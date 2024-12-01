@@ -7,22 +7,25 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       {/* Upper Portion */}
-      <div className="flex items-center justify-center p-8 space-x-10">
+      <div className="flex items-center justify-center p-10 space-x-20 bg-namecard-gradient">
         {/* Photo */}
         <div className="mr-8">
           <Image
             src="/me.jpg"
             alt="Your Name"
-            width={220}
-            height={220}
+            width={260}
+            height={260}
             className="object-cover"
           />
         </div>
         {/* Name and Info */}
         <div className="space-y-5">
-          <h1 className="text-5xl font-bold text-black">Taehoon Hwang</h1>
+          <div className="flex flex-col gap-4">
+            <h1 className="text-5xl font-bold text-black">Taehoon Hwang</h1>
+            <div className="h-1 w-full bg-black"></div>
+          </div>
           <p className="text-2xl text-black mt-2">Computer Science Undergraduate @ Purdue University</p>
-          <p className="text-xl text-gray-500 mt-2">hwang280 [at] purdue.edu</p>
+          <p className="text-xl text-gray-600 mt-2 font-mono">Contact me at: hwang280 [at] purdue.edu</p>
           {/* Social Links */}
           <div className="flex space-x-6">
             <a
@@ -45,15 +48,18 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Horizontal Line */}
+      {/* Horizontal Line
       <div className="flex justify-center my-4">
-        <div className="w-2/5 border-t-4 border-black"></div>
-      </div>
+        <div className="w-full border-t-4 border-black"></div>
+      </div> */}
 
       {/* Center Description */}
       <div className="flex-grow flex flex-col items-center justify-center px-4">
         <p className="text-2xl text-black text-center mb-8">
-          Hi!
+          I am currently studying computer science at Purdue University with a concentration in Machine Intelligence.
+        </p>
+        <p className="text-2xl text-black text-center mb-8">
+          My interests lie in theoretical machine learning and algorithmic optimizations.
         </p>
       </div>
 
