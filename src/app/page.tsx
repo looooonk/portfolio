@@ -59,7 +59,7 @@ export default function Home() {
           I am currently studying computer science at Purdue University with a concentration in Machine Intelligence.
         </p>
         <p className="text-2xl text-black text-center mb-8">
-          My interests lie in theoretical machine learning and algorithmic optimizations.
+          My interests lie in theoretical machine learning, deep learning, and algorithmic optimizations.
         </p>
       </div>
 
