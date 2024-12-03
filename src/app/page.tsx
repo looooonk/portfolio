@@ -13,8 +13,8 @@ export default function Home() {
           {/* Photo */}
           <div className="mr-8">
             <Image
-              src="/my-portfolio/me.jpg"
-              alt="Your Name"
+              src="/me.jpg"
+              alt="Me!"
               width={260}
               height={260}
               className="object-cover"

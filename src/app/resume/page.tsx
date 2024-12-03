@@ -71,6 +71,16 @@ export default function Resume() {
                       </div>
                     </div>
                   </div>
+                  {/* Home Button */}
+                  <div className="flex justify-center mb-8 pt-10">
+                    <Link
+                      href="/"
+                      className="flex items-center px-6 py-3 text-white bg-black hover:bg-gray-800"
+                    >
+                      <FaHouseChimney className="mr-2" />
+                      Back to Main Page
+                    </Link>
+                  </div>
                 </motion.div>
               )}
               {activeTab === 'experience' && (
@@ -225,6 +235,16 @@ export default function Resume() {
                       </div>
                     </div>
                   </div>
+                  {/* Home Button */}
+                  <div className="flex justify-center mb-8 pt-10">
+                    <Link
+                      href="/"
+                      className="flex items-center px-6 py-3 text-white bg-black hover:bg-gray-800"
+                    >
+                      <FaHouseChimney className="mr-2" />
+                      Back to Main Page
+                    </Link>
+                  </div>
                 </motion.div>
               )}
               {activeTab === 'projects' && (
@@ -336,6 +356,16 @@ export default function Resume() {
                         </ul>
                       </div>
                     </div>
+                  </div>
+                  {/* Home Button */}
+                  <div className="flex justify-center mb-8 pt-10">
+                    <Link
+                      href="/"
+                      className="flex items-center px-6 py-3 text-white bg-black hover:bg-gray-800"
+                    >
+                      <FaHouseChimney className="mr-2" />
+                      Back to Main Page
+                    </Link>
                   </div>
                 </motion.div>
               )}
@@ -471,6 +501,16 @@ export default function Resume() {
                       </div>
                     </div>
                   </div>
+                  {/* Home Button */}
+                  <div className="flex justify-center mb-8 pt-10">
+                    <Link
+                      href="/"
+                      className="flex items-center px-6 py-3 text-white bg-black hover:bg-gray-800"
+                    >
+                      <FaHouseChimney className="mr-2" />
+                      Back to Main Page
+                    </Link>
+                  </div>
                 </motion.div>
               )}
               {activeTab === 'awards' && (
@@ -515,6 +555,16 @@ export default function Resume() {
                       </div>
                     </div>
                   </div>
+                  {/* Home Button */}
+                  <div className="flex justify-center mb-8 pt-10">
+                    <Link
+                      href="/"
+                      className="flex items-center px-6 py-3 text-white bg-black hover:bg-gray-800"
+                    >
+                      <FaHouseChimney className="mr-2" />
+                      Back to Main Page
+                    </Link>
+                  </div>
                 </motion.div>
               )}
               {activeTab === 'skills' && (
@@ -539,21 +589,20 @@ export default function Resume() {
                       PyTorch, PyTorch Lightning, Pandas, NumPy, Scikit-learn, TensorFlow, Keras, OpenCV
                     </li>
                   </ul>
+                  {/* Home Button */}
+                  <div className="flex justify-center mb-8 pt-10">
+                    <Link
+                      href="/"
+                      className="flex items-center px-6 py-3 text-white bg-black hover:bg-gray-800"
+                    >
+                      <FaHouseChimney className="mr-2" />
+                      Back to Main Page
+                    </Link>
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
-        </div>
-
-        {/* Home Button */}
-        <div className="flex justify-center mb-8 pt-10">
-          <Link
-            href="/"
-            className="flex items-center px-6 py-3 text-white bg-black hover:bg-gray-800"
-          >
-            <FaHouseChimney className="mr-2" />
-            Back to Main Page
-          </Link>
         </div>
       </div>
     </ClientWrapper>
