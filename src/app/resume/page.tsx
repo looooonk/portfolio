@@ -8,7 +8,6 @@ import { FaGithub } from 'react-icons/fa'
 import { BiWorld } from "react-icons/bi";
 import {
   Tabs,
-  TabsContent,
   TabsList,
   TabsTrigger,
 } from "@/components/ui/tabs"
@@ -362,7 +361,7 @@ export default function Resume() {
                         </div>
                         <ul className="list-disc pl-5">
                           <li>
-                            Ranked in the Top 20 in Purdue's ICPC participant selection contest
+                            Ranked in the Top 20 in Purdue&apos;s ICPC participant selection contest
                           </li>
                           <li>
                             Led team of 3 in the ICPC East Central North America regional contest among 5 other Purdue ICPC teams
@@ -490,7 +489,7 @@ export default function Resume() {
                         <p className="text-right">Purdue University, 2024</p>
                       </div>
                       <div className="flex justify-between items-center space-x-2">
-                        <p className="font-bold">Dean's List & Semester Honors</p>
+                        <p className="font-bold">Dean&apos;s List & Semester Honors</p>
                         <div className="h-0.5 flex-grow bg-black"></div>
                         <p className="text-right">Purdue University, 2023 & 2024</p>
                       </div>
