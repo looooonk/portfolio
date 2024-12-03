@@ -13,7 +13,7 @@ export default function Home() {
           {/* Photo */}
           <div className="mr-8">
             <Image
-              src="/portfolio/me.jpg"
+              src="/me.jpg"
               alt="Me!"
               width={260}
               height={260}
