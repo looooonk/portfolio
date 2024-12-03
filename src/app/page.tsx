@@ -13,7 +13,7 @@ export default function Home() {
           {/* Photo */}
           <div className="mr-8">
             <Image
-              src="/nextjs-github-pages/me.jpg"
+              src="/my-portfolio/me.jpg"
               alt="Your Name"
               width={260}
               height={260}
