@@ -27,7 +27,7 @@ export default function Home() {
               <div className="h-1 w-full bg-black"></div>
             </div>
             <p className="text-2xl text-black mt-2">Computer Science Undergraduate @ Purdue University</p>
-            <p className="text-xl text-gray-600 mt-2 font-mono">Contact me at: hwang280 [at] purdue.edu</p>
+            <p className="text-xl text-gray-600 mt-2 font-mono">Contact me at: hwang280 [at] purdue [dot] edu</p>
             {/* Social Links */}
             <div className="flex space-x-6">
               <a

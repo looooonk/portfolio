@@ -69,6 +69,17 @@ export default function Resume() {
                           </p>
                         </div>
                       </div>
+                      <div>
+                        <div className="flex justify-between items-center space-x-2">
+                          <h3 className="text-lg font-bold">Seoul Science High School</h3>
+                          <div className="h-0.5 flex-grow bg-black"></div>
+                          <p className="italic text-right">Seoul, South Korea</p>
+                        </div>
+                        <div className="flex justify-between items-center">
+                          <p>32nd Cohort, Granted early admission</p>
+                          <p className="text-right">Mar. 2020 ~ Feb. 2023</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   {/* Home Button */}
