@@ -64,9 +64,14 @@ export default function Resume() {
                           <p>
                             <span className="font-semibold">GPA:</span> 4.00 / 4.00
                           </p>
-                          <p>
-                            <span className="font-semibold">Relevant Courses:</span> Linear Algebra, Probability, Discrete Mathematics, Programming in C, Computer Architecture, Data Structures, Statistical Methods, Competitive Programming I & II
-                          </p>
+                          <div style={{ display: 'flex', alignItems: 'flex-start' }}>
+                            <span className="font-semibold" style={{ whiteSpace: 'nowrap' }}>Relevant Courses:</span>
+                            <div style={{ marginLeft: '10px', flex: 1 }}>
+                              Linear Algebra, Probability, Discrete Mathematics, Programming in C, Computer Architecture, Data Structures, Statistical Methods,
+                              <br />
+                              Competitive Programming I & II, Foundations of Deep Learning, Data Mining & Machine Learning, Introduction to Artificial Intelligence
+                            </div>
+                          </div>
                         </div>
                       </div>
                       <div>
