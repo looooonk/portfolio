@@ -67,7 +67,7 @@ export default function Resume() {
                           <div style={{ display: 'flex', alignItems: 'flex-start' }}>
                             <span className="font-semibold" style={{ whiteSpace: 'nowrap' }}>Relevant Courses:</span>
                             <div style={{ marginLeft: '10px', flex: 1 }}>
-                              Linear Algebra, Probability, Discrete Mathematics, Programming in C, Computer Architecture, Data Structures, Statistical Methods,
+                              Linear Algebra, Probability, Discrete Mathematics, Programming in C, Computer Architecture, Data Structures, Statistical Methods, Quantum Machine Learning Research
                               <br />
                               Competitive Programming I & II, Foundations of Deep Learning, Data Mining & Machine Learning, Introduction to Artificial Intelligence
                             </div>
@@ -113,7 +113,7 @@ export default function Resume() {
                         <div className="flex justify-between items-center space-x-2">
                           <h3 className="text-lg font-bold">CS 18200 & CS 24000 Undergraduate TA</h3>
                           <div className="h-0.5 flex-grow bg-black"></div>
-                          <p className="text-right">Jan. 2024 ~ Present</p>
+                          <p className="text-right">Jan. 2025 ~ Present</p>
                         </div>
 
                         <div className="flex justify-between items-center">
