@@ -111,6 +111,30 @@ export default function Resume() {
                     <div className="space-y-8 pt-4">
                       <div>
                         <div className="flex justify-between items-center space-x-2">
+                          <h3 className="text-lg font-bold">CS 18200 & CS 24000 Undergraduate TA</h3>
+                          <div className="h-0.5 flex-grow bg-black"></div>
+                          <p className="text-right">Jan. 2024 ~ Present</p>
+                        </div>
+
+                        <div className="flex justify-between items-center">
+                          <p className="italic">Purdue University</p>
+                          <p className="italic text-right">West Lafayette, IN</p>
+                        </div>
+
+                        {/* <ul className="list-disc pl-5">
+                          <li>
+                            Engineered demand forecasting pipeline integrating probability curves with LSTM encoding for enhanced accuracy
+                          </li>
+                          <li>
+                            Optimized inference storage by achieving a reduction of &gt;99% compared to traditional deep learning models
+                          </li>
+                          <li>
+                            Conducted latent space analysis and illustrated composite encoding of demand features using LSTM models
+                          </li>
+                        </ul> */}
+                      </div>
+                      <div>
+                        <div className="flex justify-between items-center space-x-2">
                           <h3 className="text-lg font-bold">Research Assistant</h3>
                           <div className="h-0.5 flex-grow bg-black"></div>
                           <p className="text-right">Jan. 2024 ~ Dec. 2024</p>
