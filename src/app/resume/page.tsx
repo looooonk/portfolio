@@ -8,7 +8,6 @@ import { FaGithub } from 'react-icons/fa'
 import { BiWorld } from "react-icons/bi";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
-import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from 'framer-motion';
 import ClientWrapper from "./../clientwrapper";
 
