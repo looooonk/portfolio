@@ -58,8 +58,9 @@ export default function Resume() {
                           <p className="text-right">Aug. 2023 ~ Present</p>
                         </div>
                         <div className="space-y-2 pt-2">
-                          <p>
+                          <p className="space-x-8">
                             <span className="font-semibold">Overall GPA:</span> 4.00 / 4.00
+                            <span className="font-semibold">Major GPA:</span> 4.00 / 4.00
                           </p>
                           <div style={{ display: 'flex', alignItems: 'flex-start' }}>
                             <span className="font-semibold" style={{ whiteSpace: 'nowrap' }}>Relevant Courses:</span>
