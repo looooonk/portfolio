@@ -67,6 +67,18 @@ export default function Resume() {
                             <div style={{ marginLeft: '10px', flex: 1, maxWidth: '60%',wordBreak: 'keep-all',overflowWrap: 'break-word' }}>
                               <HoverCard openDelay={50} closeDelay={50}>
                                 <HoverCardTrigger>
+                                  Probability 
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    MA 41600
+                                  </div>
+                                  Took Spring 2024
+                                </HoverCardContent>
+                              </HoverCard>                 
+                              ,{" "}
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
                                   Linear Algebra
                                 </HoverCardTrigger>
                                 <HoverCardContent style={{ width: 'auto' }}>
@@ -79,11 +91,11 @@ export default function Resume() {
                               ,{" "}
                               <HoverCard openDelay={50} closeDelay={50}>
                                 <HoverCardTrigger>
-                                  Probability
+                                  Quantum Machine Learning Research
                                 </HoverCardTrigger>
                                 <HoverCardContent style={{ width: 'auto' }}>
                                   <div style={{ fontWeight: 'bold' }}>
-                                    MA 41600
+                                    PHYS 49000ZF
                                   </div>
                                   Took Spring 2024
                                 </HoverCardContent>
@@ -101,15 +113,114 @@ export default function Resume() {
                                 </HoverCardContent>
                               </HoverCard>
                               ,{" "}
-                              Programming in C,
-                              Computer Architecture,
-                              Data Structures,
-                              Statistical Methods,
-                              Quantum Machine Learning Research,
-                              Competitive Programming I & II,
-                              Foundations of Deep Learning,
-                              Data Mining & Machine Learning,
-                              Introduction to Artificial Intelligence
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Programming in C
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    CS 24000
+                                  </div>
+                                  Took Spring 2024
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Computer Architecture
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    CS 25000
+                                  </div>
+                                  Took Fall 2024
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Data Structures
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    CS 25000
+                                  </div>
+                                  Took Fall 2024
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Statistical Methods
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    STAT 51100
+                                  </div>
+                                  Took Fall 2024
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Competitive Programming I
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    CS 21100
+                                  </div>
+                                  Took Spring 2024
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Competitive Programming II
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    CS 31100
+                                  </div>
+                                  Took Fall 2024
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Foundations of Deep Learning
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    CS 58700
+                                  </div>
+                                  Taking Spring 2025
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Data Mining & Machine Learning
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    CS 37300
+                                  </div>
+                                  Taking Spring 2025
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Introduction to Artificial Intelligence
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    CS 47100
+                                  </div>
+                                  Taking Spring 2025
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
                             </div>
                           </div>
                         </div>
