@@ -6,11 +6,9 @@ import Link from 'next/link';
 import { FaHouseChimney } from "react-icons/fa6";
 import { FaGithub } from 'react-icons/fa'
 import { BiWorld } from "react-icons/bi";
-import {
-  Tabs,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs"
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
+import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from 'framer-motion';
 import ClientWrapper from "./../clientwrapper";
 
@@ -62,14 +60,56 @@ export default function Resume() {
                         </div>
                         <div className="space-y-2 pt-2">
                           <p>
-                            <span className="font-semibold">GPA:</span> 4.00 / 4.00
+                            <span className="font-semibold">Overall GPA:</span> 4.00 / 4.00
                           </p>
                           <div style={{ display: 'flex', alignItems: 'flex-start' }}>
                             <span className="font-semibold" style={{ whiteSpace: 'nowrap' }}>Relevant Courses:</span>
-                            <div style={{ marginLeft: '10px', flex: 1 }}>
-                              Linear Algebra, Probability, Discrete Mathematics, Programming in C, Computer Architecture, Data Structures, Statistical Methods, Quantum Machine Learning Research
-                              <br />
-                              Competitive Programming I & II, Foundations of Deep Learning, Data Mining & Machine Learning, Introduction to Artificial Intelligence
+                            <div style={{ marginLeft: '10px', flex: 1, maxWidth: '60%',wordBreak: 'keep-all',overflowWrap: 'break-word' }}>
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Linear Algebra
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    MA 26500
+                                  </div>
+                                  Took Fall 2023
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Probability
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    MA 41600
+                                  </div>
+                                  Took Spring 2024
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
+                              <HoverCard openDelay={50} closeDelay={50}>
+                                <HoverCardTrigger>
+                                  Discrete Mathematics
+                                </HoverCardTrigger>
+                                <HoverCardContent style={{ width: 'auto' }}>
+                                  <div style={{ fontWeight: 'bold' }}>
+                                    CS 18200
+                                  </div>
+                                  Took Spring 2024
+                                </HoverCardContent>
+                              </HoverCard>
+                              ,{" "}
+                              Programming in C,
+                              Computer Architecture,
+                              Data Structures,
+                              Statistical Methods,
+                              Quantum Machine Learning Research,
+                              Competitive Programming I & II,
+                              Foundations of Deep Learning,
+                              Data Mining & Machine Learning,
+                              Introduction to Artificial Intelligence
                             </div>
                           </div>
                         </div>
