@@ -143,7 +143,7 @@ export default function Resume() {
                                 </HoverCardTrigger>
                                 <HoverCardContent style={{ width: 'auto' }}>
                                   <div style={{ fontWeight: 'bold' }}>
-                                    CS 25000
+                                    CS 25100
                                   </div>
                                   Took Fall 2024
                                 </HoverCardContent>
