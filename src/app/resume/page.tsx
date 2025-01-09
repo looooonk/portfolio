@@ -220,7 +220,6 @@ export default function Resume() {
                                   Taking Spring 2025
                                 </HoverCardContent>
                               </HoverCard>
-                              ,{" "}
                             </div>
                           </div>
                         </div>
