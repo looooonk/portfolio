@@ -767,16 +767,20 @@ export default function Resume() {
                 >
                   <ul className="list-disc pl-5 pt-4 space-y-6">
                     <li>
-                      <span className="font-bold">Languages & Frameworks:</span>{' '}
-                      Python, C/C++, React, Flask, Java, JavaScript, TypeScript, Express.js, Next.js, HTML/CSS, x86 Assembly, Bash
+                      <span className="font-bold">Programming Languages & Frameworks:</span>{' '}
+                      Python, C/C++, R, Java, JavaScript, TypeScript, HTML/CSS, Tailwind CSS, x86 Assembly, Bash, React, Flask, Express.js, Next.js
                     </li>
                     <li>
                       <span className="font-bold">Dev & Research Tools:</span>{' '}
-                      Git/GitHub, VS Code, PyCharm, VS Code, Visual Studio, IntelliJ, Slurm, Docker, MLFlow, LaTeX, Overleaf
+                      Git/GitHub, VS Code, Visual Studio, PyCharm, IntelliJ, Slurm, Docker, MLFlow, LaTeX, Overleaf, Typst, UNIX
                     </li>
                     <li>
                       <span className="font-bold">Libraries:</span>{' '}
                       PyTorch, PyTorch Lightning, Pandas, NumPy, Scikit-learn, TensorFlow, Keras, OpenCV
+                    </li>
+                    <li>
+                      <span className="font-bold">Natural Languages:</span>{' '}
+                      English & Korean
                     </li>
                   </ul>
                   {/* Home Button */}
