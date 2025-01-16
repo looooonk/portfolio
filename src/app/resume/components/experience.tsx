@@ -7,7 +7,7 @@ export default function Experience() {
             <div className="space-y-8 pt-4">
                 <div>
                     <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">CS 18200 & CS 24000 Undergraduate TA</h3>
+                        <h3 className="text-lg font-bold">Undergraduate Teaching Assistant</h3>
                         <div className="h-0.5 flex-grow bg-black"></div>
                         <p className="text-right">Jan. 2025 ~ Present</p>
                     </div>
@@ -16,6 +16,12 @@ export default function Experience() {
                         <p className="italic">Purdue University</p>
                         <p className="italic text-right">West Lafayette, IN</p>
                     </div>
+
+                    <ul className="list-disc pl-5">
+                        <li>
+                            Currently working as a UTA for CS 18200 (Discrete Mathematics) and CS 24000 (Programming in C)
+                        </li>
+                    </ul>
                 </div>
                 <div>
                     <div className="flex justify-between items-center space-x-2">
