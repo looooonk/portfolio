@@ -40,7 +40,7 @@ export default function Education() {
                 }}
               >
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>Probability</HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>Probability</HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
                     <div style={{ fontWeight: "bold" }}>MA 41600</div>
                     Took Spring 2024
@@ -48,7 +48,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>Linear Algebra</HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>Linear Algebra</HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
                     <div style={{ fontWeight: "bold" }}>MA 26500</div>
                     Took Fall 2023
@@ -56,7 +56,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>Quantum ML Research</HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>Quantum ML Research</HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
                     <div style={{ fontWeight: "bold" }}>PHYS 49000ZF</div>
                     Took Spring 2024
@@ -64,7 +64,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>Discrete Mathematics</HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>Discrete Mathematics</HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
                     <div style={{ fontWeight: "bold" }}>CS 18200</div>
                     Took Spring 2024
@@ -72,7 +72,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>Programming in C</HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>Programming in C</HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
                     <div style={{ fontWeight: "bold" }}>CS 24000</div>
                     Took Spring 2024
@@ -80,7 +80,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>Computer Architecture</HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>Computer Architecture</HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
                     <div style={{ fontWeight: "bold" }}>CS 25000</div>
                     Took Fall 2024
@@ -88,7 +88,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>Data Structures</HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>Data Structures</HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
                     <div style={{ fontWeight: "bold" }}>CS 25100</div>
                     Took Fall 2024
@@ -96,7 +96,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>Statistical Methods</HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>Statistical Methods</HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
                     <div style={{ fontWeight: "bold" }}>STAT 51100</div>
                     Took Fall 2024
@@ -104,7 +104,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>Competitive Programming I</HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>Competitive Programming I</HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
                     <div style={{ fontWeight: "bold" }}>CS 21100</div>
                     Took Spring 2024
@@ -112,7 +112,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>
                     Competitive Programming II
                   </HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
@@ -122,7 +122,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>
                     Foundations of Deep Learning
                   </HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
@@ -132,7 +132,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>
                     Data Mining & Machine Learning
                   </HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
@@ -142,7 +142,7 @@ export default function Education() {
                 </HoverCard>
                 ,{" "}
                 <HoverCard openDelay={50} closeDelay={50}>
-                  <HoverCardTrigger>
+                  <HoverCardTrigger style={{ whiteSpace: "nowrap" }}>
                     Introduction to Artificial Intelligence
                   </HoverCardTrigger>
                   <HoverCardContent style={{ width: "auto" }}>
