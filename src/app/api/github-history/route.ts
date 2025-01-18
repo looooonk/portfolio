@@ -41,7 +41,7 @@ async function fetchCommits(owner: string, repo: string, token: string): Promise
 export async function GET() {
   const token = process.env.GITHUB_ACCESS_TOKEN;
   const owner = 'AWC2124R';
-  const repos = ['Portfolio', 'Benfords-Law-Paper'];
+  const repos = ['Portfolio', 'Benfords-Law-Paper', 'obsidian-notes'];
 
   if (!token) {
     return NextResponse.json(
@@ -57,7 +57,11 @@ export async function GET() {
       allCommits.push(...commits);
     }
 
-    return NextResponse.json(allCommits.slice(0, 50), { status: 200 }); // Limit to 10 most recent commits
+    allCommits.sort((a, b) =>
+      new Date(b.commit.author.date).getTime() - new Date(a.commit.author.date).getTime()
+    );
+
+    return NextResponse.json(allCommits, { status: 200 });
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
