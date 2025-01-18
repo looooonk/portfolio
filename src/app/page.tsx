@@ -1,7 +1,6 @@
 // src/app/page.tsx
 'use client';
 
-import { useEffect, useState } from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaFileAlt, FaLinkedin, FaGithub } from 'react-icons/fa'
@@ -11,7 +10,7 @@ import CommitHistory from './commithistory';
 export default function Home() {
   return (
     <ClientWrapper>
-      <div className="flex flex-col min-h-screen bg-gray-100">
+      <div className="flex flex-col min-h-screen bg-zinc-700">
         {/* Upper Portion */}
         <div className="flex items-center justify-center p-10 space-x-20 bg-namecard-gradient">
           {/* Photo */}
@@ -62,13 +61,13 @@ export default function Home() {
         {/* Center Description */}
         <div className="flex-grow flex flex-col md:flex-row items-start md:items-center justify-center px-4">
           <div className="md:w-1/2 text-center md:text-left">
-            <p className="text-2xl text-black text-center mb-8">
+            <p className="text-2xl text-gray-200 text-center mb-8">
               Hello!
             </p>
-            <p className="text-2xl text-black text-center mb-8">
+            <p className="text-2xl text-gray-200 text-center mb-8">
               I am currently studying computer science at Purdue University with a minor in mathematics.
             </p>
-            <p className="text-2xl text-black text-center mb-8">
+            <p className="text-2xl text-gray-200 text-center mb-8">
               My interests lie in theoretical machine learning, deep learning, and algorithmic optimizations.
             </p>
           </div>
