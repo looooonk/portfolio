@@ -110,7 +110,7 @@ export default function Experience() {
                         <div className="flex items-center space-x-2">
                             <h3 className="text-lg font-bold">Research Assistant</h3>
                             <a
-                                href="https://github.com/AWC2124R/OSR-Loss-Optimization"
+                                href="https://github.com/looooonk/OSR-Loss-Optimization"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-black hover:text-gray-800"

@@ -34,7 +34,7 @@ export default function Home() {
             {/* Social Links */}
             <div className="flex space-x-6">
               <a
-                href="https://www.linkedin.com/in/taehoon-hwang-86292728b/"
+                href="https://www.linkedin.com/in/taehoon-hwang/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-gray-800"
@@ -42,7 +42,7 @@ export default function Home() {
                 <FaLinkedin size={40} />
               </a>
                 <a
-                href="https://github.com/AWC2124R"
+                href="https://github.com/looooonk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-gray-800"

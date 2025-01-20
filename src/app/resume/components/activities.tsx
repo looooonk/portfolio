@@ -31,7 +31,7 @@ export default function Activities() {
                         <div className="flex items-center space-x-2">
                             <h3 className="text-lg font-bold">Hello World Hackathon Participant</h3>
                             <a
-                                href="https://github.com/AWC2124R/Health-App"
+                                href="https://github.com/looooonk/Health-App"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-black hover:text-gray-800"
