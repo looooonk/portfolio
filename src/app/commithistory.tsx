@@ -51,7 +51,6 @@ export default function CommitHistory() {
     commitCounts[date] = (commitCounts[date] || 0) + 1;
   });
 
-  // Prepare grid data (fill in 0 for missing dates)
   const gridData = past30Days.map((date) => ({
     date,
     count: commitCounts[date] || 0,
@@ -59,10 +58,10 @@ export default function CommitHistory() {
 
   // Color shades based on commit count
   const getColor = (count: number) => {
-    if (count === 0) return 'bg-gray-300'; // No commits
-    if (count <= 2) return 'bg-green-200'; // Low activity
-    if (count <= 5) return 'bg-green-400'; // Medium activity
-    return 'bg-green-600'; // High activity
+    if (count === 0) return 'bg-gray-300';
+    if (count <= 2) return 'bg-green-200';
+    if (count <= 5) return 'bg-green-400';
+    return 'bg-green-600';
   };
 
   // Limit the list to the 5 most recent commits
