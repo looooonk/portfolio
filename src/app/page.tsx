@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaFileAlt, FaLinkedin, FaGithub } from 'react-icons/fa'
 import ClientWrapper from "./clientwrapper";
-import CommitHistory from './commithistory';
+// import CommitHistory from './commithistory';
 
 export default function Home() {
   return (
