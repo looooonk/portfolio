@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-static'
+
 const GITHUB_API_BASE = 'https://api.github.com';
 
 type Commit = {
