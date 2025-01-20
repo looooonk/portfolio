@@ -62,7 +62,8 @@ export async function GET() {
     );
 
     return NextResponse.json(allCommits, { status: 200 });
-  } catch (error: any) {
-    return NextResponse.json({ error: error.message }, { status: 500 });
+  } catch (error: unknown) {
+    const errorMessage = (error as { message: string }).message || "An unknown error occurred";
+    return NextResponse.json({ error: errorMessage }, { status: 500 });
   }
 }

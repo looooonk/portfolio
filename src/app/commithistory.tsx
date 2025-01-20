@@ -26,8 +26,9 @@ export default function CommitHistory() {
         }
         const data: Commit[] = await response.json();
         setAllCommits(data); // Store all commits for grid and list
-      } catch (err: any) {
-        setError(err.message);
+      } catch (err: unknown) {
+        const errorMessage = (err as { message: string }).message || "An unknown error occurred";
+        setError(errorMessage);
       }
     };
 
