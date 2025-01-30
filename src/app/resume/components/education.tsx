@@ -12,8 +12,7 @@ export default function Education() {
           </div>
           <div className="flex justify-between items-center">
             <p>
-              B.S. in Computer Science, Minor in Mathematics, Machine
-              Intelligence Track
+              B.S. in Computer Science, Minor in Mathematics, Machine Intelligence and Algorithmic Foundations Track
             </p>
             <p className="text-right">Aug. 2023 ~ Present</p>
           </div>
