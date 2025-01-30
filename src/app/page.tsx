@@ -1,13 +1,16 @@
 // src/app/page.tsx
+'use client';
+
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaFileAlt, FaLinkedin, FaGithub } from 'react-icons/fa'
 import ClientWrapper from "./clientwrapper";
+// import CommitHistory from './commithistory';
 
 export default function Home() {
   return (
     <ClientWrapper>
-      <div className="flex flex-col min-h-screen bg-gray-100">
+      <div className="flex flex-col min-h-screen bg-white">
         {/* Upper Portion */}
         <div className="flex items-center justify-center p-10 space-x-20 bg-namecard-gradient">
           {/* Photo */}
@@ -31,7 +34,7 @@ export default function Home() {
             {/* Social Links */}
             <div className="flex space-x-6">
               <a
-                href="https://www.linkedin.com/in/taehoon-hwang-86292728b/"
+                href="https://www.linkedin.com/in/taehoon-hwang/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-gray-800"
@@ -39,7 +42,7 @@ export default function Home() {
                 <FaLinkedin size={40} />
               </a>
                 <a
-                href="https://github.com/AWC2124R"
+                href="https://github.com/looooonk"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-black hover:text-gray-800"
@@ -56,17 +59,23 @@ export default function Home() {
         </div> */}
 
         {/* Center Description */}
-        <div className="flex-grow flex flex-col items-center justify-center px-4">
-          <p className="text-2xl text-black text-center mb-8">
-            Hello!
-          </p>
-          <p className="text-2xl text-black text-center mb-8">
-            I am currently studying computer science at Purdue University with a minor in mathematics.
-          </p>
-          <p className="text-2xl text-black text-center mb-8">
-            My interests lie in theoretical machine learning, deep learning, and algorithmic optimizations.
-          </p>
+        <div className="flex-grow flex flex-col md:flex-row items-start md:items-center justify-center px-4">
+          <div className="md:w-1/2 text-center md:text-left">
+            <p className="text-2xl text-black text-center mb-8">
+              Hello!
+            </p>
+            <p className="text-2xl text-black text-center mb-8">
+              I am currently studying computer science at Purdue University with a minor in mathematics.
+            </p>
+            <p className="text-2xl text-black text-center mb-8">
+              My interests lie in theoretical machine learning, deep learning, and algorithmic optimizations.
+            </p>
+          </div>
+          {/* <div className="md:w-1/2">
+            <CommitHistory />
+          </div> */}
         </div>
+        
 
         {/* Resume Button */}
         <div className="flex justify-center mb-8">

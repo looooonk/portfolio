@@ -52,7 +52,7 @@ export default {
   			}
   		},
   		backgroundImage: {
-  			'namecard-gradient': 'radial-gradient(circle at right top, #d5b9df , #c7d5f4)'
+  			'namecard-gradient': 'radial-gradient(circle, rgba(238,174,202,0.75) 0%, rgba(148,187,233,0.75) 100%)'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

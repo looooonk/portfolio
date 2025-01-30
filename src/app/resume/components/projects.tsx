@@ -49,7 +49,7 @@ export default function Projects() {
                         <div className="flex items-center space-x-2">
                             <h3 className="text-lg font-bold">Contextual-Diffusion</h3>
                             <a
-                                href="https://github.com/AWC2124R/GPT4-Contextual-Diffusion"
+                                href="https://github.com/looooonk/GPT4-Contextual-Diffusion"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-black hover:text-gray-800"
@@ -78,7 +78,7 @@ export default function Projects() {
                         <div className="flex items-center space-x-2">
                             <h3 className="text-lg font-bold">Animal Shogi AI</h3>
                             <a
-                                href="https://github.com/AWC2124R/Animal-Shogi-Bot"
+                                href="https://github.com/looooonk/Animal-Shogi-Bot"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-black hover:text-gray-800"
