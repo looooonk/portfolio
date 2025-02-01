@@ -7,6 +7,27 @@ export default function Projects() {
                 <div>
                     <div className="flex justify-between items-center space-x-2">
                         <h3 className="text-lg font-bold">
+                            Financial Anomaly Detection with Modified Benford's Law
+                        </h3>
+                        <div className="h-0.5 flex-grow bg-black"></div>
+                        <p className="text-right">Jan. 2025 ~ Present</p>
+                    </div>
+
+                    <ul className="list-disc pl-5">
+                        <li>
+                            Suggested novel alteration of Benford's Law applicable to stock return data based on the Student-Lévy process
+                        </li>
+                        <li>
+                            Proved algorithm utility with real-life stock data and demonstrated 60% improvement over conventional methods
+                        </li>
+                        <li>
+                            Utilized new algorithm to detect financial anomalies in stock return data based on information from fitted location-scale t-distributions
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div className="flex justify-between items-center space-x-2">
+                        <h3 className="text-lg font-bold">
                             WUMT : Wavelet U-Net Motion Transformer
                         </h3>
                         <div className="h-0.5 flex-grow bg-black"></div>
@@ -23,13 +44,16 @@ export default function Projects() {
                         <li>
                             Built training infrastructure with PyTorch Lightning and leveraged Docker and MLFlow for streamlined research
                         </li>
+                        <li>
+                            Recieved $500 research grant from Purdue's Office of Undergraduate Research
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <div className="flex justify-between items-center space-x-2">
                         <h3 className="text-lg font-bold">RL Wildfire Optimization</h3>
                         <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">May. 2024 ~ Present</p>
+                        <p className="text-right">May. 2024 ~ Dec. 2024</p>
                     </div>
 
                     <ul className="list-disc pl-5">
@@ -76,7 +100,7 @@ export default function Projects() {
                 <div>
                     <div className="flex justify-between items-center space-x-2">
                         <div className="flex items-center space-x-2">
-                            <h3 className="text-lg font-bold">Animal Shogi AI</h3>
+                            <h3 className="text-lg font-bold">Minimax-based Animal Shogi AI</h3>
                             <a
                                 href="https://github.com/looooonk/Animal-Shogi-Bot"
                                 target="_blank"
