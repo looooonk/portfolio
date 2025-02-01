@@ -6,6 +6,25 @@ export default function Activities() {
             <div className="space-y-8 pt-4">
                 <div>
                     <div className="flex justify-between items-center space-x-2">
+                        <h3 className="text-lg font-bold">Purdue Hackers Member</h3>
+                        <div className="h-0.5 flex-grow bg-black"></div>
+                        <p className="text-right">Jan. 2025 ~ Present</p>
+                    </div>
+                    <div className="flex justify-between items-center">
+                        <p className="italic">Purdue University</p>
+                        <p className="italic text-right">West Lafayette, IN</p>
+                    </div>
+                    <ul className="list-disc pl-5">
+                        <li>
+                            Participated in weekly 'hack' sessions and developed projects involving full-stack web development
+                        </li>
+                        <li>
+                            Developed website for course scheduling at Purdue with Next.js, MongoDB, and Python among team of 3
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div className="flex justify-between items-center space-x-2">
                         <h3 className="text-lg font-bold">ICPC 2023 ECNA Regional Participant</h3>
                         <div className="h-0.5 flex-grow bg-black"></div>
                         <p className="text-right">Sep. 2023</p>
