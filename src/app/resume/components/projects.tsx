@@ -7,6 +7,35 @@ export default function Projects() {
                 <div>
                     <div className="flex justify-between items-center space-x-2">
                         <h3 className="text-lg font-bold">
+                            Fractel
+                        </h3>
+                        <a
+                            href="https://github.com/looooonk/fractel"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-black hover:text-gray-800"
+                        >
+                            <FaGithub className="text-left" size={20} />
+                        </a>
+                        <div className="h-0.5 flex-grow bg-black"></div>
+                        <p className="text-right">Jan. 2025 ~ Present</p>
+                    </div>
+
+                    <ul className="list-disc pl-5">
+                        <li>
+                            Developing course selection website for Purdue students supporting multiple time sheets and prerequisite tree viewing
+                        </li>
+                        <li>
+                            Developed website front-end UI with Next.js, TypeScript, and Tailwind CSS and course catalog scraper with Python
+                        </li>
+                        <li>
+                            Theorized implementing back-end support with MongoDB and RestAPI calls for dynamic course catalog maintenance
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div className="flex justify-between items-center space-x-2">
+                        <h3 className="text-lg font-bold">
                             Financial Anomaly Detection with Modified Benford's Law
                         </h3>
                         <div className="h-0.5 flex-grow bg-black"></div>

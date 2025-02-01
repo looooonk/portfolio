@@ -19,7 +19,7 @@ export default function Activities() {
                             Participated in weekly 'hack' sessions and developed projects involving full-stack web development
                         </li>
                         <li>
-                            Developed website for course scheduling at Purdue with Next.js, MongoDB, and Python among team of 3
+                            Developing website for course scheduling at Purdue with Next.js, MongoDB, and Python among team of 3
                         </li>
                     </ul>
                 </div>
