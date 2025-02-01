@@ -19,7 +19,7 @@ export default function Awards() {
                         <p className="text-right">Purdue University, 2023 & 2024</p>
                     </div>
                     <p>
-                        Recieved both Dean's List and Semester Honors designations in Fall 2023, Spring 2024, and Fall 2024.
+                        Recieved both Dean&apos;s List and Semester Honors designations in Fall 2023, Spring 2024, and Fall 2024.
                     </p>
                 </div>
                 <div className="space-y-1">

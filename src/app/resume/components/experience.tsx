@@ -28,7 +28,7 @@ export default function Experience() {
                             Reviewed and conducted problem solving sessions for discrete mathematics on first order logic, set theory, etc.
                         </li>
                         <li>
-                            Answered students' questions during lab sessions on UNIX systems, file IO, dynamic memory allocation, etc.
+                            Answered students&apos; questions during lab sessions on UNIX systems, file IO, dynamic memory allocation, etc.
                         </li>
                     </ul>
                 </div>

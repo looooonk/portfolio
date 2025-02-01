@@ -16,7 +16,7 @@ export default function Activities() {
                     </div>
                     <ul className="list-disc pl-5">
                         <li>
-                            Participated in weekly 'hack' sessions and developed projects involving full-stack web development
+                            Participated in weekly &apos;hack&apos; sessions and developed projects involving full-stack web development
                         </li>
                         <li>
                             Developing website for course scheduling at Purdue with Next.js, MongoDB, and Python among team of 3

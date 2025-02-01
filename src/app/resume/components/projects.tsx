@@ -36,7 +36,7 @@ export default function Projects() {
                 <div>
                     <div className="flex justify-between items-center space-x-2">
                         <h3 className="text-lg font-bold">
-                            Financial Anomaly Detection with Modified Benford's Law
+                            Financial Anomaly Detection with Modified Benford&apos;s Law
                         </h3>
                         <div className="h-0.5 flex-grow bg-black"></div>
                         <p className="text-right">Jan. 2025 ~ Present</p>
@@ -44,7 +44,7 @@ export default function Projects() {
 
                     <ul className="list-disc pl-5">
                         <li>
-                            Suggested novel alteration of Benford's Law applicable to stock return data based on the Student-Lévy process
+                            Suggested novel alteration of Benford&apos;s Law applicable to stock return data based on the Student-Lévy process
                         </li>
                         <li>
                             Proved algorithm utility with real-life stock data and demonstrated 60% improvement over conventional methods
@@ -74,7 +74,7 @@ export default function Projects() {
                             Built training infrastructure with PyTorch Lightning and leveraged Docker and MLFlow for streamlined research
                         </li>
                         <li>
-                            Recieved $500 research grant from Purdue's Office of Undergraduate Research
+                            Recieved $500 research grant from Purdue&apos;s Office of Undergraduate Research
                         </li>
                     </ul>
                 </div>
