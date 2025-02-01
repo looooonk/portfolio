@@ -7,7 +7,7 @@ export default function Projects() {
                 <div>
                     <div className="flex justify-between items-center space-x-2">
                         <h3 className="text-lg font-bold">
-                            WUMT: Wavelet U-Net Motion Transformer
+                            WUMT : Wavelet U-Net Motion Transformer
                         </h3>
                         <div className="h-0.5 flex-grow bg-black"></div>
                         <p className="text-right">Jul. 2024 ~ Present</p>
