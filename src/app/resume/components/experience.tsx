@@ -21,11 +21,20 @@ export default function Experience() {
                         <li>
                             Currently working as a UTA for CS 18200 (Discrete Mathematics) and CS 24000 (Programming in C)
                         </li>
+                        <li>
+                            Held office hours ans lab sessions for students in Discrete Mathematics and Programming in C courses
+                        </li>
+                        <li>
+                            Reviewed and conducted problem solving sessions for discrete mathematics on first order logic, set theory, etc.
+                        </li>
+                        <li>
+                            Answered students' questions during lab sessions on UNIX systems, file IO, dynamic memory allocation, etc.
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Research Assistant</h3>
+                        <h3 className="text-lg font-bold">Undergraduate Research Assistant</h3>
                         <div className="h-0.5 flex-grow bg-black"></div>
                         <p className="text-right">Jan. 2024 ~ Dec. 2024</p>
                     </div>
