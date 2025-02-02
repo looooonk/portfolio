@@ -22,7 +22,7 @@ export default function Experience() {
                             Currently working as a UTA for CS 18200 (Discrete Mathematics) and CS 24000 (Programming in C)
                         </li>
                         <li>
-                            Held office hours ans lab sessions for students in Discrete Mathematics and Programming in C courses
+                            Held office hours, lab sessions, and graded student assignments
                         </li>
                         <li>
                             Reviewed and conducted problem solving sessions for discrete mathematics on first order logic, set theory, etc.
