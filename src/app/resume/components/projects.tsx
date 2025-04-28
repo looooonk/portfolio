@@ -7,6 +7,30 @@ export default function Projects() {
                 <div>
                     <div className="flex justify-between items-center space-x-2">
                         <h3 className="text-lg font-bold">
+                            Rotationally Equivariant Spatio-temporal Prediction
+                        </h3>
+                        <div className="h-0.5 flex-grow bg-black"></div>
+                        <p className="text-right">Feb. 2025 ~ Apr. 2025</p>
+                    </div>
+
+                    <ul className="list-disc pl-5">
+                        <li>
+                            Developed spatio-temporal predictive models with rotational equivariance to improve real-world performance and adapt to out-of-distribution inputs
+                        </li>
+                        <li>
+                            Developed training infrastructure using PyTorch Lightning and distributed high-performance computing nodes
+                        </li>
+                        <li>
+                            Compared multiple methods of injecting rotational equivariance using steerable wavelet filters, group equivariance CNNs, and equivariant self-attention modules
+                        </li>
+                        <li>
+                            Improved baseline spatio-temporal predictive models with out-of-distribution input in both synthetic and out-in-the-wild datasets
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div className="flex justify-between items-center space-x-2">
+                        <h3 className="text-lg font-bold">
                             Fractel
                         </h3>
                         <a
@@ -60,7 +84,7 @@ export default function Projects() {
                             WUMT : Wavelet U-Net Motion Transformer
                         </h3>
                         <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">Jul. 2024 ~ Present</p>
+                        <p className="text-right">Jul. 2024 ~ Mar. 2025</p>
                     </div>
 
                     <ul className="list-disc pl-5">

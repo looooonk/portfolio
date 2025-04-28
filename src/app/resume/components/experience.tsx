@@ -7,6 +7,34 @@ export default function Experience() {
             <div className="space-y-8 pt-4">
                 <div>
                     <div className="flex justify-between items-center space-x-2">
+                        <h3 className="text-lg font-bold">Artificial Intelligence Engineering Intern</h3>
+                        <div className="h-0.5 flex-grow bg-black"></div>
+                        <p className="text-right">May. 2025 ~ Aug. 2025</p>
+                    </div>
+
+                    <div className="flex justify-between items-center">
+                        <div className="flex items-center space-x-2">
+                            <p className="italic">Asteromorph</p>
+                            <a
+                                href="https://www.asteromorph.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-black hover:text-gray-800"
+                            >
+                                <BiWorld className="text-left" size={15} />
+                            </a>
+                        </div>
+                        <p className="italic text-right">Seoul, South Korea</p>
+                    </div>
+
+                    <ul className="list-disc pl-5">
+                        <li>
+                            Incoming intern for Summer 2025
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div className="flex justify-between items-center space-x-2">
                         <h3 className="text-lg font-bold">Undergraduate Teaching Assistant</h3>
                         <div className="h-0.5 flex-grow bg-black"></div>
                         <p className="text-right">Jan. 2025 ~ Present</p>
