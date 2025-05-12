@@ -66,7 +66,7 @@ export default function Education() {
             <div
               className="ml-2 flex-1 max-w-[60%] break-keep"
             >
-              <Course name="Probability" code="MA 41600" semester="Took Spring 2024" />,{" "}
+              <Course name="Probability" code="MA 41600" semester="Took Spring 2024"/>,{" "}
               <Course name="Linear Algebra" code="MA 26500" semester="Took Fall 2023" />,{" "}
               <Course name="Quantum ML Research" code="PHYS 49000ZF" semester="Took Spring 2024" />,{" "}
               <Course name="Discrete Mathematics" code="CS 18200" semester="Took Spring 2024" />,{" "}
