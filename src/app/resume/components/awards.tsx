@@ -56,7 +56,7 @@ const awards = [
     issuer: "Purdue University",
     year: "2023 - 2024",
     description:
-      "Earned both Dean's List and Semester Honors in Fall 2023, Spring 2024, and Fall 2024.",
+      "Earned both Dean's List and Semester Honors for Fall 2023, Spring 2024, Fall 2024, and Spring 2025.",
   },
   {
     name: "Pohang University",
