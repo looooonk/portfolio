@@ -9,7 +9,6 @@ interface CourseProps {
 }
 
 export default function Course({ name, code, semester, grade }: CourseProps) {
-  // Define grade color mapping
   const gradeStyles: Record<string, { bg: string; text: string }> = {
     "A+": { bg: "#86efac", text: "#065f46" },
     "A": { bg: "#bbf7d0", text: "#065f46" },
@@ -37,11 +36,11 @@ export default function Course({ name, code, semester, grade }: CourseProps) {
           <div
             style={{
               backgroundColor: style?.bg,
-              borderRadius: "0.375rem", // Rounded-md
+              borderRadius: "0.375rem",
               padding: "0.25rem 0.5rem",
               fontWeight: "bold",
               color: style?.text,
-              fontSize: "1.2em",
+              fontSize: "0.9em",
               marginLeft: "1rem",
               display: "flex",
               alignItems: "center",

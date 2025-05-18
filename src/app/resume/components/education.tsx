@@ -66,19 +66,19 @@ export default function Education() {
             <div
               className="ml-2 flex-1 max-w-[60%] break-keep"
             >
-              <Course name="Probability" code="MA 41600" semester="Took Spring 2024" grade="A+" />,{" "}
-              <Course name="Linear Algebra" code="MA 26500" semester="Took Fall 2023" grade="A+" />,{" "}
-              <Course name="Quantum ML Research" code="PHYS 49000ZF" semester="Took Spring 2024" grade="A+" />,{" "}
-              <Course name="Discrete Mathematics" code="CS 18200" semester="Took Spring 2024" grade="A+" />,{" "}
-              <Course name="Programming in C" code="CS 24000" semester="Took Spring 2024" grade="A+" />,{" "}
-              <Course name="Computer Architecture" code="CS 25000" semester="Took Fall 2024" grade="A+" />,{" "}
-              <Course name="Data Structures" code="CS 25100" semester="Took Fall 2024" grade="A+" />,{" "}
-              <Course name="Statistical Methods" code="STAT 51100" semester="Took Fall 2024" grade="A" />,{" "}
-              <Course name="Competitive Programming I" code="CS 21100" semester="Took Spring 2024" grade="A+" />,{" "}
-              <Course name="Competitive Programming II" code="CS 31100" semester="Took Fall 2024" grade="P" />,{" "}
-              <Course name="Foundations of Deep Learning" code="CS 58700" semester="Took Spring 2025" grade="A" />,{" "}
-              <Course name="Data Mining & Machine Learning" code="CS 37300" semester="Took Spring 2025" grade="A" />,{" "}
-              <Course name="Introduction to Artificial Intelligence" code="CS 47100" semester="Took Spring 2025" grade="A+" />
+              <Course name="Probability"                              code="MA 41600"      semester="Took Spring 2024"  grade="A+" />, {" "}
+              <Course name="Linear Algebra"                           code="MA 26500"      semester="Took Fall 2023"    grade="A+" />, {" "}
+              <Course name="Quantum ML Research"                      code="PHYS 49000ZF"  semester="Took Spring 2024"  grade="A+" />, {" "}
+              <Course name="Discrete Mathematics"                     code="CS 18200"      semester="Took Spring 2024"  grade="A+" />, {" "}
+              <Course name="Programming in C"                         code="CS 24000"      semester="Took Spring 2024"  grade="A+" />, {" "}
+              <Course name="Computer Architecture"                    code="CS 25000"      semester="Took Fall 2024"    grade="A+" />, {" "}
+              <Course name="Data Structures"                          code="CS 25100"      semester="Took Fall 2024"    grade="A+" />, {" "}
+              <Course name="Statistical Methods"                      code="STAT 51100"    semester="Took Fall 2024"    grade="A"  />, {" "}
+              <Course name="Competitive Programming I"                code="CS 21100"      semester="Took Spring 2024"  grade="A+" />, {" "}
+              <Course name="Competitive Programming II"               code="CS 31100"      semester="Took Fall 2024"    grade="P"  />, {" "}
+              <Course name="Foundations of Deep Learning"             code="CS 58700"      semester="Took Spring 2025"  grade="A"  />, {" "}
+              <Course name="Data Mining & Machine Learning"           code="CS 37300"      semester="Took Spring 2025"  grade="A"  />, {" "}
+              <Course name="Introduction to Artificial Intelligence"  code="CS 47100"      semester="Took Spring 2025"  grade="A+" />
             </div>
           </div>
         </div>
