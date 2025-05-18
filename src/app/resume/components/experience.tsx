@@ -7,7 +7,7 @@ export default function Experience() {
             <div className="space-y-8 pt-4">
                 <div>
                     <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Artificial Intelligence Engineering Intern</h3>
+                        <h3 className="text-lg font-bold">Artificial Intelligence Research Intern</h3>
                         <div className="h-0.5 flex-grow bg-black"></div>
                         <p className="text-right">May. 2025 ~ Aug. 2025</p>
                     </div>
