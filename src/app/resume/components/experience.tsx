@@ -1,206 +1,222 @@
-import { FaGithub } from 'react-icons/fa'
+// experience.tsx
+import { FaGithub } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
+import React from "react";
+
+const logos: Record<string, string> = {
+  "Asteromorph": "/emblems/asteromorph.jpeg",
+  "Purdue University": "/emblems/purdue.png",
+  "Quantum Research Sciences": "/emblems/qrs.png",
+  "Seoul Science High School": "/emblems/sshs.png",
+  "Sungkyunkwan University": "/emblems/skku.png",
+};
+
+interface ExperienceEntryProps {
+  title: string;
+  organization: string;
+  location: string;
+  range: string;
+  organizationLink?: string;
+  repoLink?: string;
+  children?: React.ReactNode;
+}
+
+function ExperienceEntry({
+  title,
+  organization,
+  location,
+  range,
+  organizationLink,
+  repoLink,
+  children,
+}: ExperienceEntryProps) {
+  return (
+    <div className="flex space-x-4">
+      <div className="flex-shrink-0 w-12 h-12">
+        <img
+          src={logos[organization]}
+          alt={`${organization} logo`}
+          className="w-full h-full object-contain"
+        />
+      </div>
+      <div className="flex-1">
+        <div className="flex justify-between items-center space-x-2">
+          <h3 className="text-lg font-bold">{title}</h3>
+          <div className="h-0.5 flex-grow bg-black" />
+          <p className="text-right">{range}</p>
+        </div>
+        <div className="flex justify-between items-center">
+          <div className="flex items-center space-x-2">
+            <p className="italic">{organization}</p>
+            {organizationLink && (
+              <a
+                href={organizationLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black hover:text-gray-800"
+              >
+                <BiWorld size={15} />
+              </a>
+            )}
+            {repoLink && (
+              <a
+                href={repoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black hover:text-gray-800"
+              >
+                <FaGithub size={18} />
+              </a>
+            )}
+          </div>
+          <p className="italic text-right">{location}</p>
+        </div>
+        {children && <div>{children}</div>}
+      </div>
+    </div>
+  );
+}
 
 export default function Experience() {
-    return (
-        <div>
-            <div className="space-y-8 pt-4">
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Artificial Intelligence Research Intern</h3>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">May. 2025 ~ Aug. 2025</p>
-                    </div>
+  return (
+    <div className="pt-4 space-y-8">
+      <ExperienceEntry
+        title="Artificial Intelligence Research Intern"
+        organization="Asteromorph"
+        organizationLink="https://www.asteromorph.com/"
+        location="Seoul, South Korea"
+        range="May. 2025 - Present"
+      >
+        <ul className="list-disc pl-5">
+          <li>Incoming intern for Summer 2025</li>
+        </ul>
+      </ExperienceEntry>
 
-                    <div className="flex justify-between items-center">
-                        <div className="flex items-center space-x-2">
-                            <p className="italic">Asteromorph</p>
-                            <a
-                                href="https://www.asteromorph.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-black hover:text-gray-800"
-                            >
-                                <BiWorld className="text-left" size={15} />
-                            </a>
-                        </div>
-                        <p className="italic text-right">Seoul, South Korea</p>
-                    </div>
+      <ExperienceEntry
+        title="Undergraduate Teaching Assistant"
+        organization="Purdue University"
+        location="West Lafayette, IN"
+        range="Jan. 2025 - May 2025"
+      >
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            UTA for&nbsp;CS 18200 (Discrete Mathematics), CS 18200H (Honors Discrete Mathematics) and CS 24000 (Programming
+            in C)
+          </li>
+          <li>Held office hours, lab sessions, and graded assignments</li>
+          <li>
+            Ran problem-solving sessions on first-order logic, set theory, etc.
+          </li>
+          <li>
+            Assisted students with UNIX, file I/O, dynamic memory allocation,
+            and more
+          </li>
+        </ul>
+      </ExperienceEntry>
 
-                    <ul className="list-disc pl-5">
-                        <li>
-                            Incoming intern for Summer 2025
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Undergraduate Teaching Assistant</h3>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">Jan. 2025 ~ Present</p>
-                    </div>
+      <ExperienceEntry
+        title="Undergraduate Research Assistant"
+        organization="Purdue University"
+        location="West Lafayette, IN"
+        range="Jan. 2024 - Dec. 2024"
+      >
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            Built a demand-forecasting pipeline that merges probability curves
+            with an LSTM encoder
+          </li>
+          <li>Cut inference storage &gt;99% relative to conventional DL models</li>
+          <li>
+            Performed latent-space analysis to visualize composite encodings of
+            demand features
+          </li>
+        </ul>
+      </ExperienceEntry>
 
-                    <div className="flex justify-between items-center">
-                        <p className="italic">Purdue University</p>
-                        <p className="italic text-right">West Lafayette, IN</p>
-                    </div>
+      <ExperienceEntry
+        title="Machine Learning Engineer"
+        organization="Quantum Research Sciences"
+        organizationLink="https://quantumresearchsciences.com/"
+        location="West Lafayette, IN"
+        range="Sep. 2023 - Aug. 2024"
+      >
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            Deployed ML software for the United States Air Force using statistical
+            and algorithmic techniques
+          </li>
+          <li>
+            Ran Monte Carlo simulations to test and tune quantum algorithms for
+            inventory management
+          </li>
+          <li>
+            Developed an end-user analytics interface for quantum inventory
+            management
+          </li>
+        </ul>
+      </ExperienceEntry>
 
-                    <ul className="list-disc pl-5">
-                        <li>
-                            Currently working as a UTA for CS 18200 (Discrete Mathematics) and CS 24000 (Programming in C)
-                        </li>
-                        <li>
-                            Held office hours, lab sessions, and graded student assignments
-                        </li>
-                        <li>
-                            Reviewed and conducted problem solving sessions for discrete mathematics on first order logic, set theory, etc.
-                        </li>
-                        <li>
-                            Answered students&apos; questions during lab sessions on UNIX systems, file IO, dynamic memory allocation, etc.
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Undergraduate Research Assistant</h3>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">Jan. 2024 ~ Dec. 2024</p>
-                    </div>
+      <ExperienceEntry
+        title="Student Researcher"
+        organization="Seoul Science High School"
+        location="Seoul, South Korea"
+        range="Mar. 2022 - Dec. 2022"
+      >
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            Enhanced real-time landmark tracking via machine-learning techniques
+          </li>
+          <li>
+            Reduced untracked frames in Google MediaPipe by 91.7% with U-Net
+            segmentation
+          </li>
+          <li>
+            Designed a versatile multi-headed software pipeline adaptable to diverse
+            hardware constraints
+          </li>
+        </ul>
+      </ExperienceEntry>
 
-                    <div className="flex justify-between items-center">
-                        <p className="italic">Purdue University</p>
-                        <p className="italic text-right">West Lafayette, IN</p>
-                    </div>
+      <ExperienceEntry
+        title="Research Assistant"
+        organization="Sungkyunkwan University"
+        repoLink="https://github.com/looooonk/OSR-Loss-Optimization"
+        location="Seoul, South Korea"
+        range="May 2021 - Dec. 2021"
+      >
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            Boosted open-set recognition in ResNet models by 9%p through latent
+            space manipulation
+          </li>
+          <li>
+            Built a remote, automated testing/optimization framework in PyTorch
+          </li>
+          <li>
+            Presented findings at the Korean Science High School R&amp;E Conference
+          </li>
+        </ul>
+      </ExperienceEntry>
 
-                    <ul className="list-disc pl-5">
-                        <li>
-                            Engineered demand forecasting pipeline integrating probability curves with LSTM encoding for enhanced accuracy
-                        </li>
-                        <li>
-                            Optimized inference storage by achieving a reduction of &gt;99% compared to traditional deep learning models
-                        </li>
-                        <li>
-                            Conducted latent space analysis and illustrated composite encoding of demand features using LSTM models
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Machine Learning Engineer</h3>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">Sep. 2023 ~ Aug. 2024</p>
-                    </div>
-
-                    <div className="flex justify-between items-center">
-                        <div className="flex items-center space-x-2">
-                            <p className="italic">Quantum Research Sciences</p>
-                            <a
-                                href="https://quantumresearchsciences.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-black hover:text-gray-800"
-                            >
-                                <BiWorld className="text-left" size={15} />
-                            </a>
-                        </div>
-                        <p className="italic text-right">West Lafayette, IN</p>
-                    </div>
-
-                    <ul className="list-disc pl-5">
-                        <li>
-                            Employed ML algorithms and statistical techniques to deploy software for the United States Air Force
-                        </li>
-                        <li>
-                            Produced Monte Carlo simulations to test and tune quantum algorithms for inventory management
-                        </li>
-                        <li>
-                            Developed end-user interface for data analytics in quantum inventory management software
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Student Researcher</h3>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">Mar. 2022 ~ Dec. 2022</p>
-                    </div>
-
-                    <div className="flex justify-between items-center">
-                        <p className="italic">Seoul Science High School</p>
-                        <p className="italic text-right">Seoul, South Korea</p>
-                    </div>
-
-                    <ul className="list-disc pl-5">
-                        <li>
-                            Explored enhancements in real-time landmark tracking algorithms using machine and deep learning
-                        </li>
-                        <li>
-                            Improved Google MediaPipe performance by reducing untracked frames by 91.7% through U-Net segmentation
-                        </li>
-                        <li>
-                            Designed a versatile multi-headed software solution adaptable to various hardware specifications
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <div className="flex items-center space-x-2">
-                            <h3 className="text-lg font-bold">Research Assistant</h3>
-                            <a
-                                href="https://github.com/looooonk/OSR-Loss-Optimization"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-black hover:text-gray-800"
-                            >
-                                <FaGithub className="text-left" size={20} />
-                            </a>
-                        </div>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">May 2021 ~ Dec. 2021</p>
-                    </div>
-
-                    <div className="flex justify-between items-center">
-                        <p className="italic">Sungkyunkwan University</p>
-                        <p className="italic text-right">Seoul, South Korea</p>
-                    </div>
-
-                    <ul className="list-disc pl-5">
-                        <li>
-                            Engaged with research team to boost open set recognition in ResNet models by 9%p via latent space manipulation
-                        </li>
-                        <li>
-                            Developed and deployed a remote automated testing and optimization framework for models using PyTorch
-                        </li>
-                        <li>
-                            Presented research findings at the Korean Science High School R&E Conference
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Student Researcher</h3>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">Apr. 2020 ~ Jun. 2021</p>
-                    </div>
-
-                    <div className="flex justify-between items-center">
-                        <p className="italic">Seoul Science High School</p>
-                        <p className="italic text-right">Seoul, South Korea</p>
-                    </div>
-
-                    <ul className="list-disc pl-5">
-                        <li>
-                            Investigated topics on advertisement classification and recommendation using OCR and clustering algorithms
-                        </li>
-                        <li>
-                            Refined k-means clustering to enhance classification accuracy, adapting to the temporal dynamics of user interests
-                        </li>
-                        <li>
-                            Demonstrated algorithm adaptability to temporal features through rigorous testing and analysis
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    );
+      <ExperienceEntry
+        title="Student Researcher"
+        organization="Seoul Science High School"
+        location="Seoul, South Korea"
+        range="Apr. 2020 - Jun. 2021"
+      >
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            Investigated ad-classification and recommendation using OCR  &amp;
+            clustering
+          </li>
+          <li>
+            Refined k-means to handle temporal dynamics of user interests
+          </li>
+          <li>
+            Demonstrated adaptive behaviour through rigorous temporal testing
+          </li>
+        </ul>
+      </ExperienceEntry>
+    </div>
+  );
 }

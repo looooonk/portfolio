@@ -53,14 +53,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Horizontal Line
-        <div className="flex justify-center my-4">
-          <div className="w-full border-t-4 border-black"></div>
-        </div> */}
-
         {/* Center Description */}
         <div className="flex-grow flex flex-col md:flex-row items-start md:items-center justify-center px-4">
-          <div className="md:w-1/2 text-center md:text-left">
+          <div className="md:w-4/5 text-center md:text-left">
             <p className="text-2xl text-black text-center mb-8">
               Hello!
             </p>
