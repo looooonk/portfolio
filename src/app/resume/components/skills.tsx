@@ -7,7 +7,7 @@ export default function Skills() {
                         Programming Languages & Frameworks:
                     </span>
                     <p>
-                        Python, C/C++, R, Java, JavaScript, TypeScript, HTML / CSS, Tailwind CSS, x86 Assembly, Bash, React, Flask, Express.js, Next.js
+                        Python, C/C++, R, Java, JavaScript, TypeScript, HTML / CSS, Tailwind CSS, x86 Assembly, Bash, React, Flask, Express.js, Next.js, SQL
                     </p>
                 </div>
             </li>
@@ -24,20 +24,20 @@ export default function Skills() {
             <li>
                 <div style={{ display: "flex", alignItems: "flex-start" }} className="space-x-1">
                     <span className="font-bold" style={{ whiteSpace: "nowrap" }}>
-                        Libraries:
+                        Research Topics:
                     </span>
                     <p>
-                        PyTorch, PyTorch Lightning, Pandas, NumPy, Scikit-learn, TensorFlow, Keras, OpenCV
+                        Natural Language Processing, Computer Vision, Reinforcement Learning, Generative AI, Large Language Models, LLM Fine Tuning, Invariance, Diffusion Models
                     </p>
                 </div>
             </li>
             <li>
                 <div style={{ display: "flex", alignItems: "flex-start" }} className="space-x-1">
                     <span className="font-bold" style={{ whiteSpace: "nowrap" }}>
-                        Natural Languages:
+                        Libraries:
                     </span>
                     <p>
-                        English & Korean
+                        PyTorch, PyTorch Lightning, Pandas, NumPy, Scikit-learn, TensorFlow, Keras, OpenCV, Transformer, Unsloth, Xformers, HuggingFace, OpenAI
                     </p>
                 </div>
             </li>
