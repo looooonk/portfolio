@@ -40,7 +40,7 @@ export default function Course({ name, code, semester, grade }: CourseProps) {
               padding: "0.25rem 0.5rem",
               fontWeight: "bold",
               color: style?.text,
-              fontSize: "0.9em",
+              fontSize: "1.1em",
               marginLeft: "1rem",
               display: "flex",
               alignItems: "center",
