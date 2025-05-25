@@ -37,7 +37,7 @@ export default function Skills() {
                         Libraries:
                     </span>
                     <p>
-                        PyTorch, PyTorch Lightning, Pandas, NumPy, Scikit-learn, TensorFlow, Keras, OpenCV, Transformer, Unsloth, Xformers, HuggingFace, OpenAI
+                        PyTorch, PyTorch Lightning, Pandas, NumPy, Scikit-learn, TensorFlow, Keras, OpenCV, Transformer, Unsloth, Xformers, HuggingFace, OpenAI, llama.cpp, vLLM, trl
                     </p>
                 </div>
             </li>
