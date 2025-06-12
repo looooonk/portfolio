@@ -2,17 +2,17 @@
 'use client';
 
 import Image from 'next/image'
-import Link from 'next/link'
-import { FaFileAlt, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import ClientWrapper from "./clientwrapper";
+import Resume from './resume/resume';
 // import CommitHistory from './commithistory';
 
 export default function Home() {
   return (
     <ClientWrapper>
-      <div className="flex flex-col min-h-screen bg-white">
+      <div className="flex flex-col min-h-screen">
         {/* Upper Portion */}
-        <div className="flex items-center justify-center p-10 space-x-20 bg-namecard-gradient">
+        <div className="flex items-center justify-center p-10 space-x-20">
           {/* Photo */}
           <div className="mr-8">
             <Image
@@ -29,8 +29,19 @@ export default function Home() {
               <h1 className="text-5xl font-bold text-black">Taehoon Hwang</h1>
               <div className="h-1 w-full bg-black"></div>
             </div>
-            <p className="text-2xl text-black mt-2">Computer Science Undergraduate @ Purdue University</p>
-            <p className="text-xl text-gray-600 mt-2 font-mono">Contact me at: hwang280 [at] purdue [dot] edu</p>
+            <div className="text-xl text-black mt-2">
+              <p className="flex">
+                <span className="w-80">Computer Science Undergrad</span>
+                <span className="mx-2 text-gray-500">@</span>
+                <span className="font-bold text-gray-500">Columbia University</span>
+              </p>
+              <p className="flex">
+                <span className="w-80">AI Engineering Intern</span>
+                <span className="mx-2 text-gray-500">@</span>
+                <span className="font-bold text-gray-500">Asteromorph</span>
+              </p>
+            </div>
+            <p className="text-xl text-gray-600 mt-2 font-mono">Contact me at: taehoon.h [at] columbia [dot] edu</p>
             {/* Social Links */}
             <div className="flex space-x-6">
               <a
@@ -54,7 +65,7 @@ export default function Home() {
         </div>
 
         {/* Center Description */}
-        <div className="flex-grow flex flex-col md:flex-row items-start md:items-center justify-center px-4">
+        {/* <div className="flex-grow flex flex-col md:flex-row items-start md:items-center justify-center px-4">
           <div className="md:w-4/5 text-center md:text-left">
             <p className="text-2xl text-black text-center mb-8">
               Hello!
@@ -66,14 +77,11 @@ export default function Home() {
               My interests lie in theoretical machine learning, deep learning, and algorithmic optimizations.
             </p>
           </div>
-          {/* <div className="md:w-1/2">
-            <CommitHistory />
-          </div> */}
-        </div>
+        </div> */}
         
 
         {/* Resume Button */}
-        <div className="flex justify-center mb-8">
+        {/* <div className="flex justify-center mb-8">
           <Link
             href="/resume"
             className="flex items-center px-6 py-3 text-white bg-black hover:bg-gray-800"
@@ -81,7 +89,9 @@ export default function Home() {
             <FaFileAlt className="mr-2" />
             View My Full Resume
           </Link>
-        </div>
+        </div> */}
+        
+        <Resume />
       </div>
     </ClientWrapper>
   )

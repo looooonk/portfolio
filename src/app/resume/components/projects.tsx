@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa'
 export default function Projects() {
     return (
         <div>
-            <div className="space-y-8 pt-4">
+            <div className="space-y-12 pt-4">
                 <div>
                     <div className="flex justify-between items-center space-x-2">
                         <h3 className="text-lg font-bold">

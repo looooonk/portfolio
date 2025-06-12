@@ -1,6 +1,6 @@
 export default function Skills() {
     return (
-        <ul className="list-disc pl-5 pt-4 space-y-6">
+        <ul className="list-disc pl-5 pt-4 space-y-12">
             <li>
                 <div style={{ display: "flex", alignItems: "flex-start" }} className="space-x-1">
                     <span className="font-bold" style={{ whiteSpace: "nowrap" }}>

@@ -47,7 +47,7 @@ function EducationEntry({ name, location, degreeOrNotes, range, children }: Entr
 
 export default function Education() {
   return (
-    <div className="pt-4 space-y-8">
+    <div className="pt-4 space-y-12">
       <EducationEntry
         name="Columbia University"
         location="New York, NY"

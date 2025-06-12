@@ -79,7 +79,7 @@ function ExperienceEntry({
 
 export default function Experience() {
   return (
-    <div className="pt-4 space-y-8">
+    <div className="pt-4 space-y-12 mb-20">
       <ExperienceEntry
         title="Artificial Intelligence Research Intern"
         organization="Asteromorph"
@@ -88,7 +88,7 @@ export default function Experience() {
         range="May. 2025 - Present"
       >
         <ul className="list-disc pl-5">
-          <li>Incoming intern for Summer 2025</li>
+          <li>Currently working as an AI research intern handling LLMs, fine-tuning, deployment, and training optimizations</li>
         </ul>
       </ExperienceEntry>
 

@@ -94,7 +94,7 @@ const awards = [
 
 export default function Awards() {
   return (
-    <div className="pt-4 space-y-8">
+    <div className="pt-4 space-y-12">
       {awards.map(a => (
         <AwardEntry
           name={a.name}
