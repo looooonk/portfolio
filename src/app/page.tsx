@@ -31,12 +31,12 @@ export default function Home() {
             </div>
             <div className="text-xl text-black mt-2">
               <p className="flex">
-                <span className="w-80">Computer Science Undergrad</span>
+                <span className="w-80">Computer Science Undergraduate</span>
                 <span className="mx-2 text-gray-500">@</span>
                 <span className="font-bold text-gray-500">Columbia University</span>
               </p>
               <p className="flex">
-                <span className="w-80">AI Engineering Intern</span>
+                <span className="w-80">AI Research Intern</span>
                 <span className="mx-2 text-gray-500">@</span>
                 <span className="font-bold text-gray-500">Asteromorph</span>
               </p>
