@@ -1,19 +1,58 @@
 import { FaGithub } from 'react-icons/fa'
 
+interface ActivityEntryProps {
+    name: string;
+    range: string;
+    institution: string;
+    location: string;
+    link?: string;
+    icon?: React.ReactNode;
+    children?: React.ReactNode;
+}
+
+function ActivityEntry({ name, range, institution, location, link, icon, children }: ActivityEntryProps) {
+    return (
+        <div className="flex space-x-4 p-6 border-2 border-gray-300 rounded-xl hover:border-blue-500 hover:shadow-lg hover:scale-[102%] transition-all duration-300 hover:bg-gray-50">
+            {/* Textual content */}
+            <div className="flex-1">
+                <div className="flex justify-between items-center space-x-2">
+                    <h3 className="text-lg font-bold">{name}</h3>
+                    {link && icon && (
+                        <a
+                            href={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-black hover:text-gray-800"
+                        >
+                            {icon}
+                        </a>
+                    )}
+                    <div className="h-0.5 flex-grow bg-black" />
+                    <p className="text-right">{range}</p>
+                </div>
+
+                <div className="flex justify-between items-center">
+                    <p>{institution}</p>
+                    <p className="text-right">{location}</p>
+                </div>
+
+                {children && <div className="pl-4">{children}</div>}
+            </div>
+        </div>
+    );
+}
+
+
 export default function Activities() {
     return (
         <div>
-            <div className="space-y-12 pt-4">
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Purdue Hackers Member</h3>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">Jan. 2025 ~ Present</p>
-                    </div>
-                    <div className="flex justify-between items-center">
-                        <p className="italic">Purdue University</p>
-                        <p className="italic text-right">West Lafayette, IN</p>
-                    </div>
+            <div className="pt-4 space-y-12 mb-20">
+                <ActivityEntry
+                    name="Purdue Hackers Member"
+                    range="Jan. 2025 ~ Present"
+                    institution="Purdue University"
+                    location="West Lafayette, IN"
+                >
                     <ul className="list-disc pl-5">
                         <li>
                             Participated in weekly &apos;hack&apos; sessions and developed projects involving full-stack web development
@@ -22,17 +61,13 @@ export default function Activities() {
                             Developing website for course scheduling at Purdue with Next.js, MongoDB, and Python among team of 3
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">ICPC 2023 ECNA Regional Participant</h3>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">Sep. 2023</p>
-                    </div>
-                    <div className="flex justify-between items-center">
-                        <p className="italic">Purdue University</p>
-                        <p className="italic text-right">West Lafayette, IN</p>
-                    </div>
+                </ActivityEntry>
+                <ActivityEntry
+                    name="ICPC 2023 ECNA Regional Participant"
+                    range="Sep. 2023"
+                    institution="Purdue University"
+                    location="West Lafayette, IN"
+                >
                     <ul className="list-disc pl-5">
                         <li>
                             Ranked in the Top 20 in Purdue&apos;s ICPC participant selection contest
@@ -44,27 +79,15 @@ export default function Activities() {
                             Solved problems utilizing competitive programming techniques such as dynamic programming and backtracking
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <div className="flex items-center space-x-2">
-                            <h3 className="text-lg font-bold">Hello World Hackathon Participant</h3>
-                            <a
-                                href="https://github.com/looooonk/Health-App"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-black hover:text-gray-800"
-                            >
-                                <FaGithub className="text-left" size={20} />
-                            </a>
-                        </div>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">Sep. 2023</p>
-                    </div>
-                    <div className="flex justify-between items-center">
-                        <p className="italic">Purdue University</p>
-                        <p className="italic text-right">West Lafayette, IN</p>
-                    </div>
+                </ActivityEntry>
+                <ActivityEntry
+                    name="Hello World Hackathon Participant"
+                    range="Sep. 2023"
+                    institution="Purdue University"
+                    location="West Lafayette, IN"
+                    link="https://github.com/looooonk/Health-App"
+                    icon={<FaGithub className="text-left" size={20} />}
+                >
                     <ul className="list-disc pl-5">
                         <li>
                             Led a team of 4 in a 24-hour hackathon driving project development and collaboration
@@ -76,17 +99,13 @@ export default function Activities() {
                             Built a full-stack web app with a React front-end and ExpressJS back-end integrating MongoDB RestAPIs
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Published Author on Neural Network Fundamentals</h3>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">Sep. 2021 ~ Mar. 2022</p>
-                    </div>
-                    <div className="flex justify-between items-center">
-                        <p className="italic">Barun Books Co., Ltd</p>
-                        <p className="italic text-right">Seoul, South Korea</p>
-                    </div>
+                </ActivityEntry>
+                <ActivityEntry
+                    name="Published Author on Neural Network Fundamentals"
+                    range="Sep. 2021 ~ Mar. 2022"
+                    institution="Barun Books Co., Ltd"
+                    location="Seoul, South Korea"
+                >
                     <ul className="list-disc pl-5">
                         <li>
                             Authored a 160-page book on neural networks covering backpropagation, gradient descent, and parallelization
@@ -98,17 +117,13 @@ export default function Activities() {
                             Ranked as a top 4 entry in the “Weekly Top Releases” by the second-largest South Korean book retailer
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Artificial Intelligence Lecturer</h3>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">May 2021 ~ Apr. 2023</p>
-                    </div>
-                    <div className="flex justify-between items-center">
-                        <p className="italic">Seoul Science High School</p>
-                        <p className="italic text-right">Seoul, South Korea</p>
-                    </div>
+                </ActivityEntry>
+                <ActivityEntry
+                    name="Artificial Intelligence Lecturer"
+                    range="May. 2021 ~ Apr. 2023"
+                    institution="Seoul Science High School"
+                    location="Seoul, South Korea"
+                >
                     <ul className="list-disc pl-5">
                         <li>
                             Presented 8 deep learning-focused lectures to an audience of 200+ students and faculty
@@ -120,17 +135,13 @@ export default function Activities() {
                             Conducted 10 additional interdisciplinary volunteer lectures focused on mathematics and artificial intelligence
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <div className="flex justify-between items-center space-x-2">
-                        <h3 className="text-lg font-bold">Artificial Intelligence Club President</h3>
-                        <div className="h-0.5 flex-grow bg-black"></div>
-                        <p className="text-right">Mar. 2021 ~ Feb. 2023</p>
-                    </div>
-                    <div className="flex justify-between items-center">
-                        <p className="italic">Seoul Science High School</p>
-                        <p className="italic text-right">Seoul, South Korea</p>
-                    </div>
+                </ActivityEntry>
+                <ActivityEntry
+                    name="Artificial Intelligence Club President"
+                    range="Mar. 2021 ~ Feb. 2023"
+                    institution="Seoul Science High School"
+                    location="Seoul, South Korea"
+                >
                     <ul className="list-disc pl-5">
                         <li>
                             Authored 4 different entry exams on mathematical deep learning and essays on model selection
@@ -142,7 +153,7 @@ export default function Activities() {
                             Supervised and managed the acquisition of a multi-GPU deep learning server for club research and projects
                         </li>
                     </ul>
-                </div>
+                </ActivityEntry>
             </div>
         </div>
     );
