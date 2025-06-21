@@ -32,7 +32,7 @@ export default function Resume() {
                 {/* Detailed Resume */}
                 <div className="flex justify-center pt-10 mb-5">
                     <Tabs value={activeTab} onValueChange={setActiveTab} className="w-4/5">
-                        <TabsList className="grid w-70 grid-cols-6 bg-white p-4 rounded-xl shadow-lg border border-gray-100, h-full">
+                        <TabsList className="grid grid-cols-6 bg-white p-4 rounded-xl shadow-lg border border-gray-100, h-full">
                             <TabsTrigger
                                 value="education"
                                 className={tabClassName}

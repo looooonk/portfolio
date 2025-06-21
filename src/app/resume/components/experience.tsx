@@ -31,29 +31,58 @@ function ExperienceEntry({
     children,
 }: ExperienceEntryProps) {
     return (
-        <div className="flex space-x-4 p-6 border-2 border-gray-300 rounded-xl hover:border-blue-500 hover:shadow-lg hover:scale-[102%] transition-all duration-300 hover:bg-gray-50">
-            <div className="flex-shrink-0 w-12 h-12">
+        <div 
+            className="relative flex space-x-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300"
+            style={{
+                background: `
+                    linear-gradient(135deg, 
+                        rgba(255, 255, 255, 0.1) 0%, 
+                        rgba(255, 255, 255, 0.05) 100%
+                    ),
+                    linear-gradient(135deg,
+                        rgba(147, 51, 234, 0.1) 0%,
+                        rgba(59, 130, 246, 0.1) 100%
+                    )
+                `,
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.05)'
+            }}
+        >
+            {/* Logo container */}
+            <div className="flex-shrink-0 w-12 h-12 relative z-10">
                 <img
                     src={logos[organization]}
                     alt={`${organization} logo`}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain filter drop-shadow-sm"
                 />
             </div>
-            <div className="flex-1">
+
+            {/* Textual content */}
+            <div className="flex-1 relative z-10">
                 <div className="flex justify-between items-center space-x-2">
-                    <h3 className="text-lg font-bold">{title}</h3>
-                    <div className="h-0.5 flex-grow bg-black" />
-                    <p className="text-right">{range}</p>
+                    <h3 className="text-lg font-bold text-gray-800">{title}</h3>
+                    <div 
+                        className="h-0.5 flex-grow transition-all duration-300"
+                        style={{
+                            background: `linear-gradient(90deg, 
+                                rgba(147, 51, 234, 0.6) 0%, 
+                                rgba(59, 130, 246, 0.6) 100%
+                            )`
+                        }}
+                    />
+                    <p className="italic text-right text-gray-700">{range}</p>
                 </div>
-                <div className="flex justify-between items-center">
+
+                <div className="flex justify-between items-center mt-1">
                     <div className="flex items-center space-x-2">
-                        <p className="italic">{organization}</p>
+                        <p className="italic text-gray-700">{organization}</p>
                         {organizationLink && (
                             <a
                                 href={organizationLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-black hover:text-gray-800"
+                                className="text-gray-600 hover:text-gray-800 transition-colors duration-200"
                             >
                                 <BiWorld size={15} />
                             </a>
@@ -63,15 +92,16 @@ function ExperienceEntry({
                                 href={repoLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-black hover:text-gray-800"
+                                className="text-gray-600 hover:text-gray-800 transition-colors duration-200"
                             >
                                 <FaGithub size={18} />
                             </a>
                         )}
                     </div>
-                    <p className="italic text-right">{location}</p>
+                    <p className="italic text-right text-gray-600">{location}</p>
                 </div>
-                {children && <div>{children}</div>}
+
+                {children && <div className="pl-4 mt-2">{children}</div>}
             </div>
         </div>
     );

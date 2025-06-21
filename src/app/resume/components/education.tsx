@@ -16,30 +16,55 @@ interface EducationEntryProps {
 
 function EducationEntry({ name, location, degreeOrNotes, range, children }: EducationEntryProps) {
     return (
-        <div className="flex space-x-4 p-6 border-2 border-gray-300 rounded-xl hover:border-blue-500 hover:shadow-lg hover:scale-[102%] transition-all duration-300 hover:bg-gray-50">
+        <div 
+            className="relative flex space-x-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300"
+            style={{
+                background: `
+                    linear-gradient(135deg, 
+                        rgba(255, 255, 255, 0.1) 0%, 
+                        rgba(255, 255, 255, 0.05) 100%
+                    ),
+                    linear-gradient(135deg,
+                        rgba(147, 51, 234, 0.1) 0%,
+                        rgba(59, 130, 246, 0.1) 100%
+                    )
+                `,
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.05)'
+            }}
+        >
             {/* Emblem container */}
-            <div className="flex-shrink-0 w-12 h-12">
+            <div className="flex-shrink-0 w-12 h-12 relative z-10">
                 <img
                     src={emblems[name]}
                     alt={`${name} emblem`}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain filter drop-shadow-sm"
                 />
             </div>
 
             {/* Textual content */}
-            <div className="flex-1">
+            <div className="flex-1 relative z-10">
                 <div className="flex justify-between items-center space-x-2">
-                    <h3 className="text-lg font-bold">{name}</h3>
-                    <div className="h-0.5 flex-grow bg-black" />
-                    <p className="italic text-right">{location}</p>
+                    <h3 className="text-lg font-bold text-gray-800">{name}</h3>
+                    <div 
+                        className="h-0.5 flex-grow transition-all duration-300"
+                        style={{
+                            background: `linear-gradient(90deg, 
+                                rgba(147, 51, 234, 0.6) 0%, 
+                                rgba(59, 130, 246, 0.6) 100%
+                            )`
+                        }}
+                    />
+                    <p className="italic text-right text-gray-700">{location}</p>
                 </div>
 
-                <div className="flex justify-between items-center">
-                    <p>{degreeOrNotes}</p>
-                    <p className="text-right">{range}</p>
+                <div className="flex justify-between items-center mt-1">
+                    <p className="text-gray-700">{degreeOrNotes}</p>
+                    <p className="text-right text-gray-600">{range}</p>
                 </div>
 
-                {children && <div className="pl-4">{children}</div>}
+                {children && <div className="pl-4 mt-2">{children}</div>}
             </div>
         </div>
     );

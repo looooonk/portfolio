@@ -11,7 +11,7 @@ export default function Home() {
         <ClientWrapper>
             <div className="flex flex-col min-h-screen">
                 {/* Upper Portion */}
-                <div className="flex items-center justify-center p-10 space-x-20">
+                <div className="flex items-center justify-center p-10 space-x-20 w-70">
                     {/* Photo */}
                     <div className="mr-8">
                         <Image
