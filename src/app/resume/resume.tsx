@@ -13,7 +13,16 @@ import Activities from "./components/activities";
 import Awards from "./components/awards";
 import Skills from "./components/skills";
 
-const tabClassName = "relative px-4 py-3 text-sm font-medium transition-all duration-300 ease-in-out rounded-lg w-[97%] h-[120%] \
+const tabClassNameDesktop = "relative px-4 py-3 text-sm font-medium transition-all duration-300 ease-in-out rounded-lg w-[97%] h-[120%] \
+                      text-gray-600 hover:text-gray-900 hover:bg-gray-50 hover:shadow-sm hover:scale-105 \
+                      data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-100 data-[state=active]:to-purple-200 \
+                      data-[state=active]:shadow-md \
+                      before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-r before:from-blue-100 before:to-purple-200 \
+                      before:opacity-0 before:transition-opacity before:duration-300 \
+                      hover:before:opacity-10 data-[state=active]:before:opacity-100 \
+"
+
+const tabClassNameMobile = "relative px-4 py-3 text-sm font-medium transition-all duration-300 ease-in-out rounded-lg w-[97%] h-[90%] \
                       text-gray-600 hover:text-gray-900 hover:bg-gray-50 hover:shadow-sm hover:scale-105 \
                       data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-100 data-[state=active]:to-purple-200 \
                       data-[state=active]:shadow-md \
@@ -32,40 +41,80 @@ export default function Resume() {
                 {/* Detailed Resume */}
                 <div className="flex justify-center pt-10 mb-5">
                     <Tabs value={activeTab} onValueChange={setActiveTab} className="w-4/5">
-                        <TabsList className="grid grid-cols-6 bg-white p-4 rounded-xl shadow-lg border border-gray-100, h-full">
+                        {/* Desktop Layout */}
+                        <TabsList className="grid grid-cols-6 bg-white p-4 rounded-xl shadow-lg border border-gray-100, h-full hidden lg:grid">
                             <TabsTrigger
                                 value="education"
-                                className={tabClassName}
+                                className={tabClassNameDesktop}
                             >
                                 <span className="relative z-10">Education</span>
                             </TabsTrigger>
                             <TabsTrigger
                                 value="experience"
-                                className={tabClassName}
+                                className={tabClassNameDesktop}
                             >
                                 <span className="relative z-10">Experience</span>
                             </TabsTrigger>
                             <TabsTrigger
                                 value="projects"
-                                className={tabClassName}
+                                className={tabClassNameDesktop}
                             >
                                 <span className="relative z-10">Projects</span>
                             </TabsTrigger>
                             <TabsTrigger
                                 value="activities"
-                                className={tabClassName}
+                                className={tabClassNameDesktop}
                             >
                                 <span className="relative z-10">Activities</span>
                             </TabsTrigger>
                             <TabsTrigger
                                 value="awards"
-                                className={tabClassName}
+                                className={tabClassNameDesktop}
                             >
                                 <span className="relative z-10">Honors & Awards</span>
                             </TabsTrigger>
                             <TabsTrigger
                                 value="skills"
-                                className={tabClassName}
+                                className={tabClassNameDesktop}
+                            >
+                                <span className="relative z-10">Skills</span>
+                            </TabsTrigger>
+                        </TabsList>
+                        {/* Mobile Layout */}
+                        <TabsList className="lg:hidden grid grid-cols-3 grid-rows-2 bg-white p-4 rounded-xl shadow-lg border border-gray-100, h-full">
+                            <TabsTrigger
+                                value="education"
+                                className={tabClassNameMobile}
+                            >
+                                <span className="relative z-10">Education</span>
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value="experience"
+                                className={tabClassNameMobile}
+                            >
+                                <span className="relative z-10">Experience</span>
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value="projects"
+                                className={tabClassNameMobile}
+                            >
+                                <span className="relative z-10">Projects</span>
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value="activities"
+                                className={tabClassNameMobile}
+                            >
+                                <span className="relative z-10">Activities</span>
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value="awards"
+                                className={tabClassNameMobile}
+                            >
+                                <span className="relative z-10">Awards</span>
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value="skills"
+                                className={tabClassNameMobile}
                             >
                                 <span className="relative z-10">Skills</span>
                             </TabsTrigger>
