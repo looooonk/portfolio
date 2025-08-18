@@ -23,7 +23,7 @@ export default function Home() {
                             className="object-cover"
                         />
                     </div>
-                    
+
                     {/* Name and Info */}
                     <div className="space-y-5">
                         <div className="flex flex-col gap-4">
@@ -35,11 +35,6 @@ export default function Home() {
                                 <span className="w-80">Computer Science Undergraduate</span>
                                 <span className="mx-2 text-gray-500">@</span>
                                 <span className="font-bold text-gray-500">Columbia University</span>
-                            </p>
-                            <p className="flex">
-                                <span className="w-80">AI Research Intern</span>
-                                <span className="mx-2 text-gray-500">@</span>
-                                <span className="font-bold text-gray-500">Asteromorph</span>
                             </p>
                         </div>
                         <p className="text-xl text-gray-600 mt-2 font-mono">Contact me at: taehoon.h [at] columbia [dot] edu</p>
@@ -81,7 +76,7 @@ export default function Home() {
                     />
                 </div>
                 <div className="flex items-center justify-center p-10 space-x-20 w-70">
-                    
+
                     {/* Name and Info */}
                     <div className="space-y-5">
                         <div className="flex flex-col gap-4 items-center">

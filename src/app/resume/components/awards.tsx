@@ -17,12 +17,12 @@ interface AwardEntryProps {
 
 function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
     return (
-        <div 
+        <div
             className="relative flex space-x-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300"
             style={{
                 background: `
-                    linear-gradient(135deg, 
-                        rgba(255, 255, 255, 0.1) 0%, 
+                    linear-gradient(135deg,
+                        rgba(255, 255, 255, 0.1) 0%,
                         rgba(255, 255, 255, 0.05) 100%
                     ),
                     linear-gradient(135deg,
@@ -48,11 +48,11 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
             <div className="flex-1 relative z-10">
                 <div className="flex justify-between items-center space-x-2">
                     <p className="text-lg font-bold text-gray-800">{title}</p>
-                    <div 
+                    <div
                         className="h-0.5 flex-grow transition-all duration-300"
                         style={{
-                            background: `linear-gradient(90deg, 
-                                rgba(147, 51, 234, 0.6) 0%, 
+                            background: `linear-gradient(90deg,
+                                rgba(147, 51, 234, 0.6) 0%,
                                 rgba(59, 130, 246, 0.6) 100%
                             )`
                         }}
@@ -81,7 +81,7 @@ const awards = [
         name: "Purdue University",
         title: "Dean's List & Semester Honors",
         issuer: "Purdue University",
-        year: "2023 - 2024",
+        year: "2023, 2024, 2025",
         description:
             "Earned both Dean's List and Semester Honors for Fall 2023, Spring 2024, Fall 2024, and Spring 2025.",
     },

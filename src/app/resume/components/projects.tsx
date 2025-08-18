@@ -10,12 +10,12 @@ interface ProjectEntryProps {
 
 function ProjectEntry({ name, range, link, icon, children }: ProjectEntryProps) {
     return (
-        <div 
+        <div
             className="relative flex space-x-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300"
             style={{
                 background: `
-                    linear-gradient(135deg, 
-                        rgba(255, 255, 255, 0.1) 0%, 
+                    linear-gradient(135deg,
+                        rgba(255, 255, 255, 0.1) 0%,
                         rgba(255, 255, 255, 0.05) 100%
                     ),
                     linear-gradient(135deg,
@@ -42,11 +42,11 @@ function ProjectEntry({ name, range, link, icon, children }: ProjectEntryProps) 
                             {icon}
                         </a>
                     )}
-                    <div 
+                    <div
                         className="h-0.5 flex-grow transition-all duration-300"
                         style={{
-                            background: `linear-gradient(90deg, 
-                                rgba(147, 51, 234, 0.6) 0%, 
+                            background: `linear-gradient(90deg,
+                                rgba(147, 51, 234, 0.6) 0%,
                                 rgba(59, 130, 246, 0.6) 100%
                             )`
                         }}
@@ -66,7 +66,7 @@ export default function Projects() {
             <div className="pt-4 space-y-12 mb-20">
                 <ProjectEntry
                     name="Rotationally Equivariant Spatio-temporal Prediction"
-                    range="Feb. 2025 ~ Apr. 2025"
+                    range="Feb. 2025 - Apr. 2025"
                 >
                     <ul className="list-disc pl-5">
                         <li>
@@ -85,7 +85,7 @@ export default function Projects() {
                 </ProjectEntry>
                 <ProjectEntry
                     name="Fractel"
-                    range="Jan. 2025 ~ Present"
+                    range="Jan. 2025 - Present"
                 >
                     <ul className="list-disc pl-5">
                         <li>
@@ -101,7 +101,7 @@ export default function Projects() {
                 </ProjectEntry>
                 <ProjectEntry
                     name="Financial Anomaly Detection with Modified Benford&apos;s Law"
-                    range="Jan. 2025 ~ Present"
+                    range="Jan. 2025 - Present"
                 >
                     <ul className="list-disc pl-5">
                         <li>
@@ -117,7 +117,7 @@ export default function Projects() {
                 </ProjectEntry>
                 <ProjectEntry
                     name="WUMT : Wavelet U-Net Motion Transformer"
-                    range="Jul. 2024 ~ Mar. 2025"
+                    range="Jul. 2024 - Mar. 2025"
                 >
                     <ul className="list-disc pl-5">
                         <li>
@@ -133,7 +133,7 @@ export default function Projects() {
                 </ProjectEntry>
                 <ProjectEntry
                     name="RL Wildfire Optimization"
-                    range="May. 2024 ~ Dec. 2024"
+                    range="May. 2024 - Dec. 2024"
                 >
                     <ul className="list-disc pl-5">
                         <li>
@@ -149,7 +149,7 @@ export default function Projects() {
                 </ProjectEntry>
                 <ProjectEntry
                     name="Contextual-Diffusion"
-                    range="Feb. 2023 ~ Aug. 2023"
+                    range="Feb. 2023 - Aug. 2023"
                     link="https://github.com/looooonk/GPT4-Contextual-Diffusion"
                     icon={<FaGithub className="text-left" size={20} />}
                 >
@@ -167,7 +167,7 @@ export default function Projects() {
                 </ProjectEntry>
                 <ProjectEntry
                     name="Minimax-based Animal Shogi AI"
-                    range="Mar. 2021 ~ Nov. 2021"
+                    range="Mar. 2021 - Nov. 2021"
                     link="https://github.com/looooonk/Animal-Shogi-Bot"
                     icon={<FaGithub className="text-left" size={20} />}
                 >

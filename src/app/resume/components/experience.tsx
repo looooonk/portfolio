@@ -31,12 +31,12 @@ function ExperienceEntry({
     children,
 }: ExperienceEntryProps) {
     return (
-        <div 
+        <div
             className="relative flex space-x-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300"
             style={{
                 background: `
-                    linear-gradient(135deg, 
-                        rgba(255, 255, 255, 0.1) 0%, 
+                    linear-gradient(135deg,
+                        rgba(255, 255, 255, 0.1) 0%,
                         rgba(255, 255, 255, 0.05) 100%
                     ),
                     linear-gradient(135deg,
@@ -62,11 +62,11 @@ function ExperienceEntry({
             <div className="flex-1 relative z-10">
                 <div className="flex justify-between items-center space-x-2">
                     <h3 className="text-lg font-bold text-gray-800">{title}</h3>
-                    <div 
+                    <div
                         className="h-0.5 flex-grow transition-all duration-300"
                         style={{
-                            background: `linear-gradient(90deg, 
-                                rgba(147, 51, 234, 0.6) 0%, 
+                            background: `linear-gradient(90deg,
+                                rgba(147, 51, 234, 0.6) 0%,
                                 rgba(59, 130, 246, 0.6) 100%
                             )`
                         }}
@@ -115,10 +115,18 @@ export default function Experience() {
                 organization="Asteromorph"
                 organizationLink="https://www.asteromorph.com/"
                 location="Seoul, South Korea"
-                range="May. 2025 - Present"
+                range="May. 2025 - Aug. 2025"
             >
                 <ul className="list-disc pl-5">
-                    <li>Currently working as an AI research intern handling LLMs, fine-tuning, deployment, and training optimizations</li>
+                    <li>
+                        Worked with fine-tuning and hosting large-scale local LLMs (>200B parameters) on multi-GPU servers using vLLM and llama.cpp
+                    </li>
+                    <li>
+                        Developed an in-house LLM fine-tuning methodology & framework by writing kernel code with PyTorch, Unsloth, and Hugging Face libraries
+                    </li>
+                    <li>
+                        Deployed a parallel LLM fine-tuning scheduler and metric dashboard using Ray, Grafana, Prometheus, and Docker
+                    </li>
                 </ul>
             </ExperienceEntry>
 

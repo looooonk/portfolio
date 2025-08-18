@@ -12,12 +12,12 @@ interface ActivityEntryProps {
 
 function ActivityEntry({ name, range, institution, location, link, icon, children }: ActivityEntryProps) {
     return (
-        <div 
+        <div
             className="relative flex space-x-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300"
             style={{
                 background: `
-                    linear-gradient(135deg, 
-                        rgba(255, 255, 255, 0.1) 0%, 
+                    linear-gradient(135deg,
+                        rgba(255, 255, 255, 0.1) 0%,
                         rgba(255, 255, 255, 0.05) 100%
                     ),
                     linear-gradient(135deg,
@@ -44,11 +44,11 @@ function ActivityEntry({ name, range, institution, location, link, icon, childre
                             {icon}
                         </a>
                     )}
-                    <div 
+                    <div
                         className="h-0.5 flex-grow transition-all duration-300"
                         style={{
-                            background: `linear-gradient(90deg, 
-                                rgba(147, 51, 234, 0.6) 0%, 
+                            background: `linear-gradient(90deg,
+                                rgba(147, 51, 234, 0.6) 0%,
                                 rgba(59, 130, 246, 0.6) 100%
                             )`
                         }}
@@ -73,7 +73,7 @@ export default function Activities() {
             <div className="pt-4 space-y-12 mb-20">
                 <ActivityEntry
                     name="Purdue Hackers Member"
-                    range="Jan. 2025 ~ Present"
+                    range="Jan. 2025 - May. 2025"
                     institution="Purdue University"
                     location="West Lafayette, IN"
                 >
@@ -126,7 +126,7 @@ export default function Activities() {
                 </ActivityEntry>
                 <ActivityEntry
                     name="Published Author on Neural Network Fundamentals"
-                    range="Sep. 2021 ~ Mar. 2022"
+                    range="Sep. 2021 - Mar. 2022"
                     institution="Barun Books Co., Ltd"
                     location="Seoul, South Korea"
                 >
@@ -144,7 +144,7 @@ export default function Activities() {
                 </ActivityEntry>
                 <ActivityEntry
                     name="Artificial Intelligence Lecturer"
-                    range="May. 2021 ~ Apr. 2023"
+                    range="May. 2021 - Apr. 2023"
                     institution="Seoul Science High School"
                     location="Seoul, South Korea"
                 >
@@ -162,7 +162,7 @@ export default function Activities() {
                 </ActivityEntry>
                 <ActivityEntry
                     name="Artificial Intelligence Club President"
-                    range="Mar. 2021 ~ Feb. 2023"
+                    range="Mar. 2021 - Feb. 2023"
                     institution="Seoul Science High School"
                     location="Seoul, South Korea"
                 >
