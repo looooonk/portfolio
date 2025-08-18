@@ -119,7 +119,7 @@ export default function Experience() {
             >
                 <ul className="list-disc pl-5">
                     <li>
-                        Worked with fine-tuning and hosting large-scale local LLMs (>200B parameters) on multi-GPU servers using vLLM and llama.cpp
+                        Worked with fine-tuning and hosting large-scale local LLMs (&gt;200B parameters) on multi-GPU servers using vLLM and llama.cpp
                     </li>
                     <li>
                         Developed an in-house LLM fine-tuning methodology & framework by writing kernel code with PyTorch, Unsloth, and Hugging Face libraries
