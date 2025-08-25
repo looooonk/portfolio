@@ -3,6 +3,7 @@
 
 import Image from 'next/image'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { IoDocumentText } from "react-icons/io5";
 import ClientWrapper from "./clientwrapper";
 import Resume from './resume/resume';
 
@@ -57,6 +58,14 @@ export default function Home() {
                             >
                                 <FaGithub size={40} />
                             </a>
+                            <a
+                                href="/CV.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-black hover:text-gray-800"
+                            >
+                                <IoDocumentText size={40} />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -89,11 +98,6 @@ export default function Home() {
                                 <span className="mx-2 text-gray-500">@</span>
                                 <span className="font-bold text-gray-500">Columbia</span>
                             </p>
-                            <p className="flex">
-                                <span className="w-60">AI Research Intern</span>
-                                <span className="mx-2 text-gray-500">@</span>
-                                <span className="font-bold text-gray-500">Asteromorph</span>
-                            </p>
                         </div>
                         <p className="text-xl text-gray-600 mt-2 font-mono">taehoon.h [at] columbia [dot] edu</p>
 
@@ -114,6 +118,14 @@ export default function Home() {
                                 className="text-black hover:text-gray-800"
                             >
                                 <FaGithub size={40} />
+                            </a>
+                            <a
+                                href="/CV.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-black hover:text-gray-800"
+                            >
+                                <IoDocumentText size={40} />
                             </a>
                         </div>
                     </div>
