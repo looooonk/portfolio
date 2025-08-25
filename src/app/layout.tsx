@@ -2,7 +2,7 @@
 import '../styles/globals.css'
 
 export const metadata = {
-    title: 'Taehoon Hwang | Main Page',
+    title: 'Taehoon Hwang',
     description: 'Portfolio of Taehoon Hwang',
 }
 
