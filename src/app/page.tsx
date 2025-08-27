@@ -3,6 +3,7 @@
 
 import Image from 'next/image'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaOrcid } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
 import ClientWrapper from "./clientwrapper";
 import Resume from './resume/resume';
@@ -57,6 +58,14 @@ export default function Home() {
                                 className="text-black hover:text-gray-800"
                             >
                                 <FaGithub size={40} />
+                            </a>
+                            <a
+                                href="https://orcid.org/0009-0005-6452-9258"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-black hover:text-gray-800"
+                            >
+                                <FaOrcid size={40} />
                             </a>
                             <a
                                 href="/CV.pdf"
@@ -118,6 +127,14 @@ export default function Home() {
                                 className="text-black hover:text-gray-800"
                             >
                                 <FaGithub size={40} />
+                            </a>
+                            <a
+                                href="https://orcid.org/0009-0005-6452-9258"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-black hover:text-gray-800"
+                            >
+                                <FaOrcid size={40} />
                             </a>
                             <a
                                 href="/CV.pdf"
