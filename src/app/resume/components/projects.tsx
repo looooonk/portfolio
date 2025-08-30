@@ -76,7 +76,7 @@ export default function Projects() {
                             Developed training infrastructure using PyTorch Lightning and distributed high-performance computing nodes
                         </li>
                         <li>
-                            Compared multiple methods of injecting rotational equivariance using steerable wavelet filters, group equivariance CNNs, and equivariant self-attention modules
+                            Compared multiple methods of injecting rotational equivariance using steerable wavelet filters, group equivariance CNNs, and equivariant attention modules
                         </li>
                         <li>
                             Improved baseline spatio-temporal predictive models with out-of-distribution input in both synthetic and out-in-the-wild datasets

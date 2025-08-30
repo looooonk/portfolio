@@ -84,6 +84,21 @@ export default function Education() {
                     degreeOrNotes="B.S. in Computer Science"
                     range="Aug. 2025 - May. 2027"
                 >
+                    <div className="space-y-2 pt-2">
+                        <div className="flex items-start">
+                            <span className="font-semibold whitespace-nowrap">
+                                Relevant Courses:
+                            </span>
+                            <div
+                                className="ml-2 flex-1 max-w-[60%] break-keep"
+                            >
+                                <Course name="Computer Science Theory" code="COMS 3261W" semester="Taking Fall 2025"/>, {" "}
+                                <Course name="Programming Languages and Translators" code="COMS 4115W" semester="Taking Fall 2025"/>, {" "}
+                                <Course name="Introduction to Databases" code="COMS 4111W" semester="Taking Fall 2025"/>, {" "}
+                                <Course name="Deep Learning for Computer Vision" code="COMS 4995W" semester="Taking Fall 2025"/>
+                            </div>
+                        </div>
+                    </div>
                 </EducationEntry>
 
                 <EducationEntry
