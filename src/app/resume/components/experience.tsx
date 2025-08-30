@@ -127,6 +127,9 @@ export default function Experience() {
                     <li>
                         Deployed a parallel LLM fine-tuning scheduler and metric dashboard using Ray, Grafana, Prometheus, and Docker
                     </li>
+                    <li>
+                        Worked on the technical report <em>Spacer: Towards Engineered Scientific Inspiration</em> as a contributor and author
+                    </li>
                 </ul>
             </ExperienceEntry>
 
