@@ -77,7 +77,7 @@ export default function Education() {
     return (
         <div>
             { /* Desktop view */}
-            <div className="pt-4 space-y-12 hidden lg:block">
+            <div className="pt-4 space-y-12 hidden lg:block mb-20">
                 <EducationEntry
                     name="Columbia University"
                     location="New York, NY"
@@ -145,7 +145,7 @@ export default function Education() {
                 />
             </div>
             { /* Mobile view */}
-            <div className="lg:hidden pt-4 space-y-12">
+            <div className="lg:hidden pt-4 space-y-12 mb-20">
                 <EducationEntry
                     name="Columbia University"
                     location="New York"

@@ -69,6 +69,14 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
 const awards = [
     {
         name: "Purdue University",
+        title: "Dean's List & Semester Honors",
+        issuer: "Purdue University",
+        year: "2023, 2024, 2025",
+        description:
+            "Earned both Dean's List and Semester Honors for Fall 2023, Spring 2024, Fall 2024, and Spring 2025.",
+    },
+    {
+        name: "Purdue University",
         title: "Purdue Office of Undergraduate Research Grant",
         issuer: "Purdue University",
         year: "2024",
@@ -76,14 +84,6 @@ const awards = [
             <>Received $500 from the OUR for project&nbsp;
                 <span className="italic">WUMT: Wavelet U-Net Motion Transformer</span>.
             </>,
-    },
-    {
-        name: "Purdue University",
-        title: "Dean's List & Semester Honors",
-        issuer: "Purdue University",
-        year: "2023, 2024, 2025",
-        description:
-            "Earned both Dean's List and Semester Honors for Fall 2023, Spring 2024, Fall 2024, and Spring 2025.",
     },
     {
         name: "Pohang University",
@@ -121,7 +121,7 @@ const awards = [
 
 export default function Awards() {
     return (
-        <div className="pt-4 space-y-12">
+        <div className="pt-4 space-y-12 mb-20">
             {awards.map(a => (
                 <AwardEntry
                     name={a.name}
