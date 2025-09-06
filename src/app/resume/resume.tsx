@@ -33,7 +33,7 @@ const tabClassNameMobile = "relative px-4 py-3 text-sm font-medium transition-al
 
 export default function Resume() {
     const [activeTab, setActiveTab] = useState('education');
-    const transitionSettings = { duration: 0.3, ease: 'easeInOut' };
+    const transitionSettings = { duration: 0.3, ease: 'easeInOut' as const };
 
     return (
         <ClientWrapper>

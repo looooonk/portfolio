@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import Image from "next/image";
 
 const emblems: Record<string, string> = {
     "Purdue University": "/emblems/purdue.png",
@@ -37,7 +38,8 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
         >
             {/* Emblem container */}
             <div className="flex-shrink-0 w-12 h-12 relative z-10">
-                <img
+                <Image
+                    fill={true}
                     src={emblems[name]}
                     alt={`${name} emblem`}
                     className="w-full h-full object-contain filter drop-shadow-sm"

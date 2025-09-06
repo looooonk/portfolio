@@ -2,6 +2,7 @@
 import { FaGithub } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
 import React from "react";
+import Image from "next/image";
 
 const logos: Record<string, string> = {
     "Asteromorph": "/emblems/asteromorph.jpeg",
@@ -51,7 +52,8 @@ function ExperienceEntry({
         >
             {/* Logo container */}
             <div className="flex-shrink-0 w-12 h-12 relative z-10">
-                <img
+                <Image
+                    fill={true}
                     src={logos[organization]}
                     alt={`${organization} logo`}
                     className="w-full h-full object-contain filter drop-shadow-sm"

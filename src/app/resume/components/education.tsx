@@ -1,4 +1,5 @@
 import Course from "./course";
+import Image from "next/image";
 
 const emblems: Record<string, string> = {
     "Columbia University": "/emblems/columbia.png",
@@ -39,7 +40,8 @@ function EducationEntry({ name, location, degreeOrNotes, range, children }: Educ
         >
             {/* Emblem container */}
             <div className="flex-shrink-0 w-12 h-12 relative z-10">
-                <img
+                <Image
+                    fill={true}
                     src={emblems[name]}
                     alt={`${name} emblem`}
                     className="w-full h-full object-contain filter drop-shadow-sm"
