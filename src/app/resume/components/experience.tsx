@@ -122,7 +122,7 @@ export default function Experience() {
             >
                 <ul className="list-disc pl-5">
                     <li>
-                        Currently working as a research assistant at Columbia's NLP laboratory.
+                        Currently working as a research assistant at Columbia&apos;s NLP laboratory.
                     </li>
                 </ul>
             </ExperienceEntry>
