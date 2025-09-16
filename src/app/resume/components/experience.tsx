@@ -191,7 +191,7 @@ export default function Experience() {
             </ExperienceEntry>
 
             <ExperienceEntry
-                title="Machine Learning Engineer Intern"
+                title="Machine Learning Intern"
                 organization="Quantum Research Sciences"
                 organizationLink="https://quantumresearchsciences.com/"
                 location="West Lafayette, IN"
