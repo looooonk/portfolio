@@ -10,6 +10,8 @@ const logos: Record<string, string> = {
     "Quantum Research Sciences": "/emblems/qrs.png",
     "Seoul Science High School": "/emblems/sshs.png",
     "Sungkyunkwan University": "/emblems/skku.png",
+    "Columbia University": "/emblems/columbia.png",
+    "Columbia": "/emblems/columbia.png",
 };
 
 interface ExperienceEntryProps {
@@ -113,6 +115,18 @@ export default function Experience() {
     return (
         <div className="pt-4 space-y-12 mb-20">
             <ExperienceEntry
+                title="Research Assistant"
+                organization="Columbia University"
+                location="New York, NY"
+                range="Sep. 2025 - Present"
+            >
+                <ul className="list-disc pl-5">
+                    <li>
+                        Currently working as a research assistant at Columbia's NLP laboratory.
+                    </li>
+                </ul>
+            </ExperienceEntry>
+            <ExperienceEntry
                 title="Artificial Intelligence Research Intern"
                 organization="Asteromorph"
                 organizationLink="https://www.asteromorph.com/"
@@ -136,7 +150,7 @@ export default function Experience() {
             </ExperienceEntry>
 
             <ExperienceEntry
-                title="Undergraduate Teaching Assistant"
+                title="Teaching Assistant"
                 organization="Purdue University"
                 location="West Lafayette, IN"
                 range="Jan. 2025 - May 2025"
@@ -158,7 +172,7 @@ export default function Experience() {
             </ExperienceEntry>
 
             <ExperienceEntry
-                title="Undergraduate Research Assistant"
+                title="Research Assistant"
                 organization="Purdue University"
                 location="West Lafayette, IN"
                 range="Jan. 2024 - Dec. 2024"

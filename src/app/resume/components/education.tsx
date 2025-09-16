@@ -94,10 +94,10 @@ export default function Education() {
                             <div
                                 className="ml-2 flex-1 max-w-[60%] break-keep"
                             >
-                                <Course name="Computer Science Theory" code="COMS 3261W" semester="Taking Fall 2025"/>, {" "}
-                                <Course name="Programming Languages and Translators" code="COMS 4115W" semester="Taking Fall 2025"/>, {" "}
-                                <Course name="Introduction to Databases" code="COMS 4111W" semester="Taking Fall 2025"/>, {" "}
-                                <Course name="Deep Learning for Computer Vision" code="COMS 4995W" semester="Taking Fall 2025"/>
+                                <Course name="Computer Science Theory" code="COMS W3261" semester="Taking Fall 2025"/>, {" "}
+                                <Course name="Programming Languages and Translators" code="COMS W4115" semester="Taking Fall 2025"/>, {" "}
+                                <Course name="Introduction to Databases" code="COMS W4111" semester="Taking Fall 2025"/>, {" "}
+                                <Course name="Projects in Computer Science" code="COMS W4901" semester="Taking Fall 2025"/>
                             </div>
                         </div>
                     </div>
