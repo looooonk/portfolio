@@ -92,7 +92,18 @@ export default function Education() {
                     degreeOrNotes="B.S. in Computer Science"
                     range="Aug. 2025 - May. 2027"
                 >
-                    <div className="space-y-2 pt-2">
+                    <div className="space-y-2">
+                        <div className="flex items-baseline gap-6 pt-2">
+                            <span>
+                                <span className="font-semibold">GPA:</span> 4.00 / 4.33
+                            </span>
+
+                            <span className="inline-flex items-baseline gap-2">
+                                <span>
+                                <span className="font-semibold">Core GPA:</span> 4.33 / 4.33
+                                </span>
+                            </span>
+                        </div>
                         <div className="flex items-start">
                             <span className="font-semibold whitespace-nowrap">
                                 Relevant Courses:
@@ -115,7 +126,7 @@ export default function Education() {
                     degreeOrNotes="B.S. in Computer Science, Minor in Mathematics, Machine Intelligence and Algorithmic Foundations Track"
                     range="Aug. 2023 - May. 2025"
                 >
-                    <div className="space-y-2 pt-2">
+                    <div className="space-y-2">
                         <div className="flex items-baseline gap-6 pt-2">
                             <span>
                                 <span className="font-semibold">GPA:</span> 4.24 / 4.33
