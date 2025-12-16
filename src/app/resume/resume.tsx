@@ -12,6 +12,7 @@ import Projects from "./components/projects";
 import Activities from "./components/activities";
 import Awards from "./components/awards";
 import Skills from "./components/skills";
+import Publications from "./components/publications";
 
 const tabClassNameDesktop = "relative px-4 py-3 text-sm font-medium transition-all duration-300 ease-in-out rounded-lg w-[97%] h-[120%] \
                       text-gray-600 hover:text-gray-900 hover:bg-gray-50 hover:shadow-sm hover:scale-105 \
@@ -42,7 +43,7 @@ export default function Resume() {
                 <div className="flex justify-center pt-10 mb-5">
                     <Tabs value={activeTab} onValueChange={setActiveTab} className="w-4/5">
                         {/* Desktop Layout */}
-                        <TabsList className="grid grid-cols-6 bg-white p-4 rounded-xl shadow-lg border border-gray-100, h-full hidden lg:grid">
+                        <TabsList className="grid grid-cols-7 bg-white p-4 rounded-xl shadow-lg border border-gray-100, h-full hidden lg:grid">
                             <TabsTrigger
                                 value="education"
                                 className={tabClassNameDesktop}
@@ -66,6 +67,12 @@ export default function Resume() {
                                 className={tabClassNameDesktop}
                             >
                                 <span className="relative z-10">Activities</span>
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value="publications"
+                                className={tabClassNameDesktop}
+                            >
+                                <span className="relative z-10">Publications</span>
                             </TabsTrigger>
                             <TabsTrigger
                                 value="awards"
@@ -105,6 +112,12 @@ export default function Resume() {
                                 className={tabClassNameMobile}
                             >
                                 <span className="relative z-10">Activities</span>
+                            </TabsTrigger>
+                            <TabsTrigger
+                                value="publications"
+                                className={tabClassNameMobile}
+                            >
+                                <span className="relative z-10">Publications</span>
                             </TabsTrigger>
                             <TabsTrigger
                                 value="awards"
@@ -167,6 +180,17 @@ export default function Resume() {
                                     transition={transitionSettings}
                                 >
                                     <Activities />
+                                </motion.div>
+                            )}
+                            {activeTab === 'publications' && (
+                                <motion.div
+                                    key="publications"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={transitionSettings}
+                                >
+                                    <Publications />
                                 </motion.div>
                             )}
                             {activeTab === 'awards' && (
