@@ -1,5 +1,11 @@
 import Course from "./course";
 import Image from "next/image";
+import { FaQuestionCircle } from "react-icons/fa";
+import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 
 const emblems: Record<string, string> = {
     "Columbia University": "/emblems/columbia.png",
@@ -110,10 +116,41 @@ export default function Education() {
                     range="Aug. 2023 - May. 2025"
                 >
                     <div className="space-y-2 pt-2">
-                        <p className="space-x-8">
-                            <span className="font-semibold">Overall GPA:</span> 4.00 / 4.00
-                            <span className="font-semibold">Major GPA:</span> 4.00 / 4.00
-                        </p>
+                        <div className="flex items-baseline gap-6 pt-2">
+                            <span>
+                                <span className="font-semibold">GPA:</span> 4.24 / 4.33
+                            </span>
+
+                            <span className="inline-flex items-baseline gap-2">
+                                <span>
+                                <span className="font-semibold">Core GPA:</span> 4.25 / 4.33
+                                </span>
+
+                                <HoverCard openDelay={100}>
+                                <HoverCardTrigger asChild>
+                                    <button
+                                    type="button"
+                                    className="text-gray-500 hover:text-gray-800 transition-colors"
+                                    aria-label="GPA normalization info"
+                                    >
+                                    <FaQuestionCircle className="h-3 w-3 text-black" />
+                                    </button>
+                                </HoverCardTrigger>
+
+                                <HoverCardContent
+                                    side="right"
+                                    align="center"
+                                    className="text-s"
+                                    style={{
+                                        width: "auto",
+                                        height: "auto"
+                                    }}
+                                >
+                                    Normalized for Columbia&apos;s grading schema
+                                </HoverCardContent>
+                                </HoverCard>
+                            </span>
+                        </div>
                         <div className="flex items-start">
                             <span className="font-semibold whitespace-nowrap">
                                 Relevant Courses:
