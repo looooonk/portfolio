@@ -74,7 +74,7 @@ export default function Publications() {
                 <PublicationEntry
                     name="Spacer: Towards Engineered Scientific Inspiration"
                     range="Aug. 25th 2025"
-                    institution="Minhyeong Lee et. al"
+                    institution="Minhyeong Lee et al."
                     location="arXiv"
                     link="https://arxiv.org/abs/2508.17661"
                     icon={<IoDocumentText className="text-left text-black" size={20} />}
