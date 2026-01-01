@@ -95,12 +95,12 @@ export default function Education() {
                     <div className="space-y-2">
                         <div className="flex items-baseline gap-6 pt-2">
                             <span>
-                                <span className="font-semibold">GPA:</span> 4.11 / 4.33
+                                <span className="font-semibold">GPA:</span> 3.98 / 4.33
                             </span>
 
                             <span className="inline-flex items-baseline gap-2">
                                 <span>
-                                <span className="font-semibold">Core GPA:</span> 4.33 / 4.33
+                                <span className="font-semibold">Core GPA:</span> 4.22 / 4.33
                                 </span>
                             </span>
                         </div>
@@ -112,7 +112,7 @@ export default function Education() {
                                 className="ml-2 flex-1 max-w-[60%] break-keep"
                             >
                                 <Course name="Computer Science Theory" code="COMS W3261" semester="Took Fall 2025" grade="A+"/>, {" "}
-                                <Course name="Programming Languages and Translators" code="COMS W4115" semester="Taking Fall 2025"/>, {" "}
+                                <Course name="Programming Languages and Translators" code="COMS W4115" semester="Taking Fall 2025" grade="A"/>, {" "}
                                 <Course name="Introduction to Databases" code="COMS W4111" semester="Taking Fall 2025" grade="A+"/>, {" "}
                                 <Course name="Projects in Computer Science" code="COMS W4901" semester="Taking Fall 2025"/>
                             </div>
@@ -129,37 +129,11 @@ export default function Education() {
                     <div className="space-y-2">
                         <div className="flex items-baseline gap-6 pt-2">
                             <span>
-                                <span className="font-semibold">GPA:</span> 4.24 / 4.33
+                                <span className="font-semibold">GPA:</span> 4.00 / 4.00
                             </span>
 
-                            <span className="inline-flex items-baseline gap-2">
-                                <span>
-                                <span className="font-semibold">Core GPA:</span> 4.25 / 4.33
-                                </span>
-
-                                <HoverCard openDelay={100}>
-                                <HoverCardTrigger asChild>
-                                    <button
-                                    type="button"
-                                    className="text-gray-500 hover:text-gray-800 transition-colors"
-                                    aria-label="GPA normalization info"
-                                    >
-                                    <FaQuestionCircle className="h-3 w-3 text-black" />
-                                    </button>
-                                </HoverCardTrigger>
-
-                                <HoverCardContent
-                                    side="right"
-                                    align="center"
-                                    className="text-s"
-                                    style={{
-                                        width: "auto",
-                                        height: "auto"
-                                    }}
-                                >
-                                    Normalized for Columbia&apos;s grading schema
-                                </HoverCardContent>
-                                </HoverCard>
+                            <span>
+                                <span className="font-semibold">Core GPA:</span> 4.00 / 4.00
                             </span>
                         </div>
                         <div className="flex items-start">
