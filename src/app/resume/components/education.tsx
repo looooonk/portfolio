@@ -1,11 +1,5 @@
 import Course from "./course";
 import Image from "next/image";
-import { FaQuestionCircle } from "react-icons/fa";
-import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
 
 const emblems: Record<string, string> = {
     "Columbia University": "/emblems/columbia.png",
