@@ -94,7 +94,7 @@ export default function Education() {
 
                             <span className="inline-flex items-baseline gap-2">
                                 <span>
-                                <span className="font-semibold">Core GPA:</span> 4.22 / 4.33
+                                <span className="font-semibold">Core GPA:</span> 4.17 / 4.33
                                 </span>
                             </span>
                         </div>
@@ -108,7 +108,7 @@ export default function Education() {
                                 <Course name="Computer Science Theory" code="COMS W3261" semester="Took Fall 2025" grade="A+"/>, {" "}
                                 <Course name="Programming Languages and Translators" code="COMS W4115" semester="Taking Fall 2025" grade="A"/>, {" "}
                                 <Course name="Introduction to Databases" code="COMS W4111" semester="Taking Fall 2025" grade="A+"/>, {" "}
-                                <Course name="Projects in Computer Science" code="COMS W4901" semester="Taking Fall 2025"/>
+                                <Course name="Projects in Computer Science" code="COMS W4901" semester="Taking Fall 2025" grade="A"/>
                             </div>
                         </div>
                     </div>
