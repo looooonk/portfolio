@@ -65,6 +65,22 @@ export default function Projects() {
         <div>
             <div className="pt-4 space-y-12 mb-20">
                 <ProjectEntry
+                    name="Stack Rotation"
+                    range="May. 2025 - Aug. 2025"
+                >
+                    <ul className="list-disc pl-5">
+                        <li>
+                            Developed full-rank fine-tuning LoRA methodology with PyTorch and Unsloth using stochastically sampled rotation matrices
+                        </li>
+                        <li>
+                            Achieved SOTA-comparable performance when compared to LoRA variants such as DoRA, VeRA, and HiRA
+                        </li>
+                        <li>
+                            Constructed parallel fine-tuning orchastrator using Ray, Grafana, Prometheus, and Docker
+                        </li>
+                    </ul>
+                </ProjectEntry>
+                <ProjectEntry
                     name="Rotationally Equivariant Spatio-temporal Prediction"
                     range="Feb. 2025 - Apr. 2025"
                 >
@@ -73,7 +89,7 @@ export default function Projects() {
                             Developed spatio-temporal predictive models with rotational equivariance to improve real-world performance and adapt to out-of-distribution inputs
                         </li>
                         <li>
-                            Developed training infrastructure using PyTorch Lightning and distributed high-performance computing nodes
+                            Composed training infrastructure using PyTorch Lightning and distributed high-performance computing nodes
                         </li>
                         <li>
                             Compared multiple methods of injecting rotational equivariance using steerable wavelet filters, group equivariance CNNs, and equivariant attention modules
@@ -85,14 +101,14 @@ export default function Projects() {
                 </ProjectEntry>
                 <ProjectEntry
                     name="Fractel"
-                    range="Jan. 2025 - Present"
+                    range="Jan. 2025 - May. 2025"
                 >
                     <ul className="list-disc pl-5">
                         <li>
-                            Developing course selection website for Purdue students supporting multiple time sheets and prerequisite tree viewing
+                            Developed course selection website for Purdue students supporting multiple time sheets and prerequisite tree viewing
                         </li>
                         <li>
-                            Developed website front-end UI with Next.js, TypeScript, and Tailwind CSS and course catalog scraper with Python
+                            Designed website front-end UI with Next.js, TypeScript, and Tailwind CSS and course catalog scraper with Python
                         </li>
                         <li>
                             Theorized implementing back-end support with MongoDB and RestAPI calls for dynamic course catalog maintenance
@@ -101,7 +117,7 @@ export default function Projects() {
                 </ProjectEntry>
                 <ProjectEntry
                     name="Financial Anomaly Detection with Modified Benford&apos;s Law"
-                    range="Jan. 2025 - Present"
+                    range="Jan. 2025 - Mar. 2025"
                 >
                     <ul className="list-disc pl-5">
                         <li>

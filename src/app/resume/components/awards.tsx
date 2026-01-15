@@ -6,6 +6,7 @@ const emblems: Record<string, string> = {
     "Microsoft": "/emblems/microsoft.png",
     "Pohang University": "/emblems/postech.png",
     "Seoul Science High School": "/emblems/sshs.png",
+    "Columbia University": "/emblems/columbia.png",
 };
 
 interface AwardEntryProps {
@@ -69,6 +70,14 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
 }
 
 const awards = [
+    {
+        name: "Columbia University",
+        title: "Dean's List",
+        issuer: "Columbia University",
+        year: "2025",
+        description:
+            "Earned Dean's List designation for Fall 2025.",
+    },
     {
         name: "Purdue University",
         title: "Dean's List & Semester Honors",
