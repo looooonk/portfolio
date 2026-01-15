@@ -84,7 +84,7 @@ export default function Education() {
                     name="Columbia University"
                     location="New York, NY"
                     degreeOrNotes="B.S. in Computer Science"
-                    range="Aug. 2025 - May. 2027"
+                    range="Aug. 2025 - May 2027"
                 >
                     <div className="space-y-2">
                         <div className="flex items-baseline gap-6 pt-2">
@@ -121,7 +121,7 @@ export default function Education() {
                     name="Purdue University"
                     location="West Lafayette, IN"
                     degreeOrNotes="B.S. in Computer Science, Minor in Mathematics, Machine Intelligence and Algorithmic Foundations Track"
-                    range="Aug. 2023 - May. 2025"
+                    range="Aug. 2023 - May 2025"
                 >
                     <div className="space-y-2">
                         <div className="flex items-baseline gap-6 pt-2">
@@ -171,7 +171,7 @@ export default function Education() {
                     name="Columbia University"
                     location="New York"
                     degreeOrNotes="B.S. in Computer Science"
-                    range={`Aug. 2025 -\nMay. 2027`}
+                    range={`Aug. 2025 -\nMay 2027`}
                 >
                 </EducationEntry>
 
@@ -179,7 +179,7 @@ export default function Education() {
                     name="Purdue University"
                     location="Indiana"
                     degreeOrNotes={`B.S. in Computer Science,\nMinor in Mathematics,\nMachine Intelligence Track`}
-                    range={`Aug. 2023 -\nMay. 2025`}
+                    range={`Aug. 2023 -\nMay 2025`}
                 >
                 </EducationEntry>
 

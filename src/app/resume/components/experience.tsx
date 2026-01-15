@@ -131,7 +131,7 @@ export default function Experience() {
                 organization="Asteromorph"
                 organizationLink="https://www.asteromorph.com/"
                 location="Seoul, South Korea"
-                range="May. 2025 - Aug. 2025"
+                range="May 2025 - Aug. 2025"
             >
                 <ul className="list-disc pl-5">
                     <li>

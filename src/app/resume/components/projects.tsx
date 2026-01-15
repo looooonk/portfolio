@@ -66,7 +66,7 @@ export default function Projects() {
             <div className="pt-4 space-y-12 mb-20">
                 <ProjectEntry
                     name="Stack Rotation"
-                    range="May. 2025 - Aug. 2025"
+                    range="May 2025 - Aug. 2025"
                 >
                     <ul className="list-disc pl-5">
                         <li>
@@ -101,7 +101,7 @@ export default function Projects() {
                 </ProjectEntry>
                 <ProjectEntry
                     name="Fractel"
-                    range="Jan. 2025 - May. 2025"
+                    range="Jan. 2025 - May 2025"
                 >
                     <ul className="list-disc pl-5">
                         <li>
@@ -149,7 +149,7 @@ export default function Projects() {
                 </ProjectEntry>
                 <ProjectEntry
                     name="RL Wildfire Optimization"
-                    range="May. 2024 - Dec. 2024"
+                    range="May 2024 - Dec. 2024"
                 >
                     <ul className="list-disc pl-5">
                         <li>

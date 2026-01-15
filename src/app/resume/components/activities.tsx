@@ -73,7 +73,7 @@ export default function Activities() {
             <div className="pt-4 space-y-12 mb-20">
                 <ActivityEntry
                     name="Purdue Hackers Member"
-                    range="Jan. 2025 - May. 2025"
+                    range="Jan. 2025 - May 2025"
                     institution="Purdue University"
                     location="West Lafayette, IN"
                 >
@@ -144,7 +144,7 @@ export default function Activities() {
                 </ActivityEntry>
                 <ActivityEntry
                     name="Artificial Intelligence Lecturer"
-                    range="May. 2021 - Apr. 2023"
+                    range="May 2021 - Apr. 2023"
                     institution="Seoul Science High School"
                     location="Seoul, South Korea"
                 >
