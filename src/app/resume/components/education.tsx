@@ -178,9 +178,6 @@ export default function Education() {
                     degreeOrNotes={`B.S. in Computer Science,\nMinor in Mathematics,\nMachine Intelligence Track`}
                     range={`Aug. 2023 -\nMay. 2025`}
                 >
-                    <div className="space-y-2 pt-2">
-                        <span className="font-semibold">GPA:</span> 4.00 / 4.00
-                    </div>
                 </EducationEntry>
 
                 <EducationEntry

@@ -98,20 +98,20 @@ export default function Home() {
                     {/* Name and Info */}
                     <div className="space-y-5">
                         <div className="flex flex-col gap-4 items-center">
-                            <h1 className="text-5xl font-bold text-black">Taehoon Hwang</h1>
+                            <h1 className="text-4xl font-bold text-black">Taehoon Hwang</h1>
                             <div className="h-1 w-full bg-black"></div>
                         </div>
                         <div className="text-xl text-black mt-2">
                             <p className="flex">
-                                <span className="w-60">CS Undergraduate</span>
+                                <span>CS Undergraduate</span>
                                 <span className="mx-2 text-gray-500">@</span>
                                 <span className="font-bold text-gray-500">Columbia</span>
-                            </p>
+                            </p>    
                         </div>
-                        <p className="text-xl text-gray-600 mt-2 font-mono">taehoon.h [at] columbia [dot] edu</p>
+                        <p className="text-base text-gray-600 mt-2 font-mono">taehoon.h [at] columbia [dot] edu</p>
 
                         {/* Social Links */}
-                        <div className="flex space-x-6">
+                        <div className="flex space-x-6 justify-evenly">
                             <a
                                 href="https://www.linkedin.com/in/taehoon-hwang/"
                                 target="_blank"
