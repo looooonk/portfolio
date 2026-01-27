@@ -109,9 +109,8 @@ export default function Education() {
                                 <Course name="Programming Languages and Translators" code="COMS W4115" semester="Taking Fall 2025" grade="A"/>, {" "}
                                 <Course name="Introduction to Databases" code="COMS W4111" semester="Taking Fall 2025" grade="A+"/>, {" "}
                                 <Course name="Projects in Computer Science" code="COMS W4901" semester="Taking Fall 2025" grade="A"/>, {" "}
-                                <Course name="Operating Systems I" code="COMS W4118" semester="Taking Spring 2026"/>, {" "}
                                 <Course name="Theory ML Interaction" code="COMS W4995" semester="Taking Spring 2026"/>, {" "}
-                                <Course name="Natural Language Processing" code="COMS W4705" semester="Taking Spring 2026"/>    
+                                <Course name="Natural Language Processing" code="COMS W4705" semester="Taking Spring 2026"/>
                             </div>
                         </div>
                     </div>
