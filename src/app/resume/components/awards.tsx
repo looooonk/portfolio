@@ -38,7 +38,7 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
             }}
         >
             {/* Emblem container */}
-            <div className="flex-shrink-0 w-12 h-12 relative z-10 self-start">
+            <div className="flex-shrink-0 w-12 h-12 relative z-10 self-start sm:translate-x-2">
                 <Image
                     fill={true}
                     src={emblems[name]}
