@@ -23,7 +23,7 @@ const tabClassNameDesktop = "relative px-4 py-3 text-sm font-medium transition-a
                       hover:before:opacity-10 data-[state=active]:before:opacity-100 \
 "
 
-const tabClassNameMobile = "relative px-4 py-3 text-sm font-medium transition-all duration-300 ease-in-out rounded-lg w-[97%] h-[90%] \
+const tabClassNameMobile = "relative px-3 py-2 text-xs sm:text-sm font-medium transition-all duration-300 ease-in-out rounded-lg w-full h-auto text-center leading-tight whitespace-normal \
                       text-gray-600 hover:text-gray-900 hover:bg-gray-50 hover:shadow-sm hover:scale-105 \
                       data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-100 data-[state=active]:to-purple-200 \
                       data-[state=active]:shadow-md \
@@ -41,9 +41,9 @@ export default function Resume() {
             <div className="min-h-screen text-black flex flex-col">
                 {/* Detailed Resume */}
                 <div className="flex justify-center pt-10 mb-5">
-                    <Tabs value={activeTab} onValueChange={setActiveTab} className="w-4/5">
+                    <Tabs value={activeTab} onValueChange={setActiveTab} className="w-11/12 sm:w-4/5">
                         {/* Desktop Layout */}
-                        <TabsList className="grid grid-cols-7 bg-white p-4 rounded-xl shadow-lg border border-gray-100, h-full hidden lg:grid">
+                        <TabsList className="grid grid-cols-7 bg-white p-4 rounded-xl shadow-lg border border-gray-100 h-full hidden lg:grid">
                             <TabsTrigger
                                 value="education"
                                 className={tabClassNameDesktop}
@@ -88,7 +88,7 @@ export default function Resume() {
                             </TabsTrigger>
                         </TabsList>
                         {/* Mobile Layout */}
-                        <TabsList className="lg:hidden grid grid-cols-3 grid-rows-2 bg-white p-4 rounded-xl shadow-lg border border-gray-100, h-full">
+                        <TabsList className="lg:hidden grid grid-cols-2 sm:grid-cols-3 gap-2 bg-white p-4 rounded-xl shadow-lg border border-gray-100 h-full">
                             <TabsTrigger
                                 value="education"
                                 className={tabClassNameMobile}
@@ -123,7 +123,7 @@ export default function Resume() {
                                 value="awards"
                                 className={tabClassNameMobile}
                             >
-                                <span className="relative z-10">Awards</span>
+                                <span className="relative z-10">Honors & Awards</span>
                             </TabsTrigger>
                             <TabsTrigger
                                 value="skills"
@@ -136,7 +136,7 @@ export default function Resume() {
                 </div>
 
                 <div className="flex justify-center pt-4">
-                    <div className="w-4/5">
+                    <div className="w-11/12 sm:w-4/5">
                         <AnimatePresence mode="wait" initial={false}>
                             {activeTab === 'education' && (
                                 <motion.div

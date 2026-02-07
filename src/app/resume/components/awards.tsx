@@ -20,7 +20,7 @@ interface AwardEntryProps {
 function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
     return (
         <div
-            className="relative flex space-x-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300"
+            className="relative flex flex-col gap-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300 sm:flex-row sm:space-x-4"
             style={{
                 background: `
                     linear-gradient(135deg,
@@ -38,7 +38,7 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
             }}
         >
             {/* Emblem container */}
-            <div className="flex-shrink-0 w-12 h-12 relative z-10">
+            <div className="flex-shrink-0 w-12 h-12 relative z-10 self-start">
                 <Image
                     fill={true}
                     src={emblems[name]}
@@ -48,11 +48,11 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
             </div>
 
             {/* Textual content */}
-            <div className="flex-1 relative z-10">
-                <div className="flex justify-between items-center space-x-2">
-                    <p className="text-lg font-bold text-gray-800">{title}</p>
+            <div className="flex-1 min-w-0 relative z-10">
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:space-x-2">
+                    <p className="text-lg font-bold text-gray-800 lg:whitespace-nowrap">{title}</p>
                     <div
-                        className="h-0.5 flex-grow transition-all duration-300"
+                        className="h-0.5 w-full transition-all duration-300 sm:flex-grow"
                         style={{
                             background: `linear-gradient(90deg,
                                 rgba(147, 51, 234, 0.6) 0%,
@@ -60,7 +60,7 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
                             )`
                         }}
                     />
-                    <p className="italic text-right text-gray-700">{issuer}, {year}</p>
+                    <p className="italic text-left text-gray-700 sm:text-right lg:whitespace-nowrap">{issuer}, {year}</p>
                 </div>
 
                 {children && <p className="mt-2 text-gray-700">{children}</p>}

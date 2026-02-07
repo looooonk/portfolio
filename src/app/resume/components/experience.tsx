@@ -35,7 +35,7 @@ function ExperienceEntry({
 }: ExperienceEntryProps) {
     return (
         <div
-            className="relative flex space-x-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300"
+            className="relative flex flex-col gap-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300 sm:flex-row sm:space-x-4"
             style={{
                 background: `
                     linear-gradient(135deg,
@@ -53,7 +53,7 @@ function ExperienceEntry({
             }}
         >
             {/* Logo container */}
-            <div className="flex-shrink-0 w-12 h-12 relative z-10">
+            <div className="flex-shrink-0 w-12 h-12 relative z-10 self-start">
                 <Image
                     fill={true}
                     src={logos[organization]}
@@ -63,11 +63,11 @@ function ExperienceEntry({
             </div>
 
             {/* Textual content */}
-            <div className="flex-1 relative z-10">
-                <div className="flex justify-between items-center space-x-2">
-                    <h3 className="text-lg font-bold text-gray-800">{title}</h3>
+            <div className="flex-1 min-w-0 relative z-10">
+                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:space-x-2">
+                    <h3 className="text-lg font-bold text-gray-800 lg:whitespace-nowrap">{title}</h3>
                     <div
-                        className="h-0.5 flex-grow transition-all duration-300"
+                        className="h-0.5 w-full transition-all duration-300 sm:flex-grow"
                         style={{
                             background: `linear-gradient(90deg,
                                 rgba(147, 51, 234, 0.6) 0%,
@@ -75,11 +75,11 @@ function ExperienceEntry({
                             )`
                         }}
                     />
-                    <p className="italic text-right text-gray-700">{range}</p>
+                    <p className="italic text-left text-gray-700 sm:text-right lg:whitespace-nowrap">{range}</p>
                 </div>
 
-                <div className="flex justify-between items-center mt-1">
-                    <div className="flex items-center space-x-2">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between mt-1">
+                    <div className="flex flex-wrap items-center gap-2 lg:flex-nowrap">
                         <p className="italic text-gray-700">{organization}</p>
                         {organizationLink && (
                             <a
@@ -102,10 +102,10 @@ function ExperienceEntry({
                             </a>
                         )}
                     </div>
-                    <p className="italic text-right text-gray-600">{location}</p>
+                    <p className="italic text-left text-gray-600 sm:text-right lg:whitespace-nowrap">{location}</p>
                 </div>
 
-                {children && <div className="pl-4 mt-2">{children}</div>}
+                {children && <div className="mt-2 pl-0 sm:pl-4">{children}</div>}
             </div>
         </div>
     );
