@@ -31,10 +31,15 @@ export default function Home() {
                             <div className="h-1 w-full bg-black dark:bg-gray-200"></div>
                         </div>
                         <div className="text-base sm:text-xl text-black dark:text-gray-100 mt-2">
-                            <p className="flex flex-wrap items-center justify-center gap-2 lg:justify-start">
+                            <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-0 leading-tight lg:justify-start">
                                 <span className="sm:whitespace-nowrap">Computer Science Undergraduate</span>
                                 <span className="text-gray-500 dark:text-gray-400">@</span>
                                 <span className="font-bold text-gray-500 dark:text-gray-300">Columbia University</span>
+                            </p>
+                            <p className="mt-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-0 leading-tight lg:justify-start">
+                                <span className="sm:whitespace-nowrap">Research Assistant</span>
+                                <span className="text-gray-500 dark:text-gray-400">@</span>
+                                <span className="font-bold text-gray-500 dark:text-gray-300">Columbia NLP Lab</span>
                             </p>
                         </div>
                         <p className="text-base sm:text-xl text-gray-600 dark:text-gray-300 mt-2 font-mono break-words">
