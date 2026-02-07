@@ -34,13 +34,13 @@ function ActivityEntry({ name, range, institution, location, link, icon, childre
             <div className="flex-1 min-w-0 relative z-10">
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
                     <div className="flex items-center gap-2 flex-nowrap min-w-0 sm:min-w-0">
-                        <h3 className="text-lg font-bold text-gray-800 lg:whitespace-nowrap min-w-0 flex-1 break-words">{name}</h3>
+                        <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 lg:whitespace-nowrap min-w-0 flex-1 break-words">{name}</h3>
                         {link && icon && (
                             <a
                                 href={link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-gray-600 hover:text-gray-800 transition-colors duration-200"
+                                className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200"
                             >
                                 {icon}
                             </a>
@@ -55,12 +55,12 @@ function ActivityEntry({ name, range, institution, location, link, icon, childre
                             )`
                         }}
                     />
-                    <p className="italic text-left text-gray-700 sm:text-right lg:whitespace-nowrap sm:shrink-0">{range}</p>
+                    <p className="italic text-left text-gray-700 dark:text-gray-200 sm:text-right lg:whitespace-nowrap sm:shrink-0">{range}</p>
                 </div>
 
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between mt-1">
-                    <p className="text-gray-700">{institution}</p>
-                    <p className="italic text-left text-gray-600 sm:text-right lg:whitespace-nowrap">{location}</p>
+                    <p className="text-gray-700 dark:text-gray-200">{institution}</p>
+                    <p className="italic text-left text-gray-600 dark:text-gray-300 sm:text-right lg:whitespace-nowrap">{location}</p>
                 </div>
 
                 {children && <div className="mt-2 pl-0 sm:pl-4">{children}</div>}

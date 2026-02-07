@@ -51,7 +51,7 @@ function EducationEntry({ name, location, degreeOrNotes, range, children }: Educ
             {/* Textual content */}
             <div className="flex-1 min-w-0 relative z-10">
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:space-x-2">
-                    <h3 className="text-lg font-bold text-gray-800 lg:whitespace-nowrap">{name}</h3>
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 lg:whitespace-nowrap">{name}</h3>
                     <div 
                         className="h-0.5 w-full transition-all duration-300 sm:flex-grow"
                         style={{
@@ -61,12 +61,12 @@ function EducationEntry({ name, location, degreeOrNotes, range, children }: Educ
                             )`
                         }}
                     />
-                    <p className="italic text-left text-gray-700 sm:text-right lg:whitespace-nowrap">{location}</p>
+                    <p className="italic text-left text-gray-700 dark:text-gray-200 sm:text-right lg:whitespace-nowrap">{location}</p>
                 </div>
 
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between mt-1">
-                    <p className="text-gray-700 whitespace-pre-line">{degreeOrNotes}</p>
-                    <p className="text-left text-gray-600 whitespace-pre-line sm:text-right lg:whitespace-nowrap">{range}</p>
+                    <p className="text-gray-700 dark:text-gray-200 whitespace-pre-line">{degreeOrNotes}</p>
+                    <p className="text-left text-gray-600 dark:text-gray-300 whitespace-pre-line sm:text-right lg:whitespace-nowrap">{range}</p>
                 </div>
 
                 {children && <div className="mt-2 pl-0 sm:pl-4">{children}</div>}

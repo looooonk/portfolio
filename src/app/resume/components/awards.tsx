@@ -50,7 +50,7 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
             {/* Textual content */}
             <div className="flex-1 min-w-0 relative z-10">
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:space-x-2">
-                    <p className="text-lg font-bold text-gray-800 lg:whitespace-nowrap">{title}</p>
+                    <p className="text-lg font-bold text-gray-800 dark:text-gray-100 lg:whitespace-nowrap">{title}</p>
                     <div
                         className="h-0.5 w-full transition-all duration-300 sm:flex-grow"
                         style={{
@@ -60,10 +60,10 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
                             )`
                         }}
                     />
-                    <p className="italic text-left text-gray-700 sm:text-right lg:whitespace-nowrap">{issuer}, {year}</p>
+                    <p className="italic text-left text-gray-700 dark:text-gray-200 sm:text-right lg:whitespace-nowrap">{issuer}, {year}</p>
                 </div>
 
-                {children && <p className="mt-2 text-gray-700">{children}</p>}
+                {children && <p className="mt-2 text-gray-700 dark:text-gray-200">{children}</p>}
             </div>
         </div>
     );
