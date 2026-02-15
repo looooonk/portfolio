@@ -67,6 +67,24 @@ export default function Projects() {
         <div>
             <div className="pt-4 space-y-12 mb-20">
                 <ProjectEntry
+                    name="jsonl-viewer"
+                    range="Jan. 2026 - Present"
+                    link="https://github.com/looooonk/jsonl-viewer"
+                    icon={<FaGithub className="text-left" size={20} />}
+                >
+                    <ul className="list-disc pl-5">
+                        <li>
+                            Developing CLI-based JSON lines file analyzer using Python and curses for MacOS and Linux systems
+                        </li>
+                        <li>
+                            Implemented vim-like structure for in-program command analysis and execution
+                        </li>
+                        <li>
+                            Made available for download via source compilation and homebrew taps
+                        </li>
+                    </ul>
+                </ProjectEntry>
+                <ProjectEntry
                     name="Stack Rotation"
                     range="May 2025 - Aug. 2025"
                 >
