@@ -19,7 +19,7 @@ export default function Skills() {
                             Dev & Research Tools:
                         </span>
                         <p>
-                            Conda, Docker, Docker Swarm, Git / GitHub, Grafana, IntelliJ, LaTeX, MLFlow, Micromamba, Overleaf, Prometheus, PyCharm, Slurm, Tensorboard, Traefik, Typst, UNIX, VS Code, Visual Studio, uv
+                            Conda, Docker, Docker Swarm, Git / GitHub, Grafana, IntelliJ, LaTeX, MLFlow, Micromamba, Overleaf, Prometheus, PyCharm, Slurm, Tensorboard, Traefik, Typst, UNIX, VS Code, Visual Studio, uv, W&amp;B
                         </p>
                     </div>
                 </li>
@@ -64,7 +64,7 @@ export default function Skills() {
                         </p>
                     </div>
                     <p>
-                        Conda, Docker, Docker Swarm, Git / GitHub, Grafana, IntelliJ, LaTeX, MLFlow, Micromamba, Overleaf, Prometheus, PyCharm, Slurm, Tensorboard, Traefik, Typst, UNIX, VS Code, Visual Studio, uv
+                        Conda, Docker, Docker Swarm, Git / GitHub, Grafana, IntelliJ, LaTeX, MLFlow, Micromamba, Overleaf, Prometheus, PyCharm, Slurm, Tensorboard, Traefik, Typst, UNIX, VS Code, Visual Studio, uv, W&amp;B
                     </p>
                 </li>
                 <li className="space-y-2">

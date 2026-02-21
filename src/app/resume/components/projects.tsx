@@ -77,7 +77,7 @@ export default function Projects() {
                             Developing CLI-based JSON lines file analyzer using Python and curses for MacOS and Linux systems
                         </li>
                         <li>
-                            Implemented vim-like structure for in-program command analysis and execution
+                            Implemented vim-like structure for in-program command analysis and execution along with custom colored themes
                         </li>
                         <li>
                             Made available for download via source compilation and homebrew taps
