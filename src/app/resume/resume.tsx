@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 import Education from "./components/education";
 import Experience from "./components/experience";
@@ -73,7 +74,17 @@ export default function Resume() {
             </nav>
 
             <div className="pt-6">
-                {tabContent[activeTab]}
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={activeTab}
+                        initial={{ opacity: 0, y: -4 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 4 }}
+                        transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+                    >
+                        {tabContent[activeTab]}
+                    </motion.div>
+                </AnimatePresence>
             </div>
         </div>
     );
