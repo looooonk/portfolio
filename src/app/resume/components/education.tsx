@@ -53,7 +53,7 @@ export default function Education() {
             <EducationEntry
                 name="Columbia University"
                 location="New York, NY"
-                degreeOrNotes="B.S. in Computer Science"
+                degreeOrNotes="B.S. in Computer Science, Fu Foundation School of Engineering and Applied Science"
                 range="Aug. 2025 - May 2027"
             >
                 <div className="space-y-2">
