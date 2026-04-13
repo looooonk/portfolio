@@ -1,93 +1,65 @@
+interface SkillCategoryProps {
+    title: string;
+    items: string[];
+}
+
+function SkillCategory({ title, items }: SkillCategoryProps) {
+    return (
+        <div className="border-b border-border pb-6">
+            <h3 className="font-bold text-foreground mb-3">{title}</h3>
+            <div className="flex flex-wrap gap-2">
+                {[...items].sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" })).map(item => (
+                    <span
+                        key={item}
+                        className="text-sm px-2.5 py-1 rounded border border-border bg-secondary text-foreground"
+                    >
+                        {item}
+                    </span>
+                ))}
+            </div>
+        </div>
+    );
+}
+
 export default function Skills() {
     return (
-        <div>
-            {/* Desktop view */}
-            <ul className="list-disc pl-5 pt-4 space-y-12 hidden lg:block">
-                <li>
-                    <div style={{ display: "flex", alignItems: "flex-start" }} className="space-x-1">
-                        <span className="font-bold" style={{ whiteSpace: "nowrap" }}>
-                            Programming Languages & Frameworks:
-                        </span>
-                        <p>
-                            Bash, C / C++, Express.js, Flask, HTML / CSS, Java, JavaScript, Next.js, Python, R, React, Rust, SQL, Tailwind CSS, TypeScript, x86 Assembly (AT&T)
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div style={{ display: "flex", alignItems: "flex-start" }} className="space-x-1">
-                        <span className="font-bold" style={{ whiteSpace: "nowrap" }}>
-                            Dev & Research Tools:
-                        </span>
-                        <p>
-                            Conda, Docker, Docker Swarm, Git / GitHub, Grafana, IntelliJ, LaTeX, MLFlow, Micromamba, Overleaf, Prometheus, PyCharm, Slurm, Tensorboard, Traefik, Typst, UNIX, VS Code, Visual Studio, uv, W&amp;B
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div style={{ display: "flex", alignItems: "flex-start" }} className="space-x-1">
-                        <span className="font-bold" style={{ whiteSpace: "nowrap" }}>
-                            Libraries:
-                        </span>
-                        <p>
-                            HuggingFace, Keras, Matplotlib, NumPy, OpenAI, OpenCV, Pandas, PyTorch, PyTorch Lightning, Ray, Scikit-learn, Seaborn, TensorFlow, Transformer, Unsloth, Verl, Xformers, llama.cpp, trl, vLLM
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div style={{ display: "flex", alignItems: "flex-start" }} className="space-x-1">
-                        <span className="font-bold" style={{ whiteSpace: "nowrap" }}>
-                            Research Topics:
-                        </span>
-                        <p>
-                            Computer Vision, Diffusion Models, Distributed & 5D Parallel Training, Generative AI, Graph Neural Networks, Group Neural Networks, Large Language Models, Fine-tuning, Natural Language Processing, Reinforcement Learning
-                        </p>
-                    </div>
-                </li>
-            </ul>
-
-            {/* Mobile view */}
-            <ul className="lg:hidden list-disc pl-5 pt-4 space-y-12">
-                <li className="space-y-2">
-                    <div style={{ display: "flex", alignItems: "flex-start" }} className="space-x-1">
-                        <p className="font-bold" style={{ whiteSpace: "nowrap" }}>
-                            Programming Languages & Frameworks:
-                        </p>
-                    </div>
-                    <p>
-                        Bash, C / C++, Express.js, Flask, HTML / CSS, Java, JavaScript, Next.js, Python, R, React, Rust, SQL, Tailwind CSS, TypeScript, x86 Assembly (AT&T)
-                    </p>
-                </li>
-                <li className="space-y-2">
-                    <div style={{ display: "flex", alignItems: "flex-start" }} className="space-x-1">
-                        <p className="font-bold" style={{ whiteSpace: "nowrap" }}>
-                            Dev & Research Tools:
-                        </p>
-                    </div>
-                    <p>
-                        Conda, Docker, Docker Swarm, Git / GitHub, Grafana, IntelliJ, LaTeX, MLFlow, Micromamba, Overleaf, Prometheus, PyCharm, Slurm, Tensorboard, Traefik, Typst, UNIX, VS Code, Visual Studio, uv, W&amp;B
-                    </p>
-                </li>
-                <li className="space-y-2">
-                    <div style={{ display: "flex", alignItems: "flex-start" }} className="space-x-1">
-                        <p className="font-bold" style={{ whiteSpace: "nowrap" }}>
-                            Libraries:
-                        </p>
-                    </div>
-                    <p>
-                        HuggingFace, Keras, Matplotlib, NumPy, OpenAI, OpenCV, Pandas, PyTorch, PyTorch Lightning, Ray, Scikit-learn, Seaborn, TensorFlow, Transformer, Unsloth, Verl, Xformers, llama.cpp, trl, vLLM
-                    </p>
-                </li>
-                <li className="space-y-2">
-                    <div style={{ display: "flex", alignItems: "flex-start" }} className="space-x-1">
-                        <p className="font-bold" style={{ whiteSpace: "nowrap" }}>
-                            Research Topics:
-                        </p>
-                    </div>
-                    <p>
-                        Computer Vision, Diffusion Models, Distributed & 5D Parallel Training, Generative AI, Graph Neural Networks, Group Neural Networks, Large Language Models, Fine-tuning, Natural Language Processing, Reinforcement Learning
-                    </p>
-                </li>
-            </ul>
+        <div className="pt-4 space-y-8 mb-20">
+            <SkillCategory
+                title="Programming Languages & Frameworks"
+                items={[
+                    "Bash", "C / C++", "Express.js", "Flask", "HTML / CSS", "Java",
+                    "JavaScript", "Next.js", "Python", "R", "React", "Rust", "SQL",
+                    "Tailwind CSS", "TypeScript", "x86 Assembly (AT&T)",
+                ]}
+            />
+            <SkillCategory
+                title="Dev & Research Tools"
+                items={[
+                    "Conda", "Docker", "Docker Swarm", "Git / GitHub", "Grafana",
+                    "IntelliJ", "LaTeX", "MLFlow", "Micromamba", "Overleaf",
+                    "Prometheus", "PyCharm", "Slurm", "Tensorboard", "Traefik",
+                    "Typst", "UNIX", "VS Code", "Visual Studio", "uv", "W&B",
+                ]}
+            />
+            <SkillCategory
+                title="Libraries"
+                items={[
+                    "HuggingFace", "Keras", "Matplotlib", "NumPy", "OpenAI",
+                    "OpenCV", "Pandas", "PyTorch", "PyTorch Lightning", "Ray",
+                    "Scikit-learn", "Seaborn", "TensorFlow", "Transformer",
+                    "Unsloth", "Verl", "Xformers", "llama.cpp", "trl", "vLLM",
+                ]}
+            />
+            <SkillCategory
+                title="Research Topics"
+                items={[
+                    "Computer Vision", "Diffusion Models",
+                    "Distributed & 5D Parallel Training", "Generative AI",
+                    "Graph Neural Networks", "Group Neural Networks",
+                    "Large Language Models", "Fine-tuning",
+                    "Natural Language Processing", "Reinforcement Learning",
+                ]}
+            />
         </div>
     );
 }

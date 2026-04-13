@@ -19,51 +19,23 @@ interface AwardEntryProps {
 
 function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
     return (
-        <div
-            className="relative flex flex-col gap-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300 sm:flex-row sm:space-x-4"
-            style={{
-                background: `
-                    linear-gradient(135deg,
-                        rgba(255, 255, 255, 0.1) 0%,
-                        rgba(255, 255, 255, 0.05) 100%
-                    ),
-                    linear-gradient(135deg,
-                        rgba(147, 51, 234, 0.1) 0%,
-                        rgba(59, 130, 246, 0.1) 100%
-                    )
-                `,
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
-                boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.05)'
-            }}
-        >
-            {/* Emblem container */}
-            <div className="flex-shrink-0 w-12 h-12 relative z-10 self-start sm:translate-x-2">
+        <div className="flex gap-4 border-b border-border pb-6 sm:gap-5">
+            <div className="flex-shrink-0 w-10 h-10 relative mt-0.5">
                 <Image
                     fill={true}
                     src={emblems[name]}
                     alt={`${name} emblem`}
-                    className="w-full h-full object-contain filter drop-shadow-sm"
+                    className="object-contain"
                 />
             </div>
 
-            {/* Textual content */}
-            <div className="flex-1 min-w-0 relative z-10">
-                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:space-x-2">
-                    <p className="text-lg font-bold text-gray-800 dark:text-gray-100 lg:whitespace-nowrap">{title}</p>
-                    <div
-                        className="h-0.5 w-full transition-all duration-300 sm:flex-grow"
-                        style={{
-                            background: `linear-gradient(90deg,
-                                rgba(147, 51, 234, 0.6) 0%,
-                                rgba(59, 130, 246, 0.6) 100%
-                            )`
-                        }}
-                    />
-                    <p className="italic text-left text-gray-700 dark:text-gray-200 sm:text-right lg:whitespace-nowrap">{issuer}, {year}</p>
+            <div className="flex-1 min-w-0">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                    <p className="text-lg font-bold text-foreground">{title}</p>
+                    <p className="text-sm italic text-muted-foreground sm:text-right whitespace-nowrap">{issuer}, {year}</p>
                 </div>
 
-                {children && <p className="mt-2 text-gray-700 dark:text-gray-200">{children}</p>}
+                {children && <p className="mt-1.5 text-muted-foreground">{children}</p>}
             </div>
         </div>
     );
@@ -132,7 +104,7 @@ const awards = [
 
 export default function Awards() {
     return (
-        <div className="pt-4 space-y-12 mb-20">
+        <div className="pt-4 space-y-8 mb-20">
             {awards.map(a => (
                 <AwardEntry
                     name={a.name}

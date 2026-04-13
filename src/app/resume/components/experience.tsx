@@ -34,61 +34,33 @@ function ExperienceEntry({
     children,
 }: ExperienceEntryProps) {
     return (
-        <div
-            className="relative flex flex-col gap-4 p-6 rounded-xl hover:scale-[102%] hover:z-10 transition-all duration-300 sm:flex-row sm:space-x-4"
-            style={{
-                background: `
-                    linear-gradient(135deg,
-                        rgba(255, 255, 255, 0.1) 0%,
-                        rgba(255, 255, 255, 0.05) 100%
-                    ),
-                    linear-gradient(135deg,
-                        rgba(147, 51, 234, 0.1) 0%,
-                        rgba(59, 130, 246, 0.1) 100%
-                    )
-                `,
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
-                boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.05)'
-            }}
-        >
-            {/* Logo container */}
-            <div className="flex-shrink-0 w-12 h-12 relative z-10 self-start sm:translate-x-2">
+        <div className="flex gap-4 border-b border-border pb-6 sm:gap-5">
+            <div className="flex-shrink-0 w-10 h-10 relative mt-0.5">
                 <Image
                     fill={true}
                     src={logos[organization]}
                     alt={`${organization} logo`}
-                    className="w-full h-full object-contain filter drop-shadow-sm"
+                    className="object-contain"
                 />
             </div>
 
-            {/* Textual content */}
-            <div className="flex-1 min-w-0 relative z-10">
-                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:space-x-2">
-                    <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 lg:whitespace-nowrap">{title}</h3>
-                    <div
-                        className="h-0.5 w-full transition-all duration-300 sm:flex-grow"
-                        style={{
-                            background: `linear-gradient(90deg,
-                                rgba(147, 51, 234, 0.6) 0%,
-                                rgba(59, 130, 246, 0.6) 100%
-                            )`
-                        }}
-                    />
-                    <p className="italic text-left text-gray-700 dark:text-gray-200 sm:text-right lg:whitespace-nowrap">{range}</p>
+            <div className="flex-1 min-w-0">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                    <h3 className="text-lg font-bold text-foreground">{title}</h3>
+                    <p className="text-sm italic text-muted-foreground sm:text-right whitespace-nowrap">{range}</p>
                 </div>
 
-                <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between mt-1">
-                    <div className="flex flex-wrap items-center gap-2 lg:flex-nowrap">
-                        <p className="italic text-gray-700 dark:text-gray-200">{organization}</p>
+                <div className="flex flex-col gap-0.5 sm:flex-row sm:items-center sm:justify-between mt-0.5">
+                    <div className="flex items-center gap-2">
+                        <p className="italic text-muted-foreground">{organization}</p>
                         {organizationLink && (
                             <a
                                 href={organizationLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200"
+                                className="text-muted-foreground hover:text-foreground"
                             >
-                                <BiWorld size={15} />
+                                <BiWorld size={14} />
                             </a>
                         )}
                         {repoLink && (
@@ -96,13 +68,13 @@ function ExperienceEntry({
                                 href={repoLink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-200"
+                                className="text-muted-foreground hover:text-foreground"
                             >
-                                <FaGithub size={18} />
+                                <FaGithub size={16} />
                             </a>
                         )}
                     </div>
-                    <p className="italic text-left text-gray-600 dark:text-gray-300 sm:text-right lg:whitespace-nowrap">{location}</p>
+                    <p className="text-sm italic text-muted-foreground sm:text-right whitespace-nowrap">{location}</p>
                 </div>
 
                 {children && <div className="mt-2 pl-0 sm:pl-4">{children}</div>}
@@ -113,7 +85,7 @@ function ExperienceEntry({
 
 export default function Experience() {
     return (
-        <div className="pt-4 space-y-12 mb-20">
+        <div className="pt-4 space-y-8 mb-20">
             <ExperienceEntry
                 title="Research Assistant"
                 organization="Columbia University"
