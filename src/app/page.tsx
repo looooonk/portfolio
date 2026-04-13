@@ -45,7 +45,47 @@ function Sidebar() {
                 taehoon.h [at] columbia [dot] edu
             </p>
 
-            <div className="flex gap-4">
+            <p className="text-sm text-muted-foreground text-center lg:text-left leading-relaxed">
+                I am an undergraduate student studying computer science at{' '}
+                <a
+                    href="https://www.columbia.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 underline visited:text-blue-400"
+                >
+                    Columbia University
+                </a>
+                . My research focuses on natural language processing, particularly with large language models and reinforcement learning. I am directly advised by PhD candidate{' '}
+                <a
+                    href="https://www.yunfanzhang.me/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 underline visited:text-blue-400"
+                >
+                    Yunfan Zhang
+                </a>
+                {' '}at{' '}
+                <a
+                    href="https://www.cs.columbia.edu/nlp/index.cgi"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 underline visited:text-blue-400"
+                >
+                    Columbia&apos;s NLP Lab
+                </a>
+                {' '}under{' '}
+                <a
+                    href="https://www.cs.columbia.edu/~kathy/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 underline visited:text-blue-400"
+                >
+                    Prof. Kathleen McKeown
+                </a>
+                &apos;s guidance.
+            </p>
+
+            <div className="flex gap-4 justify-center lg:justify-start">
                 <a
                     href="https://www.linkedin.com/in/taehoon-hwang/"
                     target="_blank"
