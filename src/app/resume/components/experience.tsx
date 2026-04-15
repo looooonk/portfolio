@@ -94,7 +94,7 @@ export default function Experience() {
             >
                 <ul className="list-disc pl-5">
                     <li>
-                        Working on fine-grained advantage computations for reinforcement learning on LLMs to improve existing GRPO methodologies
+                        Researching better advantage computations in existing post-training methodologies to improve LLM performance
                     </li>
                 </ul>
             </ExperienceEntry>

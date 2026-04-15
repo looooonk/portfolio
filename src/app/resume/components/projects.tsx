@@ -38,13 +38,13 @@ export default function Projects() {
         <div className="pt-4 space-y-8 mb-20">
             <ProjectEntry
                 name="jsonl-viewer"
-                range="Jan. 2026 - Present"
+                range="Jan. 2026 - Apr. 2026"
                 link="https://github.com/looooonk/jsonl-viewer"
                 icon={<FaGithub size={16} />}
             >
                 <ul className="list-disc pl-5">
                     <li>
-                        Developing CLI-based JSON lines file analyzer using Python and curses for MacOS and Linux systems
+                        Developed CLI-based JSON lines (.jsonl) file analyzer using Python and curses for MacOS and Linux systems
                     </li>
                     <li>
                         Implemented vim-like structure for in-program command analysis and execution along with custom colored themes
