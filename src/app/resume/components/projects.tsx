@@ -1,16 +1,19 @@
 import type { ReactNode } from "react";
 import { FaGithub } from 'react-icons/fa'
 import IconLink from "@/components/icon-link";
+import ResumeImageStrip, { type ResumeItemImage } from "./resume-image-strip";
 
 interface ProjectEntryProps {
     name: string;
     range: string;
     link?: string;
     icon?: ReactNode;
+    images?: ResumeItemImage[];
+    showImages?: boolean;
     children?: ReactNode;
 }
 
-function ProjectEntry({ name, range, link, icon, children }: ProjectEntryProps) {
+function ProjectEntry({ name, range, link, icon, images, showImages, children }: ProjectEntryProps) {
     return (
         <div className="border-b border-border pb-6">
             <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
@@ -30,6 +33,7 @@ function ProjectEntry({ name, range, link, icon, children }: ProjectEntryProps) 
             </div>
 
             {children && <div className="mt-2 pl-0 sm:pl-4">{children}</div>}
+            <ResumeImageStrip images={images} showImages={showImages} />
         </div>
     );
 }

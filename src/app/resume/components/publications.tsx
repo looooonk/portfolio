@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { IoDocumentText } from "react-icons/io5";
 import IconLink from "@/components/icon-link";
+import ResumeImageStrip, { type ResumeItemImage } from "./resume-image-strip";
 
 interface PublicationEntryProps {
     name: string;
@@ -9,10 +10,12 @@ interface PublicationEntryProps {
     location: string;
     link?: string;
     icon?: ReactNode;
+    images?: ResumeItemImage[];
+    showImages?: boolean;
     children?: ReactNode;
 }
 
-function PublicationEntry({ name, range, institution, location, link, icon, children }: PublicationEntryProps) {
+function PublicationEntry({ name, range, institution, location, link, icon, images, showImages, children }: PublicationEntryProps) {
     return (
         <div className="border-b border-border pb-6">
             <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
@@ -37,6 +40,7 @@ function PublicationEntry({ name, range, institution, location, link, icon, chil
             </div>
 
             {children && <div className="mt-2 pl-0 sm:pl-4">{children}</div>}
+            <ResumeImageStrip images={images} showImages={showImages} />
         </div>
     );
 }

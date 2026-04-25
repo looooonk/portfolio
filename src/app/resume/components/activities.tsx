@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { FaGithub } from 'react-icons/fa'
 import IconLink from "@/components/icon-link";
+import ResumeImageStrip, { type ResumeItemImage } from "./resume-image-strip";
 
 interface ActivityEntryProps {
     name: string;
@@ -9,10 +10,12 @@ interface ActivityEntryProps {
     location: string;
     link?: string;
     icon?: ReactNode;
+    images?: ResumeItemImage[];
+    showImages?: boolean;
     children?: ReactNode;
 }
 
-function ActivityEntry({ name, range, institution, location, link, icon, children }: ActivityEntryProps) {
+function ActivityEntry({ name, range, institution, location, link, icon, images, showImages, children }: ActivityEntryProps) {
     return (
         <div className="border-b border-border pb-6">
             <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
@@ -37,6 +40,7 @@ function ActivityEntry({ name, range, institution, location, link, icon, childre
             </div>
 
             {children && <div className="mt-2 pl-0 sm:pl-4">{children}</div>}
+            <ResumeImageStrip images={images} showImages={showImages} />
         </div>
     );
 }
