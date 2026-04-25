@@ -1,4 +1,5 @@
 // src/app/layout.tsx
+import type { ReactNode } from 'react'
 import '../styles/globals.css'
 
 export const metadata = {
@@ -19,7 +20,7 @@ const theme_script = `
 })();
 `;
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en" suppressHydrationWarning>
             <head>

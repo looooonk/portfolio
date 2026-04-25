@@ -1,4 +1,6 @@
+import type { ReactNode } from "react";
 import { FaGithub } from 'react-icons/fa'
+import IconLink from "@/components/icon-link";
 
 interface ActivityEntryProps {
     name: string;
@@ -6,8 +8,8 @@ interface ActivityEntryProps {
     institution: string;
     location: string;
     link?: string;
-    icon?: React.ReactNode;
-    children?: React.ReactNode;
+    icon?: ReactNode;
+    children?: ReactNode;
 }
 
 function ActivityEntry({ name, range, institution, location, link, icon, children }: ActivityEntryProps) {
@@ -17,14 +19,13 @@ function ActivityEntry({ name, range, institution, location, link, icon, childre
                 <div className="flex items-center gap-2">
                     <h3 className="text-lg font-bold text-foreground">{name}</h3>
                     {link && icon && (
-                        <a
+                        <IconLink
                             href={link}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            label={`${name} repository`}
                             className="text-muted-foreground hover:text-foreground"
                         >
                             {icon}
-                        </a>
+                        </IconLink>
                     )}
                 </div>
                 <p className="text-sm italic text-muted-foreground whitespace-nowrap">{range}</p>

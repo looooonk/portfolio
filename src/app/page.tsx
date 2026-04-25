@@ -7,6 +7,7 @@ import { FaOrcid } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
 import Resume from './resume/resume';
 import ThemeToggle from '@/components/theme-toggle';
+import IconLink from "@/components/icon-link";
 
 function Sidebar() {
     return (
@@ -86,38 +87,30 @@ function Sidebar() {
             </p>
 
             <div className="flex gap-4 justify-center lg:justify-start">
-                <a
+                <IconLink
                     href="https://www.linkedin.com/in/taehoon-hwang/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground hover:text-muted-foreground"
+                    label="LinkedIn profile"
                 >
                     <FaLinkedin size={24} />
-                </a>
-                <a
+                </IconLink>
+                <IconLink
                     href="https://github.com/looooonk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground hover:text-muted-foreground"
+                    label="GitHub profile"
                 >
                     <FaGithub size={24} />
-                </a>
-                <a
+                </IconLink>
+                <IconLink
                     href="https://orcid.org/0009-0005-6452-9258"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground hover:text-muted-foreground"
+                    label="ORCID profile"
                 >
                     <FaOrcid size={24} />
-                </a>
-                <a
+                </IconLink>
+                <IconLink
                     href="/CV.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground hover:text-muted-foreground"
+                    label="Curriculum vitae"
                 >
                     <IoDocumentText size={24} />
-                </a>
+                </IconLink>
             </div>
         </div>
     );

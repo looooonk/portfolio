@@ -1,8 +1,9 @@
 // experience.tsx
 import { FaGithub } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
-import React from "react";
+import type { ReactNode } from "react";
 import Image from "next/image";
+import IconLink from "@/components/icon-link";
 
 const logos: Record<string, string> = {
     "Asteromorph": "/emblems/asteromorph.jpeg",
@@ -21,7 +22,7 @@ interface ExperienceEntryProps {
     range: string;
     organizationLink?: string;
     repoLink?: string;
-    children?: React.ReactNode;
+    children?: ReactNode;
 }
 
 function ExperienceEntry({
@@ -37,7 +38,7 @@ function ExperienceEntry({
         <div className="flex gap-4 border-b border-border pb-6 sm:gap-5">
             <div className="flex-shrink-0 w-10 h-10 relative mt-0.5">
                 <Image
-                    fill={true}
+                    fill
                     src={logos[organization]}
                     alt={`${organization} logo`}
                     className="object-contain"
@@ -54,24 +55,22 @@ function ExperienceEntry({
                     <div className="flex items-center gap-2">
                         <p className="italic text-muted-foreground">{organization}</p>
                         {organizationLink && (
-                            <a
+                            <IconLink
                                 href={organizationLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                label={`${organization} website`}
                                 className="text-muted-foreground hover:text-foreground"
                             >
                                 <BiWorld size={14} />
-                            </a>
+                            </IconLink>
                         )}
                         {repoLink && (
-                            <a
+                            <IconLink
                                 href={repoLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                label={`${title} repository`}
                                 className="text-muted-foreground hover:text-foreground"
                             >
                                 <FaGithub size={16} />
-                            </a>
+                            </IconLink>
                         )}
                     </div>
                     <p className="text-sm italic text-muted-foreground sm:text-right whitespace-nowrap">{location}</p>

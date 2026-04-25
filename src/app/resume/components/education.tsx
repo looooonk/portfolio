@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Course from "./course";
 import Image from "next/image";
 
@@ -15,7 +16,7 @@ interface EducationEntryProps {
     location: string;
     degreeOrNotes: string;
     range: string;
-    children?: React.ReactNode;
+    children?: ReactNode;
 }
 
 function EducationEntry({ name, location, degreeOrNotes, range, children }: EducationEntryProps) {
@@ -23,7 +24,7 @@ function EducationEntry({ name, location, degreeOrNotes, range, children }: Educ
         <div className="flex gap-4 border-b border-border pb-6 sm:gap-5">
             <div className="flex-shrink-0 w-10 h-10 relative mt-0.5">
                 <Image
-                    fill={true}
+                    fill
                     src={emblems[name]}
                     alt={`${name} emblem`}
                     className="object-contain"

@@ -1,4 +1,6 @@
+import type { ReactNode } from "react";
 import { IoDocumentText } from "react-icons/io5";
+import IconLink from "@/components/icon-link";
 
 interface PublicationEntryProps {
     name: string;
@@ -6,8 +8,8 @@ interface PublicationEntryProps {
     institution: string;
     location: string;
     link?: string;
-    icon?: React.ReactNode;
-    children?: React.ReactNode;
+    icon?: ReactNode;
+    children?: ReactNode;
 }
 
 function PublicationEntry({ name, range, institution, location, link, icon, children }: PublicationEntryProps) {
@@ -17,14 +19,13 @@ function PublicationEntry({ name, range, institution, location, link, icon, chil
                 <div className="flex items-center gap-2">
                     <h3 className="text-lg font-bold text-foreground">{name}</h3>
                     {link && icon && (
-                        <a
+                        <IconLink
                             href={link}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            label={`${name} publication`}
                             className="text-muted-foreground hover:text-foreground"
                         >
                             {icon}
-                        </a>
+                        </IconLink>
                     )}
                 </div>
                 <p className="text-sm italic text-muted-foreground whitespace-nowrap">{range}</p>
@@ -51,11 +52,9 @@ export default function Publications() {
                 link="https://arxiv.org/abs/2508.17661"
                 icon={<IoDocumentText className="text-muted-foreground" size={18} />}
             >
-                <ul className="list-disc pl-5">
-                    <p>
-                        Recent advances in LLMs have made automated scientific research the next frontline in the path to artificial superintelligence. However, these systems are bound either to tasks of narrow scope or the limited creative capabilities of LLMs. We propose Spacer, a scientific discovery system that develops creative and factually grounded concepts without external intervention.
-                    </p>
-                </ul>
+                <p className="text-muted-foreground">
+                    Recent advances in LLMs have made automated scientific research the next frontline in the path to artificial superintelligence. However, these systems are bound either to tasks of narrow scope or the limited creative capabilities of LLMs. We propose Spacer, a scientific discovery system that develops creative and factually grounded concepts without external intervention.
+                </p>
             </PublicationEntry>
         </div>
     );

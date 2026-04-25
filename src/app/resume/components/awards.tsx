@@ -22,7 +22,7 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
         <div className="flex gap-4 border-b border-border pb-6 sm:gap-5">
             <div className="flex-shrink-0 w-10 h-10 relative mt-0.5">
                 <Image
-                    fill={true}
+                    fill
                     src={emblems[name]}
                     alt={`${name} emblem`}
                     className="object-contain"

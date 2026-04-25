@@ -1,7 +1,8 @@
 // src/app/resume/resume.tsx
 "use client";
 
-import React, { useState } from "react";
+import type { ReactNode } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import Education from "./components/education";
@@ -24,7 +25,7 @@ const tabs = [
 
 type TabKey = (typeof tabs)[number]["key"];
 
-const tabContent: Record<TabKey, React.ReactNode> = {
+const tabContent: Record<TabKey, ReactNode> = {
     education: <Education />,
     experience: <Experience />,
     projects: <Projects />,
