@@ -18,7 +18,7 @@ const tabs = [
     { key: "experience", label: "Experience" },
     { key: "projects", label: "Projects" },
     { key: "activities", label: "Activities" },
-    { key: "publications", label: "Publications" },
+    { key: "publications", label: "Publications & Contributions" },
     { key: "awards", label: "Honors & Awards" },
     { key: "skills", label: "Skills" },
 ] as const;
