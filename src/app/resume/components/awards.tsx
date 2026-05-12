@@ -76,14 +76,14 @@ const awards = [
         description:
             "Recognized for a presentation on open-set recognition with ResNet models.",
     },
-    {
-        name: "Seoul Science High School",
-        title: "Top Award for R&E Research in Computer Science",
-        issuer: "Seoul Science High School",
-        year: "2022",
-        description:
-            "Improved open-set recognition accuracy in ResNet models.",
-    },
+    // {
+    //     name: "Seoul Science High School",
+    //     title: "Top Award for R&E Research in Computer Science",
+    //     issuer: "Seoul Science High School",
+    //     year: "2022",
+    //     description:
+    //         "Improved open-set recognition accuracy in ResNet models.",
+    // },
     {
         name: "Microsoft",
         title: "Azure AI Fundamentals Certification",
@@ -92,14 +92,14 @@ const awards = [
         description:
             "Achieved AZ-900 certification on AI and Microsoft Azure fundamentals.",
     },
-    {
-        name: "Seoul Science High School",
-        title: "Top Award for Independent Research in Computer Science",
-        issuer: "Seoul Science High School",
-        year: "2021",
-        description:
-            "Developed advertisement classification using OCR and semantic tree matching.",
-    },
+    // {
+    //     name: "Seoul Science High School",
+    //     title: "Top Award for Independent Research in Computer Science",
+    //     issuer: "Seoul Science High School",
+    //     year: "2021",
+    //     description:
+    //         "Developed advertisement classification using OCR and semantic tree matching.",
+    // },
 ] as const;
 
 export default function Awards() {

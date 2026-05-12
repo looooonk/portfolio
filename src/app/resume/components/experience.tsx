@@ -184,7 +184,7 @@ export default function Experience() {
                 </ul>
             </ExperienceEntry>
 
-            <ExperienceEntry
+            {/* <ExperienceEntry
                 title="Student Researcher"
                 organization="Seoul Science High School"
                 location="Seoul, South Korea"
@@ -203,7 +203,7 @@ export default function Experience() {
                         hardware constraints
                     </li>
                 </ul>
-            </ExperienceEntry>
+            </ExperienceEntry> */}
 
             <ExperienceEntry
                 title="Research Assistant"
@@ -220,13 +220,10 @@ export default function Experience() {
                     <li>
                         Built a remote, automated testing/optimization framework in PyTorch
                     </li>
-                    <li>
-                        Presented findings at the Korean Science High School R&amp;E Conference
-                    </li>
                 </ul>
             </ExperienceEntry>
 
-            <ExperienceEntry
+            {/* <ExperienceEntry
                 title="Student Researcher"
                 organization="Seoul Science High School"
                 location="Seoul, South Korea"
@@ -244,7 +241,7 @@ export default function Experience() {
                         Demonstrated adaptive behaviour through rigorous temporal testing
                     </li>
                 </ul>
-            </ExperienceEntry>
+            </ExperienceEntry> */}
         </div>
     );
 }

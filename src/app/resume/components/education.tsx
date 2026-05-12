@@ -120,12 +120,12 @@ export default function Education() {
                 </div>
             </EducationEntry>
 
-            <EducationEntry
+            {/* <EducationEntry
                 name="Seoul Science High School"
                 location="Seoul, South Korea"
                 degreeOrNotes="32nd Cohort, Granted early admission"
                 range="Mar. 2020 - Feb. 2023"
-            />
+            /> */}
         </div>
     );
 }

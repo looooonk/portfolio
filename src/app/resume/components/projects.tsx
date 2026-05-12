@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { FaGithub } from 'react-icons/fa'
+import { BiWorld } from "react-icons/bi";
 import IconLink from "@/components/icon-link";
 
 interface ProjectEntryProps {
@@ -7,10 +8,12 @@ interface ProjectEntryProps {
     range: string;
     link?: string;
     icon?: ReactNode;
+    link2?: string;
+    icon2?: ReactNode;
     children?: ReactNode;
 }
 
-function ProjectEntry({ name, range, link, icon, children }: ProjectEntryProps) {
+function ProjectEntry({ name, range, link, icon, link2, icon2, children }: ProjectEntryProps) {
     return (
         <div className="border-b border-border pb-6">
             <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
@@ -23,6 +26,15 @@ function ProjectEntry({ name, range, link, icon, children }: ProjectEntryProps) 
                             className="text-muted-foreground hover:text-foreground"
                         >
                             {icon}
+                        </IconLink>
+                    )}
+                    {link2 && icon2 && (
+                        <IconLink
+                            href={link2}
+                            label={`${name} website`}
+                            className="text-muted-foreground hover:text-foreground"
+                        >
+                            {icon2}
                         </IconLink>
                     )}
                 </div>
@@ -38,8 +50,46 @@ export default function Projects() {
     return (
         <div className="pt-4 space-y-8 mb-20">
             <ProjectEntry
-                name="jsonl-viewer"
-                range="Jan. 2026 - Apr. 2026"
+                name="Graduate School Research Agent"
+                range="Apr. 2026 - Present"
+                link="https://github.com/looooonk/graduate-school-agent"
+                icon={<FaGithub size={16} />}
+            >
+                <ul className="list-disc pl-5">
+                    <li>
+                        Developed agentic system to research graduate school programs, including fitness, quality, and difficulty
+                    </li>
+                    <li>
+                        Implemented agentic retrieval loop, LLM quality judging, CV-aware fit assessment, and gap-fill passes using the Anthropic SDK
+                    </li>
+                    <li>
+                        Added rich reporting using markdown files, full trajectory viewing and analysis, and interactive UIs using curses
+                    </li>
+                </ul>
+            </ProjectEntry>
+            <ProjectEntry
+                name="Factorio Tech Tree"
+                range="Feb. 2026 - Present"
+                link="https://github.com/looooonk/factorio-tech-tree/"
+                icon={<FaGithub size={16} />}
+                link2="https://factorio-tech-tree.com/"
+                icon2={<BiWorld size={14} />}
+            >
+                <ul className="list-disc pl-5">
+                    <li>
+                        Developed an interactive technology tree viewer for the game Factorio, along with a crawler to automatically collect relevant data from wiki pages
+                    </li>
+                    <li>
+                        Utilized dynamic tree structuring and full child search features using graph distance algorithms in TypeScript
+                    </li>
+                    <li>
+                        Deployed website using Vercel with production optimization for faster image rendering and tree processing
+                    </li>
+                </ul>
+            </ProjectEntry>
+            <ProjectEntry
+                name="CLI JSONL Viewer"
+                range="Jan. 2026 - Present"
                 link="https://github.com/looooonk/jsonl-viewer"
                 icon={<FaGithub size={16} />}
             >
@@ -90,7 +140,7 @@ export default function Projects() {
                     </li>
                 </ul>
             </ProjectEntry>
-            <ProjectEntry
+            {/* <ProjectEntry
                 name="Fractel"
                 range="Jan. 2025 - May 2025"
             >
@@ -105,7 +155,7 @@ export default function Projects() {
                         Theorized implementing back-end support with MongoDB and RestAPI calls for dynamic course catalog maintenance
                     </li>
                 </ul>
-            </ProjectEntry>
+            </ProjectEntry> */}
             <ProjectEntry
                 name="Financial Anomaly Detection with Modified Benford&apos;s Law"
                 range="Jan. 2025 - Mar. 2025"
@@ -138,7 +188,7 @@ export default function Projects() {
                     </li>
                 </ul>
             </ProjectEntry>
-            <ProjectEntry
+            {/* <ProjectEntry
                 name="RL Wildfire Optimization"
                 range="May 2024 - Dec. 2024"
             >
@@ -153,7 +203,7 @@ export default function Projects() {
                         Theorized dynamic custom action and state space utilizing one-hot encoding and action masks
                     </li>
                 </ul>
-            </ProjectEntry>
+            </ProjectEntry> */}
             <ProjectEntry
                 name="Contextual-Diffusion"
                 range="Feb. 2023 - Aug. 2023"
@@ -172,7 +222,7 @@ export default function Projects() {
                     </li>
                 </ul>
             </ProjectEntry>
-            <ProjectEntry
+            {/* <ProjectEntry
                 name="Minimax-based Animal Shogi AI"
                 range="Mar. 2021 - Nov. 2021"
                 link="https://github.com/looooonk/Animal-Shogi-Bot"
@@ -189,7 +239,7 @@ export default function Projects() {
                         Demonstrated bot with live play-testing at school festival to 350+ students and faculty
                     </li>
                 </ul>
-            </ProjectEntry>
+            </ProjectEntry> */}
         </div>
     );
 }
