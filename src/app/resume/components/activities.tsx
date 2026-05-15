@@ -119,7 +119,7 @@ export default function Activities() {
                     </li>
                 </ul>
             </ActivityEntry>
-            <ActivityEntry
+            {/* <ActivityEntry
                 name="Artificial Intelligence Lecturer"
                 range="May 2021 - Apr. 2023"
                 institution="Seoul Science High School"
@@ -154,7 +154,7 @@ export default function Activities() {
                         Supervised and managed the acquisition of a multi-GPU deep learning server for club research and projects
                     </li>
                 </ul>
-            </ActivityEntry>
+            </ActivityEntry> */}
         </div>
     );
 }
