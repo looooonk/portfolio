@@ -4,6 +4,7 @@ import { BiWorld } from "react-icons/bi";
 import type { ReactNode } from "react";
 import Image from "next/image";
 import IconLink from "@/components/icon-link";
+import ResumeImageStrip, { type ResumeItemImage } from "./resume-image-strip";
 
 const logos: Record<string, string> = {
     "Asteromorph": "/emblems/asteromorph.jpeg",
@@ -22,6 +23,8 @@ interface ExperienceEntryProps {
     range: string;
     organizationLink?: string;
     repoLink?: string;
+    images?: ResumeItemImage[];
+    showImages?: boolean;
     children?: ReactNode;
 }
 
@@ -32,6 +35,8 @@ function ExperienceEntry({
     range,
     organizationLink,
     repoLink,
+    images,
+    showImages,
     children,
 }: ExperienceEntryProps) {
     return (
@@ -77,6 +82,7 @@ function ExperienceEntry({
                 </div>
 
                 {children && <div className="mt-2 pl-0 sm:pl-4">{children}</div>}
+                <ResumeImageStrip images={images} showImages={showImages} />
             </div>
         </div>
     );
