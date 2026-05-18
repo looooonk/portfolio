@@ -77,7 +77,7 @@ export default function Projects() {
                         Implemented agentic retrieval loop, LLM quality judging, CV-aware fit assessment, and gap-fill passes using the Anthropic SDK
                     </li>
                     <li>
-                        Added rich reporting using markdown files, full trajectory viewing and analysis, and interactive UIs using curses
+                        Added rich reporting using markdown files, full trajectory viewing and analysis, and interactive UIs
                     </li>
                 </ul>
             </ProjectEntry>
