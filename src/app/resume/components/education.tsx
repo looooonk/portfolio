@@ -72,11 +72,11 @@ export default function Education() {
                         </span>
                         <div className="mt-1 flex-1 max-w-full break-words sm:mt-0 sm:ml-2 sm:max-w-[60%] text-sm sm:text-base">
                             <Course name="Computer Science Theory" code="COMS W3261" semester="Took Fall 2025" grade="A+"/>, {" "}
-                            <Course name="Programming Languages and Translators" code="COMS W4115" semester="Taking Fall 2025" grade="A"/>, {" "}
-                            <Course name="Introduction to Databases" code="COMS W4111" semester="Taking Fall 2025" grade="A+"/>, {" "}
-                            <Course name="Projects in Computer Science" code="COMS W4901" semester="Taking Fall 2025" grade="A"/>, {" "}
-                            <Course name="Theory ML Interaction" code="COMS W4995" semester="Taking Spring 2026" grade="A+"/>, {" "}
-                            <Course name="Natural Language Processing" code="COMS W4705" semester="Taking Spring 2026" grade="A+"/>
+                            <Course name="Programming Languages and Translators" code="COMS W4115" semester="Took Fall 2025" grade="A"/>, {" "}
+                            <Course name="Introduction to Databases" code="COMS W4111" semester="Took Fall 2025" grade="A+"/>, {" "}
+                            <Course name="Projects in Computer Science (I)" code="COMS W4901" semester="Took Fall 2025 & Spring 2026" grade="A"/>, {" "}
+                            <Course name="Theory ML Interaction" code="COMS W4995" semester="Took Spring 2026" grade="A+"/>, {" "}
+                            <Course name="Natural Language Processing" code="COMS W4705" semester="Took Spring 2026" grade="A+"/>
                         </div>
                     </div>
                 </div>
