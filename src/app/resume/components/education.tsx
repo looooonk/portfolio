@@ -55,7 +55,7 @@ export default function Education() {
                 name="Columbia University"
                 location="New York, NY"
                 degreeOrNotes="B.S. in Computer Science, Fu Foundation School of Engineering and Applied Science"
-                range="Aug. 2025 - May 2027"
+                range="Aug. 2025 - May 2027 (exp.)"
             >
                 <div className="space-y-2">
                     <div className="flex flex-col gap-2 pt-1 sm:flex-row sm:items-baseline sm:gap-6">
@@ -74,7 +74,7 @@ export default function Education() {
                             <Course name="Computer Science Theory" code="COMS W3261" semester="Took Fall 2025" grade="A+"/>, {" "}
                             <Course name="Programming Languages and Translators" code="COMS W4115" semester="Took Fall 2025" grade="A"/>, {" "}
                             <Course name="Introduction to Databases" code="COMS W4111" semester="Took Fall 2025" grade="A+"/>, {" "}
-                            <Course name="Projects in Computer Science (I)" code="COMS W4901" semester="Took Fall 2025 & Spring 2026" grade="A"/>, {" "}
+                            <Course name="Projects in Computer Science" code="COMS W4901" semester="Took Fall 2025 & Spring 2026" grade="A"/>, {" "}
                             <Course name="Theory ML Interaction" code="COMS W4995" semester="Took Spring 2026" grade="A+"/>, {" "}
                             <Course name="Natural Language Processing" code="COMS W4705" semester="Took Spring 2026" grade="A+"/>
                         </div>
