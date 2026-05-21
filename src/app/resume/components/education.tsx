@@ -60,10 +60,10 @@ export default function Education() {
                 <div className="space-y-2">
                     <div className="flex flex-col gap-2 pt-1 sm:flex-row sm:items-baseline sm:gap-6">
                         <span>
-                            <span className="font-semibold">GPA:</span> 3.98 / 4.33
+                            <span className="font-semibold">GPA:</span> 4.05 / 4.33
                         </span>
                         <span>
-                            <span className="font-semibold">Core GPA:</span> 4.17 / 4.33
+                            <span className="font-semibold">Core GPA:</span> 4.19 / 4.33
                         </span>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-start">
