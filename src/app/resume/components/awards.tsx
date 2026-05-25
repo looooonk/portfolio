@@ -46,9 +46,9 @@ const awards = [
         name: "Columbia University",
         title: "Dean's List",
         issuer: "Columbia University",
-        year: "2025",
+        year: "2025, 2026",
         description:
-            "Earned Dean's List designation for Fall 2025.",
+            "Earned Dean's List designation for Fall 2025 and Spring 2026",
     },
     {
         name: "Purdue University",
