@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { FaOrcid } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
+import { Rss } from "lucide-react";
 import Resume from './resume/resume';
 import ThemeToggle from '@/components/theme-toggle';
 import IconLink from "@/components/icon-link";
@@ -110,6 +111,12 @@ function Sidebar() {
                     label="Curriculum vitae"
                 >
                     <IoDocumentText size={24} />
+                </IconLink>
+                <IconLink
+                    href="https://blog.taehoonhwang.net"
+                    label="Blog"
+                >
+                    <Rss size={24} />
                 </IconLink>
             </div>
         </div>
