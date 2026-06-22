@@ -92,6 +92,19 @@ export default function Experience() {
     return (
         <div className="pt-4 space-y-8 mb-20">
             <ExperienceEntry
+                title="Artificial Intelligence Researcher"
+                organization="Asteromorph"
+                organizationLink="https://www.asteromorph.com/"
+                location="Seoul, South Korea"
+                range="Jun. 2026 - Present"
+            >
+                <ul className="list-disc pl-5">
+                    <li>
+                        Working on deploying scalable and efficient  reinforcement learning engines for use in agentic systems
+                    </li>
+                </ul>
+            </ExperienceEntry>
+            <ExperienceEntry
                 title="Research Assistant"
                 organization="Columbia University"
                 location="New York, NY"
