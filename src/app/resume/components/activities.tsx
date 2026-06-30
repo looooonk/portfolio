@@ -59,7 +59,7 @@ export default function Activities() {
                         Participated in weekly &apos;hack&apos; sessions and developed projects involving full-stack web development
                     </li>
                     <li>
-                        Developing website for course scheduling at Purdue with Next.js, MongoDB, and Python among team of 3
+                        Developed a course scheduling website at Purdue with Next.js, MongoDB, and Python on a team of 3
                     </li>
                 </ul>
             </ActivityEntry>
@@ -97,7 +97,7 @@ export default function Activities() {
                         Built a software pipeline utilizing LLMs to deliver personalized dietary text feedback to users
                     </li>
                     <li>
-                        Built a full-stack web app with a React front-end and ExpressJS back-end integrating MongoDB RestAPIs
+                        Built a full-stack web app with a React front-end and Express.js back-end integrating MongoDB REST APIs
                     </li>
                 </ul>
             </ActivityEntry>

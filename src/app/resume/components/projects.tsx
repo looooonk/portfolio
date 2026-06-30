@@ -109,13 +109,13 @@ export default function Projects() {
             >
                 <ul className="list-disc pl-5">
                     <li>
-                        Developed CLI-based JSON lines (.jsonl) file analyzer using Python and curses for MacOS and Linux systems
+                        Developed CLI-based JSON lines (.jsonl) file analyzer using Python and curses for macOS and Linux systems
                     </li>
                     <li>
                         Implemented vim-like structure for in-program command analysis and execution along with custom colored themes
                     </li>
                     <li>
-                        Made available for download via source compilation and homebrew taps
+                        Made available for download via source compilation and Homebrew taps
                     </li>
                 </ul>
             </ProjectEntry>
@@ -131,7 +131,7 @@ export default function Projects() {
                         Achieved SOTA-comparable performance when compared to LoRA variants such as DoRA, VeRA, and HiRA
                     </li>
                     <li>
-                        Constructed parallel fine-tuning orchastrator using Ray, Grafana, Prometheus, and Docker
+                        Constructed parallel fine-tuning orchestrator using Ray, Grafana, Prometheus, and Docker
                     </li>
                 </ul>
             </ProjectEntry>
@@ -187,7 +187,7 @@ export default function Projects() {
                 </ul>
             </ProjectEntry>
             <ProjectEntry
-                name="WUMT : Wavelet U-Net Motion Transformer"
+                name="WUMT: Wavelet U-Net Motion Transformer"
                 range="Jul. 2024 - Mar. 2025"
             >
                 <ul className="list-disc pl-5">

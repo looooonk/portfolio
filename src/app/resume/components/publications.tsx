@@ -60,9 +60,9 @@ export default function Publications() {
         <div className="pt-4 space-y-8 mb-20">
             <PublicationEntry
                 name="LiveNewsBench: Evaluating LLM Web Search Capabilities with Freshly Curated News"
-                range="May 2026"
+                range="Feb. 2026"
                 institution="Yunfan Zhang, Kathleen McKeown, Smaranda Muresan"
-                location="ICML 2026"
+                location="arXiv"
                 link="https://arxiv.org/abs/2602.13543"
                 icon={<IoDocumentText className="text-muted-foreground" size={18} />}
             >

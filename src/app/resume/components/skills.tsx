@@ -36,18 +36,18 @@ export default function Skills() {
                 title="Dev & Research Tools"
                 items={[
                     "Conda", "Docker", "Docker Swarm", "Git / GitHub", "Grafana",
-                    "IntelliJ", "LaTeX", "MLFlow", "Micromamba", "Overleaf",
-                    "Prometheus", "PyCharm", "Slurm", "Tensorboard", "Traefik",
+                    "IntelliJ", "LaTeX", "MLflow", "Micromamba", "Overleaf",
+                    "Prometheus", "PyCharm", "Slurm", "TensorBoard", "Traefik",
                     "Typst", "UNIX", "VS Code", "Visual Studio", "uv", "W&B",
                 ]}
             />
             <SkillCategory
                 title="Libraries"
                 items={[
-                    "HuggingFace", "Keras", "Matplotlib", "NumPy", "OpenAI",
+                    "Hugging Face", "Keras", "Matplotlib", "NumPy", "OpenAI",
                     "OpenCV", "Pandas", "PyTorch", "PyTorch Lightning", "Ray",
-                    "Scikit-learn", "Seaborn", "TensorFlow", "Transformer",
-                    "Unsloth", "Verl", "Xformers", "llama.cpp", "trl", "vLLM",
+                    "Scikit-learn", "Seaborn", "TensorFlow", "Transformers",
+                    "Unsloth", "verl", "xFormers", "llama.cpp", "trl", "vLLM",
                 ]}
             />
             <SkillCategory

@@ -100,7 +100,7 @@ export default function Experience() {
             >
                 <ul className="list-disc pl-5">
                     <li>
-                        Working on deploying scalable and efficient  reinforcement learning engines for use in agentic systems
+                        Working on deploying scalable and efficient reinforcement learning engines for use in agentic systems
                     </li>
                 </ul>
             </ExperienceEntry>

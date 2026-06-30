@@ -19,7 +19,7 @@ This is a **Next.js 15 static export** portfolio site (output: `"export"` in `ne
 ### Key structural points
 
 - **Single-page app**: `src/app/page.tsx` is the only route. It renders a hero section followed by the `<Resume />` component.
-- **`ClientWrapper`** (`src/app/clientwrapper.tsx`): Wraps content in Framer Motion's `AnimatePresence` to handle page-level fade transitions keyed by pathname.
+- **`ClientWrapper`** (`src/app/clientwrapper.tsx`): Currently passes children through unchanged.
 - **Resume tabs** (`src/app/resume/resume.tsx`): Client component managing a `useState` tab selection. Each tab (Education, Experience, Projects, Activities, Publications, Awards, Skills) maps to a component in `src/app/resume/components/`. Tab content is animated via Framer Motion's `AnimatePresence`.
 - **Theme**: Dark/light mode handled by an inline `<script>` in `layout.tsx` that runs before hydration to prevent flash. The `ThemeToggle` component (`src/components/theme-toggle.tsx`) writes to `localStorage` and toggles the `dark` class on `<html>`.
 - **UI primitives**: shadcn/ui components live in `src/components/ui/` (currently `tabs.tsx`, `hover-card.tsx`). `src/lib/utils.ts` exports `cn()` (clsx + tailwind-merge).
@@ -29,5 +29,5 @@ This is a **Next.js 15 static export** portfolio site (output: `"export"` in `ne
 ### Styling conventions
 
 - Tailwind CSS with the `dark:` variant for theme support.
-- Card-style entries use inline `style` props for glassmorphism gradients (purple-to-blue, rgba-based) — this is intentional and consistent across `ExperienceEntry` and `ProjectEntry`.
+- Card-style entries are simple bordered rows with Tailwind styling.
 - Responsive layout: stacked on mobile, side-by-side on `sm:` and above; tab grid switches from `grid-cols-2/3` (mobile) to `grid-cols-7` (desktop via `lg:`).
