@@ -62,8 +62,8 @@ export default function Publications() {
                 name="LiveNewsBench: Evaluating LLM Web Search Capabilities with Freshly Curated News"
                 range="Feb. 2026"
                 institution="Yunfan Zhang, Kathleen McKeown, Smaranda Muresan"
-                location="arXiv"
-                link="https://arxiv.org/abs/2602.13543"
+                location="ICML 2026"
+                link="https://openreview.net/pdf?id=8fIsZEGmh1"
                 icon={<IoDocumentText className="text-muted-foreground" size={18} />}
             >
                 <p className="text-muted-foreground">
