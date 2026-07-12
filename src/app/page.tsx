@@ -1,6 +1,6 @@
-// src/app/page.tsx
 'use client';
 
+import type { ReactNode } from 'react'
 import Image from 'next/image'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { FaOrcid, FaXTwitter } from "react-icons/fa6";
@@ -8,6 +8,19 @@ import { IoDocumentText } from "react-icons/io5";
 import Resume from './resume/resume';
 import ThemeToggle from '@/components/theme-toggle';
 import IconLink from "@/components/icon-link";
+
+function TextLink({ href, children }: { href: string; children: ReactNode }) {
+    return (
+        <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 underline visited:text-blue-400"
+        >
+            {children}
+        </a>
+    );
+}
 
 function Sidebar() {
     return (
@@ -54,41 +67,13 @@ function Sidebar() {
 
             <p className="text-sm text-muted-foreground text-center lg:text-left leading-relaxed">
                 I am an undergraduate student studying computer science at{' '}
-                <a
-                    href="https://www.columbia.edu/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 underline visited:text-blue-400"
-                >
-                    Columbia University
-                </a>
+                <TextLink href="https://www.columbia.edu/">Columbia University</TextLink>
                 . My research focuses on natural language processing, particularly with large language models and reinforcement learning. I am directly advised by PhD candidate{' '}
-                <a
-                    href="https://www.yunfanzhang.me/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 underline visited:text-blue-400"
-                >
-                    Yunfan Zhang
-                </a>
+                <TextLink href="https://www.yunfanzhang.me/">Yunfan Zhang</TextLink>
                 {' '}at{' '}
-                <a
-                    href="https://www.cs.columbia.edu/nlp/index.cgi"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 underline visited:text-blue-400"
-                >
-                    Columbia&apos;s NLP Lab
-                </a>
+                <TextLink href="https://www.cs.columbia.edu/nlp/index.cgi">Columbia&apos;s NLP Lab</TextLink>
                 {' '}under{' '}
-                <a
-                    href="https://www.cs.columbia.edu/~kathy/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 underline visited:text-blue-400"
-                >
-                    Prof. Kathleen McKeown
-                </a>
+                <TextLink href="https://www.cs.columbia.edu/~kathy/">Prof. Kathleen McKeown</TextLink>
                 &apos;s guidance.
             </p>
 

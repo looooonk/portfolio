@@ -1,62 +1,37 @@
 import type { ReactNode } from "react";
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
-import IconLink from "@/components/icon-link";
-import ResumeImageStrip, { type ResumeItemImage } from "./resume-image-strip";
+import ResumeEntry, { type EntryLink } from "./resume-entry";
 
 interface ProjectEntryProps {
     name: string;
     range: string;
-    link?: string;
-    icon?: ReactNode;
-    link2?: string;
-    icon2?: ReactNode;
-    images?: ResumeItemImage[];
-    showImages?: boolean;
+    repoLink?: string;
+    siteLink?: string;
     children?: ReactNode;
 }
 
-function ProjectEntry({
-    name,
-    range,
-    link,
-    icon,
-    link2,
-    icon2,
-    images,
-    showImages,
-    children,
-}: ProjectEntryProps) {
-    return (
-        <div className="border-b border-border pb-6">
-            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                <div className="flex items-center gap-2">
-                    <h3 className="text-lg font-bold text-foreground">{name}</h3>
-                    {link && icon && (
-                        <IconLink
-                            href={link}
-                            label={`${name} repository`}
-                            className="text-muted-foreground hover:text-foreground"
-                        >
-                            {icon}
-                        </IconLink>
-                    )}
-                    {link2 && icon2 && (
-                        <IconLink
-                            href={link2}
-                            label={`${name} website`}
-                            className="text-muted-foreground hover:text-foreground"
-                        >
-                            {icon2}
-                        </IconLink>
-                    )}
-                </div>
-                <p className="text-sm italic text-muted-foreground whitespace-nowrap">{range}</p>
-            </div>
+function ProjectEntry({ name, range, repoLink, siteLink, children }: ProjectEntryProps) {
+    const links: EntryLink[] = [];
+    if (repoLink) {
+        links.push({
+            href: repoLink,
+            label: `${name} repository`,
+            icon: <FaGithub size={16} />,
+        });
+    }
+    if (siteLink) {
+        links.push({
+            href: siteLink,
+            label: `${name} website`,
+            icon: <BiWorld size={14} />,
+        });
+    }
 
-            {children && <div className="mt-2 pl-0 sm:pl-4">{children}</div>}
-            <ResumeImageStrip images={images} showImages={showImages} />
-        </div>
+    return (
+        <ResumeEntry title={name} range={range} titleLinks={links}>
+            {children}
+        </ResumeEntry>
     );
 }
 
@@ -66,8 +41,7 @@ export default function Projects() {
             <ProjectEntry
                 name="Graduate School Research Agent"
                 range="Apr. 2026 - Present"
-                link="https://github.com/looooonk/graduate-school-agent"
-                icon={<FaGithub size={16} />}
+                repoLink="https://github.com/looooonk/graduate-school-agent"
             >
                 <ul className="list-disc pl-5">
                     <li>
@@ -84,10 +58,8 @@ export default function Projects() {
             <ProjectEntry
                 name="Factorio Tech Tree"
                 range="Feb. 2026 - Present"
-                link="https://github.com/looooonk/factorio-tech-tree/"
-                icon={<FaGithub size={16} />}
-                link2="https://factorio-tech-tree.com/"
-                icon2={<BiWorld size={14} />}
+                repoLink="https://github.com/looooonk/factorio-tech-tree/"
+                siteLink="https://factorio-tech-tree.com/"
             >
                 <ul className="list-disc pl-5">
                     <li>
@@ -104,8 +76,7 @@ export default function Projects() {
             <ProjectEntry
                 name="CLI JSONL Viewer"
                 range="Jan. 2026 - Present"
-                link="https://github.com/looooonk/jsonl-viewer"
-                icon={<FaGithub size={16} />}
+                repoLink="https://github.com/looooonk/jsonl-viewer"
             >
                 <ul className="list-disc pl-5">
                     <li>
@@ -150,28 +121,12 @@ export default function Projects() {
                         Compared multiple methods of injecting rotational equivariance using steerable wavelet filters, group equivariance CNNs, and equivariant attention modules
                     </li>
                     <li>
-                        Improved baseline spatio-temporal predictive models with out-of-distribution input in both synthetic and out-in-the-wild datasets
+                        Improved baseline spatio-temporal predictive models with out-of-distribution input in both synthetic and in-the-wild datasets
                     </li>
                 </ul>
             </ProjectEntry>
-            {/* <ProjectEntry
-                name="Fractel"
-                range="Jan. 2025 - May 2025"
-            >
-                <ul className="list-disc pl-5">
-                    <li>
-                        Developed course selection website for Purdue students supporting multiple time sheets and prerequisite tree viewing
-                    </li>
-                    <li>
-                        Designed website front-end UI with Next.js, TypeScript, and Tailwind CSS and course catalog scraper with Python
-                    </li>
-                    <li>
-                        Theorized implementing back-end support with MongoDB and RestAPI calls for dynamic course catalog maintenance
-                    </li>
-                </ul>
-            </ProjectEntry> */}
             <ProjectEntry
-                name="Financial Anomaly Detection with Modified Benford&apos;s Law"
+                name="Financial Anomaly Detection with Modified Benford's Law"
                 range="Jan. 2025 - Mar. 2025"
             >
                 <ul className="list-disc pl-5">
@@ -202,27 +157,10 @@ export default function Projects() {
                     </li>
                 </ul>
             </ProjectEntry>
-            {/* <ProjectEntry
-                name="RL Wildfire Optimization"
-                range="May 2024 - Dec. 2024"
-            >
-                <ul className="list-disc pl-5">
-                    <li>
-                        Utilized Convolutional DQN models to optimize firefighting efforts and evacuation routes with wildfires
-                    </li>
-                    <li>
-                        Developed complex wildfire simulation incorporating population density, terrain, weather, and crowd dynamics
-                    </li>
-                    <li>
-                        Theorized dynamic custom action and state space utilizing one-hot encoding and action masks
-                    </li>
-                </ul>
-            </ProjectEntry> */}
             <ProjectEntry
                 name="Contextual-Diffusion"
                 range="Feb. 2023 - Aug. 2023"
-                link="https://github.com/looooonk/GPT4-Contextual-Diffusion"
-                icon={<FaGithub size={16} />}
+                repoLink="https://github.com/looooonk/GPT4-Contextual-Diffusion"
             >
                 <ul className="list-disc pl-5">
                     <li>
@@ -236,24 +174,6 @@ export default function Projects() {
                     </li>
                 </ul>
             </ProjectEntry>
-            {/* <ProjectEntry
-                name="Minimax-based Animal Shogi AI"
-                range="Mar. 2021 - Nov. 2021"
-                link="https://github.com/looooonk/Animal-Shogi-Bot"
-                icon={<FaGithub size={16} />}
-            >
-                <ul className="list-disc pl-5">
-                    <li>
-                        Programmed an Animal Shogi bot using a minimax algorithm with alpha-beta pruning in C++
-                    </li>
-                    <li>
-                        Implemented interactable game GUI and cross-language translation mechanism with Python
-                    </li>
-                    <li>
-                        Demonstrated bot with live play-testing at school festival to 350+ students and faculty
-                    </li>
-                </ul>
-            </ProjectEntry> */}
         </div>
     );
 }

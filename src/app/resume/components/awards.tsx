@@ -1,16 +1,9 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
-
-const emblems: Record<string, string> = {
-    "Purdue University": "/emblems/purdue.png",
-    "Microsoft": "/emblems/microsoft.png",
-    "Pohang University": "/emblems/postech.png",
-    "Seoul Science High School": "/emblems/sshs.png",
-    "Columbia University": "/emblems/columbia.png",
-};
+import { emblems, type Organization } from "./emblems";
 
 interface AwardEntryProps {
-    name: string;
+    name: Organization;
     title: string;
     issuer: string;
     year: string;
@@ -41,14 +34,22 @@ function AwardEntry({ name, title, issuer, year, children }: AwardEntryProps) {
     );
 }
 
-const awards = [
+interface Award {
+    name: Organization;
+    title: string;
+    issuer: string;
+    year: string;
+    description: ReactNode;
+}
+
+const awards: Award[] = [
     {
         name: "Columbia University",
         title: "Dean's List",
         issuer: "Columbia University",
         year: "2025, 2026",
         description:
-            "Earned Dean's List designation for Fall 2025 and Spring 2026",
+            "Earned Dean's List designation for Fall 2025 and Spring 2026.",
     },
     {
         name: "Purdue University",
@@ -76,31 +77,15 @@ const awards = [
         description:
             "Recognized for a presentation on open-set recognition with ResNet models.",
     },
-    // {
-    //     name: "Seoul Science High School",
-    //     title: "Top Award for R&E Research in Computer Science",
-    //     issuer: "Seoul Science High School",
-    //     year: "2022",
-    //     description:
-    //         "Improved open-set recognition accuracy in ResNet models.",
-    // },
     {
         name: "Microsoft",
         title: "Azure AI Fundamentals Certification",
         issuer: "Microsoft",
         year: "2022",
         description:
-            "Achieved AZ-900 certification on AI and Microsoft Azure fundamentals.",
+            "Achieved AI-900 certification on AI and Microsoft Azure fundamentals.",
     },
-    // {
-    //     name: "Seoul Science High School",
-    //     title: "Top Award for Independent Research in Computer Science",
-    //     issuer: "Seoul Science High School",
-    //     year: "2021",
-    //     description:
-    //         "Developed advertisement classification using OCR and semantic tree matching.",
-    // },
-] as const;
+];
 
 export default function Awards() {
     return (

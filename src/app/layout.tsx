@@ -1,4 +1,3 @@
-// src/app/layout.tsx
 import type { ReactNode } from 'react'
 import '../styles/globals.css'
 
@@ -7,13 +6,13 @@ export const metadata = {
     description: 'Portfolio of Taehoon Hwang',
 }
 
-const theme_script = `
+// Runs before hydration so the correct theme paints on first load.
+const themeScript = `
 (() => {
-  const theme_key = 'theme';
-  const saved_theme = localStorage.getItem(theme_key);
-  const has_saved_theme = saved_theme === 'dark' || saved_theme === 'light';
-  const prefers_dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const theme = has_saved_theme ? saved_theme : (prefers_dark ? 'dark' : 'light');
+  const saved = localStorage.getItem('theme');
+  const hasSaved = saved === 'dark' || saved === 'light';
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = hasSaved ? saved : (prefersDark ? 'dark' : 'light');
   const root = document.documentElement;
   root.classList.toggle('dark', theme === 'dark');
   root.style.colorScheme = theme;
@@ -24,7 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     return (
         <html lang="en" suppressHydrationWarning>
             <head>
-                <script dangerouslySetInnerHTML={{ __html: theme_script }} />
+                <script dangerouslySetInnerHTML={{ __html: themeScript }} />
             </head>
             <body>
                 {children}

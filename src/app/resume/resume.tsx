@@ -1,4 +1,3 @@
-// src/app/resume/resume.tsx
 "use client";
 
 import type { ReactNode } from "react";

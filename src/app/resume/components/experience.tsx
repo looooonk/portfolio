@@ -1,30 +1,16 @@
-// experience.tsx
 import { FaGithub } from "react-icons/fa";
 import { BiWorld } from "react-icons/bi";
 import type { ReactNode } from "react";
-import Image from "next/image";
-import IconLink from "@/components/icon-link";
-import ResumeImageStrip, { type ResumeItemImage } from "./resume-image-strip";
-
-const logos: Record<string, string> = {
-    "Asteromorph": "/emblems/asteromorph.jpeg",
-    "Purdue University": "/emblems/purdue.png",
-    "Quantum Research Sciences": "/emblems/qrs.png",
-    "Seoul Science High School": "/emblems/sshs.png",
-    "Sungkyunkwan University": "/emblems/skku.png",
-    "Columbia University": "/emblems/columbia.png",
-    "Columbia": "/emblems/columbia.png",
-};
+import ResumeEntry, { type EntryLink } from "./resume-entry";
+import type { Organization } from "./emblems";
 
 interface ExperienceEntryProps {
     title: string;
-    organization: string;
+    organization: Organization;
     location: string;
     range: string;
     organizationLink?: string;
     repoLink?: string;
-    images?: ResumeItemImage[];
-    showImages?: boolean;
     children?: ReactNode;
 }
 
@@ -35,56 +21,35 @@ function ExperienceEntry({
     range,
     organizationLink,
     repoLink,
-    images,
-    showImages,
     children,
 }: ExperienceEntryProps) {
+    const links: EntryLink[] = [];
+    if (organizationLink) {
+        links.push({
+            href: organizationLink,
+            label: `${organization} website`,
+            icon: <BiWorld size={14} />,
+        });
+    }
+    if (repoLink) {
+        links.push({
+            href: repoLink,
+            label: `${title} repository`,
+            icon: <FaGithub size={16} />,
+        });
+    }
+
     return (
-        <div className="flex gap-4 border-b border-border pb-6 sm:gap-5">
-            <div className="flex-shrink-0 w-10 h-10 relative mt-0.5">
-                <Image
-                    fill
-                    src={logos[organization]}
-                    alt={`${organization} logo`}
-                    className="object-contain"
-                />
-            </div>
-
-            <div className="flex-1 min-w-0">
-                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                    <h3 className="text-lg font-bold text-foreground">{title}</h3>
-                    <p className="text-sm italic text-muted-foreground sm:text-right whitespace-nowrap">{range}</p>
-                </div>
-
-                <div className="flex flex-col gap-0.5 sm:flex-row sm:items-center sm:justify-between mt-0.5">
-                    <div className="flex items-center gap-2">
-                        <p className="italic text-muted-foreground">{organization}</p>
-                        {organizationLink && (
-                            <IconLink
-                                href={organizationLink}
-                                label={`${organization} website`}
-                                className="text-muted-foreground hover:text-foreground"
-                            >
-                                <BiWorld size={14} />
-                            </IconLink>
-                        )}
-                        {repoLink && (
-                            <IconLink
-                                href={repoLink}
-                                label={`${title} repository`}
-                                className="text-muted-foreground hover:text-foreground"
-                            >
-                                <FaGithub size={16} />
-                            </IconLink>
-                        )}
-                    </div>
-                    <p className="text-sm italic text-muted-foreground sm:text-right whitespace-nowrap">{location}</p>
-                </div>
-
-                {children && <div className="mt-2 pl-0 sm:pl-4">{children}</div>}
-                <ResumeImageStrip images={images} showImages={showImages} />
-            </div>
-        </div>
+        <ResumeEntry
+            title={title}
+            range={range}
+            emblem={organization}
+            subtitle={<span className="italic">{organization}</span>}
+            subtitleLinks={links}
+            location={location}
+        >
+            {children}
+        </ResumeEntry>
     );
 }
 
@@ -203,27 +168,6 @@ export default function Experience() {
                 </ul>
             </ExperienceEntry>
 
-            {/* <ExperienceEntry
-                title="Student Researcher"
-                organization="Seoul Science High School"
-                location="Seoul, South Korea"
-                range="Mar. 2022 - Dec. 2022"
-            >
-                <ul className="list-disc pl-5 space-y-1">
-                    <li>
-                        Enhanced real-time landmark tracking via machine-learning techniques
-                    </li>
-                    <li>
-                        Reduced untracked frames in Google MediaPipe by 91.7% with U-Net
-                        segmentation
-                    </li>
-                    <li>
-                        Designed a versatile multi-headed software pipeline adaptable to diverse
-                        hardware constraints
-                    </li>
-                </ul>
-            </ExperienceEntry> */}
-
             <ExperienceEntry
                 title="Research Assistant"
                 organization="Sungkyunkwan University"
@@ -241,26 +185,6 @@ export default function Experience() {
                     </li>
                 </ul>
             </ExperienceEntry>
-
-            {/* <ExperienceEntry
-                title="Student Researcher"
-                organization="Seoul Science High School"
-                location="Seoul, South Korea"
-                range="Apr. 2020 - Jun. 2021"
-            >
-                <ul className="list-disc pl-5 space-y-1">
-                    <li>
-                        Investigated ad-classification and recommendation using OCR  &amp;
-                        clustering
-                    </li>
-                    <li>
-                        Refined k-means to handle temporal dynamics of user interests
-                    </li>
-                    <li>
-                        Demonstrated adaptive behaviour through rigorous temporal testing
-                    </li>
-                </ul>
-            </ExperienceEntry> */}
         </div>
     );
 }

@@ -1,18 +1,10 @@
 import type { ReactNode } from "react";
 import Course from "./course";
 import Image from "next/image";
-
-const emblems: Record<string, string> = {
-    "Columbia University": "/emblems/columbia.png",
-    "Columbia": "/emblems/columbia.png",
-    "Purdue University": "/emblems/purdue.png",
-    "Purdue": "/emblems/purdue.png",
-    "Seoul Science High School": "/emblems/sshs.png",
-    "Seoul Science HS": "/emblems/sshs.png",
-};
+import { emblems, type Organization } from "./emblems";
 
 interface EducationEntryProps {
-    name: string;
+    name: Organization;
     location: string;
     degreeOrNotes: string;
     range: string;
@@ -119,13 +111,6 @@ export default function Education() {
                     </div>
                 </div>
             </EducationEntry>
-
-            {/* <EducationEntry
-                name="Seoul Science High School"
-                location="Seoul, South Korea"
-                degreeOrNotes="32nd Cohort, Granted early admission"
-                range="Mar. 2020 - Feb. 2023"
-            /> */}
         </div>
     );
 }

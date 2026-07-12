@@ -1,47 +1,31 @@
 import type { ReactNode } from "react";
-import { FaGithub } from 'react-icons/fa'
-import IconLink from "@/components/icon-link";
-import ResumeImageStrip, { type ResumeItemImage } from "./resume-image-strip";
+import { FaGithub } from "react-icons/fa";
+import ResumeEntry, { type EntryLink } from "./resume-entry";
 
 interface ActivityEntryProps {
     name: string;
     range: string;
     institution: string;
     location: string;
-    link?: string;
-    icon?: ReactNode;
-    images?: ResumeItemImage[];
-    showImages?: boolean;
+    repoLink?: string;
     children?: ReactNode;
 }
 
-function ActivityEntry({ name, range, institution, location, link, icon, images, showImages, children }: ActivityEntryProps) {
+function ActivityEntry({ name, range, institution, location, repoLink, children }: ActivityEntryProps) {
+    const links: EntryLink[] = repoLink
+        ? [{ href: repoLink, label: `${name} repository`, icon: <FaGithub size={16} /> }]
+        : [];
+
     return (
-        <div className="border-b border-border pb-6">
-            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                <div className="flex items-center gap-2">
-                    <h3 className="text-lg font-bold text-foreground">{name}</h3>
-                    {link && icon && (
-                        <IconLink
-                            href={link}
-                            label={`${name} repository`}
-                            className="text-muted-foreground hover:text-foreground"
-                        >
-                            {icon}
-                        </IconLink>
-                    )}
-                </div>
-                <p className="text-sm italic text-muted-foreground whitespace-nowrap">{range}</p>
-            </div>
-
-            <div className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between mt-0.5">
-                <p className="text-muted-foreground">{institution}</p>
-                <p className="text-sm italic text-muted-foreground sm:text-right whitespace-nowrap">{location}</p>
-            </div>
-
-            {children && <div className="mt-2 pl-0 sm:pl-4">{children}</div>}
-            <ResumeImageStrip images={images} showImages={showImages} />
-        </div>
+        <ResumeEntry
+            title={name}
+            range={range}
+            titleLinks={links}
+            subtitle={institution}
+            location={location}
+        >
+            {children}
+        </ResumeEntry>
     );
 }
 
@@ -86,8 +70,7 @@ export default function Activities() {
                 range="Sep. 2023"
                 institution="Purdue University"
                 location="West Lafayette, IN"
-                link="https://github.com/looooonk/Health-App"
-                icon={<FaGithub size={16} />}
+                repoLink="https://github.com/looooonk/Health-App"
             >
                 <ul className="list-disc pl-5">
                     <li>
@@ -119,42 +102,6 @@ export default function Activities() {
                     </li>
                 </ul>
             </ActivityEntry>
-            {/* <ActivityEntry
-                name="Artificial Intelligence Lecturer"
-                range="May 2021 - Apr. 2023"
-                institution="Seoul Science High School"
-                location="Seoul, South Korea"
-            >
-                <ul className="list-disc pl-5">
-                    <li>
-                        Presented 8 deep learning-focused lectures to an audience of 200+ students and faculty
-                    </li>
-                    <li>
-                        Delivered lectures on topics including linear algebra, conventional neural networks, and transformers
-                    </li>
-                    <li>
-                        Conducted 10 additional interdisciplinary volunteer lectures focused on mathematics and artificial intelligence
-                    </li>
-                </ul>
-            </ActivityEntry>
-            <ActivityEntry
-                name="Artificial Intelligence Club President"
-                range="Mar. 2021 - Feb. 2023"
-                institution="Seoul Science High School"
-                location="Seoul, South Korea"
-            >
-                <ul className="list-disc pl-5">
-                    <li>
-                        Authored 4 different entry exams on mathematical deep learning and essays on model selection
-                    </li>
-                    <li>
-                        Curated literature and project content with paper readings and specialized datasets
-                    </li>
-                    <li>
-                        Supervised and managed the acquisition of a multi-GPU deep learning server for club research and projects
-                    </li>
-                </ul>
-            </ActivityEntry> */}
         </div>
     );
 }
