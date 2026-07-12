@@ -3,9 +3,8 @@
 
 import Image from 'next/image'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
-import { FaOrcid } from "react-icons/fa6";
+import { FaOrcid, FaXTwitter } from "react-icons/fa6";
 import { IoDocumentText } from "react-icons/io5";
-import { Rss } from "lucide-react";
 import Resume from './resume/resume';
 import ThemeToggle from '@/components/theme-toggle';
 import IconLink from "@/components/icon-link";
@@ -101,6 +100,12 @@ function Sidebar() {
                     <FaLinkedin size={24} />
                 </IconLink>
                 <IconLink
+                    href="https://x.com/taehoon_hwang"
+                    label="X profile"
+                >
+                    <FaXTwitter size={24} />
+                </IconLink>
+                <IconLink
                     href="https://github.com/looooonk"
                     label="GitHub profile"
                 >
@@ -117,12 +122,6 @@ function Sidebar() {
                     label="Curriculum vitae"
                 >
                     <IoDocumentText size={24} />
-                </IconLink>
-                <IconLink
-                    href="https://blog.taehoonhwang.net"
-                    label="Blog"
-                >
-                    <Rss size={24} />
                 </IconLink>
             </div>
         </div>

@@ -62,15 +62,15 @@ export default function Publications() {
                 name="LiveNewsBench: Evaluating LLM Web Search Capabilities with Freshly Curated News"
                 range="Feb. 2026"
                 institution="Yunfan Zhang, Kathleen McKeown, Smaranda Muresan"
-                location="arXiv"
-                link="https://arxiv.org/abs/2602.13543"
+                location="ICML 2026"
+                link="https://openreview.net/pdf?id=8fIsZEGmh1"
                 icon={<IoDocumentText className="text-muted-foreground" size={18} />}
             >
                 <p className="text-muted-foreground">
                     Large Language Models (LLMs) with agentic web search capabilities show strong potential for tasks requiring real-time information access and complex fact retrieval, yet evaluating such systems remains challenging. We introduce LiveNewsBench, a rigorous and regularly updated benchmark designed to assess the agentic web search abilities of LLMs.
                 </p>
                 <p className="mt-2 text-xs text-muted-foreground">
-                    Contributor, not author.
+                    Contributor (not author).
                 </p>
             </PublicationEntry>
 
@@ -84,6 +84,9 @@ export default function Publications() {
             >
                 <p className="text-muted-foreground">
                     Recent advances in LLMs have made automated scientific research the next frontline in the path to artificial superintelligence. However, these systems are bound either to tasks of narrow scope or the limited creative capabilities of LLMs. We propose Spacer, a scientific discovery system that develops creative and factually grounded concepts without external intervention.
+                </p>
+                <p className="mt-2 text-xs text-muted-foreground">
+                    Co-author.
                 </p>
             </PublicationEntry>
 
