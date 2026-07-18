@@ -43,7 +43,7 @@ export default function Publications() {
                     Large Language Models (LLMs) with agentic web search capabilities show strong potential for tasks requiring real-time information access and complex fact retrieval, yet evaluating such systems remains challenging. We introduce LiveNewsBench, a rigorous and regularly updated benchmark designed to assess the agentic web search abilities of LLMs.
                 </p>
                 <p className="mt-2 text-xs text-muted-foreground">
-                    Contributor (not author).
+                    Contributor (non-author).
                 </p>
             </PublicationEntry>
 
