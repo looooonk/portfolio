@@ -18,25 +18,36 @@ export default function ThemeToggle() {
     const [theme, setTheme] = useState<Theme>("light");
 
     useEffect(() => {
-        const saved = localStorage.getItem(THEME_KEY);
-        if (saved === "dark" || saved === "light") {
-            setTheme(saved);
-            applyTheme(saved);
-            return;
-        }
+        let media: MediaQueryList | undefined;
+        let onChange: ((event: MediaQueryListEvent) => void) | undefined;
 
-        // No saved preference: follow the system theme, live.
-        const media = window.matchMedia(DARK_MEDIA_QUERY);
-        const followSystem = (matchesDark: boolean) => {
-            const next: Theme = matchesDark ? "dark" : "light";
-            setTheme(next);
-            applyTheme(next);
+        const frame = window.requestAnimationFrame(() => {
+            const saved = localStorage.getItem(THEME_KEY);
+            if (saved === "dark" || saved === "light") {
+                setTheme(saved);
+                applyTheme(saved);
+                return;
+            }
+
+            // No saved preference: follow the system theme, live.
+            media = window.matchMedia(DARK_MEDIA_QUERY);
+            const followSystem = (matchesDark: boolean) => {
+                const next: Theme = matchesDark ? "dark" : "light";
+                setTheme(next);
+                applyTheme(next);
+            };
+            followSystem(media.matches);
+
+            onChange = (event: MediaQueryListEvent) => followSystem(event.matches);
+            media.addEventListener("change", onChange);
+        });
+
+        return () => {
+            window.cancelAnimationFrame(frame);
+            if (media && onChange) {
+                media.removeEventListener("change", onChange);
+            }
         };
-        followSystem(media.matches);
-
-        const onChange = (event: MediaQueryListEvent) => followSystem(event.matches);
-        media.addEventListener("change", onChange);
-        return () => media.removeEventListener("change", onChange);
     }, []);
 
     const toggleTheme = () => {

@@ -7,14 +7,14 @@ This file provides guidance to AI coding agents when working with code in this r
 ```bash
 npm run dev      # Start local dev server (localhost:3000)
 npm run build    # Static export to ./out/
-npm run lint     # ESLint via next lint
+npm run lint     # ESLint CLI
 ```
 
 No test suite exists in this project.
 
 ## Architecture
 
-This is a **Next.js 15 static export** portfolio site (output: `"export"` in `next.config.ts`). The built output lands in `./out/` and is deployed to GitHub Pages via `.github/workflows/nextjs.yml` on every push to `main`.
+This is a **Next.js 16 static export** portfolio site (output: `"export"` in `next.config.ts`). The built output lands in `./out/` and is deployed to GitHub Pages via `.github/workflows/nextjs.yml` on every push to `main`.
 
 ### Key structural points
 
@@ -31,3 +31,13 @@ This is a **Next.js 15 static export** portfolio site (output: `"export"` in `ne
 - Tailwind CSS with the `dark:` variant for theme support.
 - Card-style entries are simple bordered rows with Tailwind styling.
 - Responsive layout: stacked on mobile, side-by-side on `sm:` and above. The tab bar is a `grid-cols-2`/`grid-cols-3` grid on mobile and an underlined flex tab row on desktop (`lg:`).
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
