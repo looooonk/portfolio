@@ -42,12 +42,6 @@ function Sidebar() {
 
             <div className="text-sm sm:text-base text-foreground space-y-1.5 text-center lg:text-left">
                 <p>
-                    <span>Artificial Intelligence Researcher</span>
-                    <br />
-                    <span className="text-muted-foreground">@ </span>
-                    <span className="font-semibold text-muted-foreground">Asteromorph</span>
-                </p>
-                <p>
                     <span>Research Assistant</span>
                     <br />
                     <span className="text-muted-foreground">@ </span>

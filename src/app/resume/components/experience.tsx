@@ -61,11 +61,20 @@ export default function Experience() {
                 organization="Asteromorph"
                 organizationLink="https://www.asteromorph.com/"
                 location="Seoul, South Korea"
-                range="Jun. 2026 - Present"
+                range="Jun. 2026 - Aug. 2026"
             >
                 <ul className="list-disc pl-5">
                     <li>
-                        Working on deploying scalable and efficient reinforcement learning engines for use in agentic systems
+                        Developed and deployed a custom gradient-free post-training engine for Evolutionary Strategies (ES) with an SGLang backend
+                    </li>
+                    <li>
+                        Matched the model performance of GRPO on verl with zero gradient updates, reducing end-to-end training time by 15%
+                    </li>
+                    <li>
+                        Applied the framework to test post-training of large-scale models including Qwen3.5-397B and Solar Open2 250B
+                    </li>
+                    <li>
+                        Supported major parallelism and quantization strategies across multi-node clusters, enabling post-training of models exceeding 1T parameters, including Kimi-K2.6, Kimi-K3 and Deepseek v4 Pro
                     </li>
                 </ul>
             </ExperienceEntry>
