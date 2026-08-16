@@ -21,7 +21,7 @@ const skillCategories: SkillCategory[] = [
         title: "Dev & Research Tools",
         items: sorted([
             "Conda", "Docker", "Docker Swarm", "Git / GitHub", "Grafana",
-            "IntelliJ", "LaTeX", "MLflow", "Micromamba", "Overleaf",
+            "IntelliJ", "Kubernetes", "LaTeX", "MLflow", "Micromamba", "Overleaf",
             "Prometheus", "PyCharm", "Slurm", "TensorBoard", "Traefik",
             "Typst", "UNIX", "VS Code", "Visual Studio", "uv", "W&B",
         ]),
@@ -32,7 +32,7 @@ const skillCategories: SkillCategory[] = [
             "Hugging Face", "Keras", "Matplotlib", "NumPy", "OpenAI",
             "OpenCV", "Pandas", "PyTorch", "PyTorch Lightning", "Ray",
             "Scikit-learn", "Seaborn", "TensorFlow", "Transformers",
-            "Unsloth", "verl", "xFormers", "llama.cpp", "trl", "vLLM",
+            "SGLang", "Unsloth", "verl", "xFormers", "llama.cpp", "trl", "vLLM",
         ]),
     },
     {
@@ -41,7 +41,7 @@ const skillCategories: SkillCategory[] = [
             "Computer Vision", "Diffusion Models",
             "Distributed & 5D Parallel Training", "Generative AI",
             "Graph Neural Networks", "Group Neural Networks",
-            "Large Language Models", "Fine-tuning",
+            "Large Language Models", "Fine-tuning", "Post-training", "Distillation",
             "Natural Language Processing", "Reinforcement Learning",
         ]),
     },
