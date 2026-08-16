@@ -39,6 +39,23 @@ export default function Projects() {
     return (
         <div className="pt-4 space-y-8 mb-20">
             <ProjectEntry
+                name="better-codex"
+                range="Jun. 2026 - Present"
+                repoLink="https://github.com/looooonk/better-codex"
+            >
+                <ul className="list-disc pl-5">
+                    <li>
+                        Reengineered the Codex CLI as a standalone, full-screen Rust TUI with a dashboard and session-focused workspace
+                    </li>
+                    <li>
+                        Built thread and session management for searching, resuming, forking, renaming, archiving, and deleting agent work
+                    </li>
+                    <li>
+                        Integrated live tool output, command approvals, sandbox controls, git diff review, and account usage monitoring into a unified interface
+                    </li>
+                </ul>
+            </ProjectEntry>
+            <ProjectEntry
                 name="Graduate School Research Agent"
                 range="Apr. 2026 - Present"
                 repoLink="https://github.com/looooonk/graduate-school-agent"
@@ -75,7 +92,7 @@ export default function Projects() {
             </ProjectEntry>
             <ProjectEntry
                 name="CLI JSONL Viewer"
-                range="Jan. 2026 - Present"
+                range="Jan. 2026 - Jun. 2026"
                 repoLink="https://github.com/looooonk/jsonl-viewer"
             >
                 <ul className="list-disc pl-5">
