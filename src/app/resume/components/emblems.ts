@@ -4,7 +4,7 @@
  * error rather than a broken image at runtime.
  */
 export const emblems = {
-    "Asteromorph": "/emblems/asteromorph.jpeg",
+    "Asteromorph": "/emblems/asteromorph.png",
     "Columbia University": "/emblems/columbia.png",
     "Microsoft": "/emblems/microsoft.png",
     "Pohang University": "/emblems/postech.png",

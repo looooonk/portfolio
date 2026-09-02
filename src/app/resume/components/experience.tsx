@@ -57,7 +57,7 @@ export default function Experience() {
     return (
         <div className="pt-4 space-y-8 mb-20">
             <ExperienceEntry
-                title="Artificial Intelligence Researcher"
+                title="Artificial Intelligence Research Intern"
                 organization="Asteromorph"
                 organizationLink="https://www.asteromorph.com/"
                 location="Seoul, South Korea"
