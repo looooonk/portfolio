@@ -57,6 +57,18 @@ export default function Experience() {
     return (
         <div className="pt-4 space-y-8 mb-20">
             <ExperienceEntry
+                title="Teaching Assistant"
+                organization="Columbia University"
+                location="New York, NY"
+                range="Sep. 2026 - Present"
+            >
+                <ul className="list-disc pl-5">
+                    <li>
+                        Working as a TA for COMS W4705 (Natural Language Processing) under Prof. John Hewitt
+                    </li>
+                </ul>
+            </ExperienceEntry>
+            <ExperienceEntry
                 title="Artificial Intelligence Research Intern"
                 organization="Asteromorph"
                 organizationLink="https://www.asteromorph.com/"
