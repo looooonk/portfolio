@@ -68,7 +68,12 @@ export default function Education() {
                             <Course name="Introduction to Databases" code="COMS W4111" semester="Took Fall 2025" grade="A+"/>, {" "}
                             <Course name="Projects in Computer Science" code="COMS W4901" semester="Took Fall 2025 & Spring 2026" grade="A"/>, {" "}
                             <Course name="Theory ML Interaction" code="COMS W4995" semester="Took Spring 2026" grade="A+"/>, {" "}
-                            <Course name="Natural Language Processing" code="COMS W4705" semester="Took Spring 2026" grade="A+"/>
+                            <Course name="Natural Language Processing" code="COMS W4705" semester="Took Spring 2026" grade="A+"/>, {" "}
+                            <Course name="Intro to Computational Complexity" code="COMS W4236" semester="Taking Fall 2026"/>, {" "}
+                            <Course name="Machine Learning Theory" code="COMS W4773" semester="Taking Fall 2026"/>, {" "}
+                            <Course name="Natural Language Generation and Summarization" code="COMS E6975" semester="Taking Fall 2026"/>, {" "}
+                            <Course name="Algorithms for LLMs" code="COMS E6998" semester="Taking Fall 2026"/>, {" "}
+                            <Course name="Scaling LLMs" code="COMS E6998" semester="Taking Fall 2026"/>
                         </div>
                     </div>
                 </div>
