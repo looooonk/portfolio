@@ -6,7 +6,7 @@ This file provides guidance to AI coding agents when working with code in this r
 
 ```bash
 npm run dev      # Start local dev server (localhost:3000)
-npm run build    # Static export to ./out/
+npm run build    # Next.js production build in ./.next/
 npm run lint     # ESLint CLI
 ```
 
@@ -14,7 +14,7 @@ No test suite exists in this project.
 
 ## Architecture
 
-This is a **Next.js 16 static export** portfolio site (output: `"export"` in `next.config.ts`). The built output lands in `./out/` and is deployed to GitHub Pages via `.github/workflows/nextjs.yml` on every push to `main`.
+This is a **Next.js 16** portfolio site deployed to Vercel through its GitHub integration. Pushes to `main` deploy to production; other branches and pull requests get preview deployments. The homepage is prerendered, and Vercel provides image optimization. Use Node.js 24 to match Vercel and `.github/workflows/ci.yml`, which runs lint and build checks.
 
 ### Key structural points
 
